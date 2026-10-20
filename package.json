@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node build/build.mjs",
     "validate": "node build/validate.mjs",
-    "components": "python3 build/generate_components.py",
+    "components": "python3 build/generate_components.py && node build/consumer-bundle.mjs",
     "check": "npm run validate && npm run build && npm run components"
   }
 }

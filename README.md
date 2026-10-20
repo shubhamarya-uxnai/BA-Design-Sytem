@@ -1,5 +1,15 @@
 # VA Design System
 
+## Shared browser release: v0.1.0
+
+Gradient Creator, Color Palette Visualizer, and Acoustic Matrix load the shared stylesheet from:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/BA-Design-Sytem@v0.1.0/dist/consumer.css">
+```
+
+`npm run check` rebuilds this bundle, including the central compatibility adapter for existing `ds-*` markup. Its legacy layout sources and token reference are under `source/compat/`; emitted compatibility values resolve through BA variables. Consumer repositories retain application layout, behavior, and font assets. Local copies of the old shared system have been removed from consumers. This pinned release requires a consumer version change to adopt future BA releases; it does not automatically follow main.
+
 Token foundation for the Bunny Are design system.
 
 This package is intentionally token-first. It does not create a parallel Figma file. The source snapshot in `source/collections/` is the current Figma variable export; the generated token and component files in `dist/` are derived from that snapshot and can be rebuilt at any time.
