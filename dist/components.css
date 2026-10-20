@@ -1,0 +1,791 @@
+/* Generated from source/specs/buttons.json and icon-buttons.json. */
+
+/* Rebuild with: npm run components */
+
+.va-button, .va-icon-button { isolation: isolate; }
+
+.va-button > *, .va-icon-button > * { min-width: 0; }
+
+.va-button[data-size="large"] {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m);
+  border-style: solid;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  cursor: pointer;
+  font-family: var(--va-typography-font-family-body);
+  font-size: var(--va-typography-font-sizes-16);
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.va-button[data-size="large"] > .va-button__icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.va-button[data-size="large"] > .va-button__label {
+  display: inline-block;
+}
+
+.va-button[data-size="small"] {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding: var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-s);
+  border-style: solid;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  cursor: pointer;
+  font-family: var(--va-typography-font-family-body);
+  font-size: var(--va-typography-font-sizes-12);
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.va-button[data-size="small"] > .va-button__icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.va-button[data-size="small"] > .va-button__label {
+  display: inline-block;
+}
+
+.va-icon-button[data-size="large"] {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-style: solid;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  cursor: pointer;
+}
+
+.va-icon-button[data-size="large"] > .va-icon-button__icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.va-icon-button[data-size="small"] {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding: var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-xs);
+  border-style: solid;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  cursor: pointer;
+}
+
+.va-icon-button[data-size="small"] > .va-icon-button__icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-button[data-enabled="false"], .va-button[aria-disabled="true"], .va-button:disabled { cursor: not-allowed; }
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"]:focus-visible, .va-icon-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="true"][data-pressed="false"][data-preview="focus"] {
+  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-hover);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="false"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: var(--va-semantic-color-tokens-background-secondary-default);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] {
+  background-color: transparent;
+  border-color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--va-semantic-color-tokens-pressed);
+  pointer-events: none;
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="true"][data-enabled="true"][data-pressed="true"] > * { position: relative; z-index: 1; }
+
+.va-icon-button[data-size="large"][data-type="primary"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-size="small"][data-type="primary"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-size="large"][data-type="default"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-size="small"][data-type="default"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-size="large"][data-type="ghost"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-size="small"][data-type="ghost"][data-hover="false"][data-enabled="false"][data-pressed="false"] {
+  background-color: var(--va-semantic-color-tokens-background-disabled);
+  border-color: transparent;
+  border-width: var(--va-screen-size-switch-stroke-default);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+
+.va-icon-button[data-enabled="false"], .va-icon-button[aria-disabled="true"], .va-icon-button:disabled { cursor: not-allowed; }
+
+.va-button__icon, .va-icon-button__icon { color: currentColor; }
+
+.va-button[data-hover="true"]:hover::after, .va-icon-button[data-hover="true"]:hover::after { opacity: 1; }

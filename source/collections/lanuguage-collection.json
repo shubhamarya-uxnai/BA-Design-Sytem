@@ -1,0 +1,41 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:4004:823",
+    "name": "Lanuguage Collection",
+    "modes": [
+      {
+        "name": "Mode 1",
+        "modeId": "4004:0"
+      }
+    ],
+    "defaultModeId": "4004:0"
+  },
+  "variables": [
+    {
+      "id": "VariableID:4004:825",
+      "name": "Roman/Family",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4004:0": "DM Sans"
+      }
+    },
+    {
+      "id": "VariableID:4004:826",
+      "name": "Roman/Direction",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4004:0": "LTR"
+      }
+    }
+  ]
+}

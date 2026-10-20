@@ -1,0 +1,582 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:3:108",
+    "name": "Typography",
+    "modes": [
+      {
+        "name": "Mode 1",
+        "modeId": "3:2"
+      }
+    ],
+    "defaultModeId": "3:2"
+  },
+  "variables": [
+    {
+      "id": "VariableID:3:109",
+      "name": "Font Family/Display",
+      "resolvedType": "STRING",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:829"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:110",
+      "name": "Font Family/Body",
+      "resolvedType": "STRING",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Inter"
+      }
+    },
+    {
+      "id": "VariableID:3:111",
+      "name": "Font Sizes/10",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:823"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:112",
+      "name": "Font Sizes/11",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:824"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:113",
+      "name": "Font Sizes/12",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:825"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:114",
+      "name": "Font Sizes/13",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:826"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:115",
+      "name": "Font Sizes/14",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:827"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:116",
+      "name": "Font Sizes/16",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:828"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:117",
+      "name": "Font Sizes/18",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:829"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:118",
+      "name": "Font Sizes/20",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:830"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:119",
+      "name": "Font Sizes/22",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:831"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:120",
+      "name": "Font Sizes/24",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:832"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:121",
+      "name": "Font Sizes/28",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:833"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:122",
+      "name": "Font Sizes/32",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:834"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:123",
+      "name": "Font Sizes/36",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:835"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:124",
+      "name": "Font Sizes/40",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:836"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:125",
+      "name": "Font Sizes/44",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:837"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:126",
+      "name": "Font Sizes/48",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:838"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:127",
+      "name": "Font Sizes/52",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:839"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:128",
+      "name": "Font Sizes/56",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:840"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:129",
+      "name": "Font Sizes/60",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:841"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:130",
+      "name": "Font Sizes/64",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:842"
+        }
+      }
+    },
+    {
+      "id": "VariableID:36:642",
+      "name": "Font Sizes/72",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4005:843"
+        }
+      }
+    },
+    {
+      "id": "VariableID:4154:1558",
+      "name": "Font Weights/Thin/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Thin"
+      }
+    },
+    {
+      "id": "VariableID:4154:1559",
+      "name": "Font Weights/Thin/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Thin Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1560",
+      "name": "Font Weights/ExtraLight/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "ExtraLight"
+      }
+    },
+    {
+      "id": "VariableID:4154:1561",
+      "name": "Font Weights/ExtraLight/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "ExtraLight Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1562",
+      "name": "Font Weights/Light/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Light"
+      }
+    },
+    {
+      "id": "VariableID:4154:1563",
+      "name": "Font Weights/Light/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Light Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1564",
+      "name": "Font Weights/Regular/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Regular"
+      }
+    },
+    {
+      "id": "VariableID:4154:1565",
+      "name": "Font Weights/Regular/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Regular Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1566",
+      "name": "Font Weights/Medium/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Medium"
+      }
+    },
+    {
+      "id": "VariableID:4154:1567",
+      "name": "Font Weights/Medium/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Medium Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1568",
+      "name": "Font Weights/SemiBold/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "SemiBold"
+      }
+    },
+    {
+      "id": "VariableID:4154:1569",
+      "name": "Font Weights/SemiBold/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "SemiBold Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1570",
+      "name": "Font Weights/Bold/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Bold"
+      }
+    },
+    {
+      "id": "VariableID:4154:1571",
+      "name": "Font Weights/Bold/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Bold Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1572",
+      "name": "Font Weights/ExtraBold/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "ExtraBold"
+      }
+    },
+    {
+      "id": "VariableID:4154:1573",
+      "name": "Font Weights/ExtraBold/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "ExtraBold Italics"
+      }
+    },
+    {
+      "id": "VariableID:4154:1574",
+      "name": "Font Weights/Black/Regular",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Black"
+      }
+    },
+    {
+      "id": "VariableID:4154:1575",
+      "name": "Font Weights/Black/Italics",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": "Black Italics"
+      }
+    },
+    {
+      "id": "VariableID:4149:7000",
+      "name": "Font Family/Title",
+      "resolvedType": "STRING",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "3:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:829"
+        }
+      }
+    }
+  ]
+}

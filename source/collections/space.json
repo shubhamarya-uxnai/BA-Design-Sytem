@@ -1,0 +1,367 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:4133:5716",
+    "name": "Space",
+    "modes": [
+      {
+        "name": "Default",
+        "modeId": "4133:0"
+      }
+    ],
+    "defaultModeId": "4133:0"
+  },
+  "variables": [
+    {
+      "id": "VariableID:4133:5805",
+      "name": "0",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0
+      }
+    },
+    {
+      "id": "VariableID:4133:5806",
+      "name": "0-025",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0.10000000149011612
+      }
+    },
+    {
+      "id": "VariableID:4133:5807",
+      "name": "0-05",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0.20000000298023224
+      }
+    },
+    {
+      "id": "VariableID:4133:5808",
+      "name": "0-1",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0.4000000059604645
+      }
+    },
+    {
+      "id": "VariableID:4133:5809",
+      "name": "0-15",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0.6000000238418579
+      }
+    },
+    {
+      "id": "VariableID:4133:5810",
+      "name": "0-2",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 0.800000011920929
+      }
+    },
+    {
+      "id": "VariableID:4133:5811",
+      "name": "0-25",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 1
+      }
+    },
+    {
+      "id": "VariableID:4133:5812",
+      "name": "1",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 4
+      }
+    },
+    {
+      "id": "VariableID:4133:5813",
+      "name": "2",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 8
+      }
+    },
+    {
+      "id": "VariableID:4133:5814",
+      "name": "2-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 10
+      }
+    },
+    {
+      "id": "VariableID:4133:5815",
+      "name": "3",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 12
+      }
+    },
+    {
+      "id": "VariableID:4133:5816",
+      "name": "3-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 14
+      }
+    },
+    {
+      "id": "VariableID:4133:5817",
+      "name": "4",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 16
+      }
+    },
+    {
+      "id": "VariableID:4133:5818",
+      "name": "5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 20
+      }
+    },
+    {
+      "id": "VariableID:4133:5819",
+      "name": "6",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 24
+      }
+    },
+    {
+      "id": "VariableID:4133:5820",
+      "name": "7",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 28
+      }
+    },
+    {
+      "id": "VariableID:4133:5821",
+      "name": "8",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 32
+      }
+    },
+    {
+      "id": "VariableID:4133:5822",
+      "name": "9",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 36
+      }
+    },
+    {
+      "id": "VariableID:4133:5823",
+      "name": "10",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 40
+      }
+    },
+    {
+      "id": "VariableID:4133:5824",
+      "name": "10-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 42
+      }
+    },
+    {
+      "id": "VariableID:4133:5825",
+      "name": "11",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 44
+      }
+    },
+    {
+      "id": "VariableID:4133:5826",
+      "name": "12",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 48
+      }
+    },
+    {
+      "id": "VariableID:4133:5827",
+      "name": "13",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 52
+      }
+    },
+    {
+      "id": "VariableID:4133:5828",
+      "name": "14",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 56
+      }
+    },
+    {
+      "id": "VariableID:4133:5829",
+      "name": "15",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 60
+      }
+    },
+    {
+      "id": "VariableID:4133:5830",
+      "name": "16",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 64
+      }
+    },
+    {
+      "id": "VariableID:4133:5831",
+      "name": "full",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 999
+      }
+    },
+    {
+      "id": "VariableID:4138:1560",
+      "name": "0-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 2
+      }
+    },
+    {
+      "id": "VariableID:4138:1561",
+      "name": "1-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 6
+      }
+    },
+    {
+      "id": "VariableID:4138:1562",
+      "name": "4-5",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 18
+      }
+    },
+    {
+      "id": "VariableID:4141:1559",
+      "name": "18",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 72
+      }
+    },
+    {
+      "id": "VariableID:4141:1560",
+      "name": "20",
+      "resolvedType": "FLOAT",
+      "scopes": [],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4133:0": 80
+      }
+    }
+  ]
+}

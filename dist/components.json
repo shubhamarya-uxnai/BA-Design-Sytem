@@ -1,0 +1,694 @@
+{
+  "buttons": {
+    "buttons": {
+      "id": "4149:6078",
+      "name": "Buttons",
+      "propertyDefinitions": {
+        "leading-icon#322:0": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4149:6634",
+          "preferredValues": []
+        },
+        "tailing-icon#322:13": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4149:6784",
+          "preferredValues": []
+        },
+        "Tailing Icon#322:26": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Leading Icon#322:39": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Button#322:52": {
+          "type": "TEXT",
+          "defaultValue": "Button"
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Default",
+            "Ghost"
+          ]
+        },
+        "Hover": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Enabled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Pressed": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Large",
+            "Small"
+          ]
+        }
+      }
+    },
+    "iconButtons": {
+      "id": "4149:6136",
+      "name": "Icon Button",
+      "propertyDefinitions": {
+        "icon#322:13": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4149:6859",
+          "preferredValues": []
+        },
+        "Icon#322:26": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Focus#2098:11": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Default",
+            "Ghost"
+          ]
+        },
+        "Hover": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Inverse": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False"
+          ]
+        },
+        "Enabled": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "Pressed": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Large",
+            "Small"
+          ]
+        }
+      }
+    },
+    "variantCounts": {
+      "buttons": 24,
+      "iconButtons": 24
+    },
+    "fontWeightAdapter": "Figma exposes font-weight variables as string labels for italic support; generated CSS uses the equivalent numeric CSS weight and preserves the source token in each size spec.",
+    "buttonSizes": {
+      "Large": {
+        "fontWeightToken": "var(--va-typography-font-weights-medium-regular)"
+      },
+      "Small": {
+        "fontWeightToken": "var(--va-typography-font-weights-regular-regular)"
+      }
+    }
+  },
+  "textStyles": [
+    {
+      "name": "Title/Small",
+      "className": "va-text-title-small",
+      "sourceStyleId": "S:be54dca184c8ed1b14c38b7d6dff68e070e2e0be,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-36)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Title/Medium",
+      "className": "va-text-title-medium",
+      "sourceStyleId": "S:857b14fbd4c906cb5c75333363fc1df916b9e5bb,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-40)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Title/Large",
+      "className": "va-text-title-large",
+      "sourceStyleId": "S:78677ea364bf80ca29d7cb69dc5b185eb6b7d081,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-48)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Heading/Small",
+      "className": "va-text-heading-small",
+      "sourceStyleId": "S:80559c5c9ecf8a75178d7ab1528f5b571c9f2983,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-24)",
+      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontWeightCss": 600,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Heading/Medium",
+      "className": "va-text-heading-medium",
+      "sourceStyleId": "S:ecc72f3f01128227bbf510f0b93ee1b6f66e6090,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-28)",
+      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontWeightCss": 600,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Heading/Large",
+      "className": "va-text-heading-large",
+      "sourceStyleId": "S:54e79c71351016c799701202649e3674ab7eac28,",
+      "fontFamilyToken": "var(--va-typography-font-family-title)",
+      "fontSizeToken": "var(--va-typography-font-sizes-32)",
+      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontWeightCss": 600,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/XS",
+      "className": "va-text-body-xs",
+      "sourceStyleId": "S:adf321a99b94f54f50c72849808b012310123433,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-14)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Small",
+      "className": "va-text-body-small",
+      "sourceStyleId": "S:0b52e1b893abed05b02734a3660bac3fdbfe5301,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-16)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Medium",
+      "className": "va-text-body-medium",
+      "sourceStyleId": "S:7fbbed5b59fa6d125d1921f690b07f51963c50ac,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-20)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Large",
+      "className": "va-text-body-large",
+      "sourceStyleId": "S:e9de991473ff7e8347138854bf84be99defc254e,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-22)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Emphasis/Small",
+      "className": "va-text-body-emphasis-small",
+      "sourceStyleId": "S:5ad9e64f0939444fff3547ffb827b2b759937489,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-16)",
+      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Emphasis/Medium",
+      "className": "va-text-body-emphasis-medium",
+      "sourceStyleId": "S:1c16739a1d1b3cc262a104dd50bc8bcaba318f32,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-20)",
+      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Emphasis/Large",
+      "className": "va-text-body-emphasis-large",
+      "sourceStyleId": "S:127d44ad68bce7f806814caf1afd7e2b243b4c5a,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-22)",
+      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Body/Italic/Small",
+      "className": "va-text-body-italic-small",
+      "sourceStyleId": "S:cacd01f8e3eaf02362287c513c0f1a5d751d685b,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-16)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "italic"
+    },
+    {
+      "name": "Body/Italic/Medium",
+      "className": "va-text-body-italic-medium",
+      "sourceStyleId": "S:0cd976a1915f2a0067e36b71b2ae611c3b5e2a9b,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-20)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "italic"
+    },
+    {
+      "name": "Label/Small",
+      "className": "va-text-label-small",
+      "sourceStyleId": "S:bbdf5988717328aa4b3a490c2a018e1c357be74d,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-10)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Label/Medium",
+      "className": "va-text-label-medium",
+      "sourceStyleId": "S:4e9272518d33800ff074f96eb57177a1ede51db1,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-11)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Label/Large",
+      "className": "va-text-label-large",
+      "sourceStyleId": "S:d334ddb73c15f51a1cbbee5ecf1bc6dbe6d65eae,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-12)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Label/Emphasis",
+      "className": "va-text-label-emphasis",
+      "sourceStyleId": "S:770297faf02b0fae4f8db37a5c77a33f03307ba0,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-12)",
+      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Legend/Small",
+      "className": "va-text-legend-small",
+      "sourceStyleId": "S:a3a02a8ef8d24d5a8bb8dad7de19fae08c9e9bcf,",
+      "fontFamilyToken": "var(--va-typography-font-family-body)",
+      "fontSizeToken": "var(--va-typography-font-sizes-10)",
+      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    }
+  ],
+  "inputFields": {
+    "source": {
+      "id": "4158:7549",
+      "name": "Input Field",
+      "propertyDefinitions": {
+        "label#160:11": {
+          "type": "TEXT",
+          "defaultValue": "Label"
+        },
+        "Label#160:22": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "leading-icon#329:74": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4158:7445",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "a9bdc3ddda4e6091eede4208b8560b5b8c459eff"
+            }
+          ]
+        },
+        "Leading Icon#329:85": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "tailing-icon#329:96": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4158:7448",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "a9bdc3ddda4e6091eede4208b8560b5b8c459eff"
+            }
+          ]
+        },
+        "Tailing Icon#329:107": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "input#329:118": {
+          "type": "TEXT",
+          "defaultValue": "Placeholder"
+        },
+        "Button#4158:0": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "button#4158:18": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4158:7224",
+          "preferredValues": [
+            {
+              "type": "COMPONENT_SET",
+              "key": "eb4af83ef07c57e8821de585f0dc93a5589457f4"
+            }
+          ]
+        },
+        "Focus Ring#4158:27": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Hover": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Typing": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Error": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Typed": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Active": {
+          "type": "VARIANT",
+          "defaultValue": "True",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        }
+      }
+    },
+    "variantCount": 8,
+    "variantProperties": {
+      "label#160:11": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Label#160:22": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "leading-icon#329:74": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "4158:7445",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "a9bdc3ddda4e6091eede4208b8560b5b8c459eff"
+          }
+        ]
+      },
+      "Leading Icon#329:85": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "tailing-icon#329:96": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "4158:7448",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "a9bdc3ddda4e6091eede4208b8560b5b8c459eff"
+          }
+        ]
+      },
+      "Tailing Icon#329:107": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "input#329:118": {
+        "type": "TEXT",
+        "defaultValue": "Placeholder"
+      },
+      "Button#4158:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "button#4158:18": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "4158:7224",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "eb4af83ef07c57e8821de585f0dc93a5589457f4"
+          }
+        ]
+      },
+      "Focus Ring#4158:27": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Hover": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Typing": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Error": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Typed": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Active": {
+        "type": "VARIANT",
+        "defaultValue": "True",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "name": "Hover=False, Typing=False, Error=False, Typed=False, Active=True",
+        "props": {
+          "Hover": "False",
+          "Typing": "False",
+          "Error": "False",
+          "Typed": "False",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+      },
+      {
+        "name": "Hover=True, Typing=False, Error=False, Typed=False, Active=True",
+        "props": {
+          "Hover": "True",
+          "Typing": "False",
+          "Error": "False",
+          "Typed": "False",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+      },
+      {
+        "name": "Hover=False, Typing=False, Error=True, Typed=False, Active=True",
+        "props": {
+          "Hover": "False",
+          "Typing": "False",
+          "Error": "True",
+          "Typed": "False",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"true\"][data-typed=\"false\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-status-error-border)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-status-error-border)"
+      },
+      {
+        "name": "Hover=False, Typing=False, Error=False, Typed=False, Active=False",
+        "props": {
+          "Hover": "False",
+          "Typing": "False",
+          "Error": "False",
+          "Typed": "False",
+          "Active": "False"
+        },
+        "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"false\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-disabled)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-disabled)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-disabled)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-foreground-disabled)"
+      },
+      {
+        "name": "Hover=False, Typing=True, Error=False, Typed=False, Active=True",
+        "props": {
+          "Hover": "False",
+          "Typing": "True",
+          "Error": "False",
+          "Typed": "False",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-border-primary)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-primary)"
+      },
+      {
+        "name": "Hover=True, Typing=True, Error=False, Typed=False, Active=True",
+        "props": {
+          "Hover": "True",
+          "Typing": "True",
+          "Error": "False",
+          "Typed": "False",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-border-primary)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-primary)"
+      },
+      {
+        "name": "Hover=False, Typing=True, Error=False, Typed=True, Active=True",
+        "props": {
+          "Hover": "False",
+          "Typing": "True",
+          "Error": "False",
+          "Typed": "True",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"true\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+      },
+      {
+        "name": "Hover=True, Typing=True, Error=False, Typed=True, Active=True",
+        "props": {
+          "Hover": "True",
+          "Typing": "True",
+          "Error": "False",
+          "Typed": "True",
+          "Active": "True"
+        },
+        "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"true\"][data-active=\"true\"]",
+        "hasButtonSlot": true,
+        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+      }
+    ],
+    "materialIconPolicy": "Use Google Material Symbols/Material Icons in the leading and trailing slots; embedded Figma icon instances are not imported.",
+    "buttonSlotPolicy": "The internal Button slot remains a real insertion point. Use a va-button, va-icon-button, native button, or dropdown control inside va-input-field__button-slot."
+  }
+}

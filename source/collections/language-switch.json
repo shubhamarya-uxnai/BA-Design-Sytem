@@ -1,0 +1,71 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:4004:828",
+    "name": "Language Switch",
+    "modes": [
+      {
+        "name": "English",
+        "modeId": "4004:1"
+      },
+      {
+        "name": "Arabic",
+        "modeId": "4004:2"
+      },
+      {
+        "name": "Hindi",
+        "modeId": "4004:3"
+      }
+    ],
+    "defaultModeId": "4004:1"
+  },
+  "variables": [
+    {
+      "id": "VariableID:4004:829",
+      "name": "Font Family",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4004:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:825"
+        },
+        "4004:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:825"
+        },
+        "4004:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:825"
+        }
+      }
+    },
+    {
+      "id": "VariableID:4004:830",
+      "name": "Direction",
+      "resolvedType": "STRING",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "description": "",
+      "hiddenFromPublishing": false,
+      "valuesByMode": {
+        "4004:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:826"
+        },
+        "4004:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:826"
+        },
+        "4004:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4004:826"
+        }
+      }
+    }
+  ]
+}

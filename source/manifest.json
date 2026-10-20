@@ -1,0 +1,25 @@
+{
+  "package": "VA Design System",
+  "brand": "Bunny Are",
+  "source": {
+    "type": "figma",
+    "fileKey": "TeshjuZ2KBKj4xhK9r2OHU",
+    "fileName": "BA Design System",
+    "url": "https://www.figma.com/design/TeshjuZ2KBKj4xhK9r2OHU/BA-Design-System",
+    "exportedAt": "2026-10-20",
+    "note": "Token foundation export only; component implementation is intentionally deferred."
+  },
+  "collections": [
+    { "name": "Typography", "file": "collections/typography.json" },
+    { "name": "Screen Size Switch", "file": "collections/screen-size-switch.json" },
+    { "name": "Color Themes", "file": "collections/color-themes.json" },
+    { "name": "Primitive Color Tokens", "file": "collections/primitive-color-tokens.json" },
+    { "name": "Lanuguage Collection", "file": "collections/lanuguage-collection.json" },
+    { "name": "Language Switch", "file": "collections/language-switch.json" },
+    { "name": "Font Size Control", "file": "collections/font-size-control.json" },
+    { "name": "Contrast Control", "file": "collections/contrast-control.json" },
+    { "name": "Space", "file": "collections/space.json" },
+    { "name": "-------------", "file": "collections/separator.json" },
+    { "name": "Semantic Color Tokens", "file": "collections/semantic-color-tokens.json" }
+  ]
+}

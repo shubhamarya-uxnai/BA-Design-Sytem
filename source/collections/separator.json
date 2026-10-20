@@ -1,0 +1,14 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:4133:5922",
+    "name": "-------------",
+    "modes": [
+      {
+        "name": "Mode 1",
+        "modeId": "4133:1"
+      }
+    ],
+    "defaultModeId": "4133:1"
+  },
+  "variables": []
+}
