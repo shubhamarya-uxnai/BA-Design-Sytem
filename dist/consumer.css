@@ -1,4 +1,4 @@
-/* BA Design System v0.1.2 — shared browser consumer entry point */
+/* BA Design System v0.2.0 — shared browser consumer entry point */
 /* Font files supplied by the owner, who confirmed permission for web use. */
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
@@ -3190,3 +3190,97 @@
 
 .ds-button .ph, .ds-icon-button .ph { width: var(--va-screen-size-switch-width-and-height-l); height: var(--va-screen-size-switch-width-and-height-l); font-size: var(--va-screen-size-switch-width-and-height-l); }
 .material-symbols-rounded.ph { display: inline-flex; align-items: center; justify-content: center; font-family: 'Material Symbols Rounded'; font-weight: 400; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; white-space: nowrap; word-wrap: normal; font-feature-settings: 'liga'; }
+
+/* Explicit component rules win over the legacy application selectors. */
+body[data-ba-component="Page"] {
+  background: var(--va-semantic-color-tokens-background-neutral-page);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  font-family: var(--va-typography-font-family-body), sans-serif;
+}
+[data-ba-component="Sidebar"], [data-ba-component="Topbar"], [data-ba-component="Surface"] {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border-color: var(--va-semantic-color-tokens-border-subtle);
+}
+[data-ba-component="Surface"][data-ba-surface="raised"] { background: var(--va-semantic-color-tokens-background-neutral-raised); }
+[data-ba-component="Display"] {
+  font-family: var(--va-typography-font-family-display), serif;
+  font-size: var(--va-screen-size-switch-font-size-title-xs);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+/* Component attributes form the public API, shared by React and existing DOM. */
+body [data-ba-component="Button"][data-ba-variant][data-ba-size], body [data-ba-component="IconButton"][data-ba-variant][data-ba-size] {
+  --ba-control-text: var(--va-semantic-color-tokens-foreground-neutral-default);
+  --ba-control-fill: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding: var(--va-screen-size-switch-gap-xs) var(--va-screen-size-switch-gap-s);
+  font-family: var(--va-typography-font-family-body), sans-serif;
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ba-control-text);
+  background: var(--ba-control-fill);
+  border: var(--va-screen-size-switch-stroke-default) solid currentColor;
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+}
+body [data-ba-component][data-ba-tone="primary"] { --ba-control-text: var(--va-semantic-color-tokens-foreground-primary-default); }
+body [data-ba-component][data-ba-tone="secondary"] { --ba-control-text: var(--va-semantic-color-tokens-foreground-secondary-default); }
+body [data-ba-component][data-ba-size][data-ba-variant="filled"] {
+  --ba-control-text: var(--va-semantic-color-tokens-foreground-inverse-default);
+  --ba-control-fill: var(--va-semantic-color-tokens-background-primary-default);
+  border-color: transparent;
+}
+body [data-ba-component][data-ba-variant="filled"][data-ba-tone="secondary"] { --ba-control-fill: var(--va-semantic-color-tokens-background-secondary-default); }
+body [data-ba-component][data-ba-variant="filled"][data-ba-tone="neutral"] { --ba-control-fill: var(--va-semantic-color-tokens-foreground-neutral-default); }
+body [data-ba-component][data-ba-size="large"] {
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m);
+  font-size: var(--va-typography-font-sizes-16);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+body [data-ba-component="IconButton"][data-ba-variant][data-ba-size] { padding: var(--va-screen-size-switch-gap-xs); }
+body [data-ba-component][data-ba-size][data-ba-variant]:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--ba-control-fill), var(--ba-control-text) 10%);
+  color: var(--ba-control-text);
+}
+body [data-ba-component][data-ba-variant]:active:not(:disabled) { background: color-mix(in srgb, var(--ba-control-fill), var(--ba-control-text) 20%); }
+body [data-ba-component][data-ba-variant]:focus-visible, body [data-ba-component="InputField"]:focus-visible {
+  outline: 2px solid var(--va-semantic-color-tokens-border-primary);
+  outline-offset: 3px;
+}
+body [data-ba-component][data-ba-variant]:is(:disabled,[aria-disabled="true"]) {
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+  background: var(--va-semantic-color-tokens-background-disabled);
+  border-color: currentColor;
+  cursor: not-allowed;
+}
+body [data-ba-component][data-ba-variant] > :is(span,svg) { color: inherit; }
+body [data-ba-component][data-ba-variant] .ph, body [data-ba-component][data-ba-variant] .material-symbols-rounded {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  flex: 0 0 auto;
+}
+body [data-ba-component="InputField"], [data-ba-component="InputShell"] {
+  font-family: var(--va-typography-font-family-body), sans-serif;
+  font-size: var(--va-typography-font-sizes-14);
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  padding: var(--va-screen-size-switch-gap-s);
+}
+[data-ba-component="InputShell"] { display:flex; align-items:center; gap:var(--va-screen-size-switch-gap-xs); }
+[data-ba-component="InputShell"] > input[data-ba-component] { border:0; background:transparent; flex:1; min-width:0; }
+[data-ba-component="InputShell"][data-invalid="true"] { border-color:var(--va-semantic-color-tokens-status-error-border); }
+[data-ba-component="Field"] { display:grid; gap:var(--va-screen-size-switch-gap-xs); }
+[data-ba-slot="action"] { display:inline-flex; flex-shrink:0; }

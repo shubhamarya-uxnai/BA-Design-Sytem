@@ -1,6 +1,6 @@
 {
   "name": "va-design-system",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "description": "Token foundation for the VA / Bunny Are design system, sourced from Figma.",
   "type": "module",

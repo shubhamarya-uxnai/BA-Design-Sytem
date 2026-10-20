@@ -7,9 +7,12 @@ const type = read('source/compat/type.css');
 const shadcn = read('source/compat/shadcn.css');
 const tokens = read('dist/tokens.css');
 const fonts = read('source/fonts.css');
+const componentCSS = read('source/browser-components.css');
+for (const file of ['browser-components.mjs','adopt.mjs']) fs.copyFileSync('source/'+file,'dist/'+file);
+fs.writeFileSync('dist/browser-components.css',componentCSS);
 fs.writeFileSync('dist/fonts.css', fonts);
 const entry = read('dist/index.css');
-fs.writeFileSync('dist/index.css', '@import url("./fonts.css");\n' + entry.replace('@import url("./fonts.css");\n', ''));
+fs.writeFileSync('dist/index.css', '@import url("./fonts.css");\n' + entry.replace('@import url("./fonts.css");\n', '') + '@import url("./browser-components.css");\n');
 const defs = new Map();
 for (const m of old.matchAll(/(--ds-[\w-]+)\s*:\s*([^;]+);/g)) if (!defs.has(m[1])) defs.set(m[1],m[2]);
 function resolve(name, seen = new Set()) {
@@ -73,7 +76,7 @@ const bundle = ['tokens.css','components.css','text-styles.css','input-fields.cs
 const iconCSS = `.ds-button .ph, .ds-icon-button .ph { width: var(--va-screen-size-switch-width-and-height-l); height: var(--va-screen-size-switch-width-and-height-l); font-size: var(--va-screen-size-switch-width-and-height-l); }
 .material-symbols-rounded.ph { display: inline-flex; align-items: center; justify-content: center; font-family: 'Material Symbols Rounded'; font-weight: 400; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; white-space: nowrap; word-wrap: normal; font-feature-settings: 'liga'; }
 `;
-fs.writeFileSync('dist/consumer.css', `/* BA Design System v0.1.2 — shared browser consumer entry point */\n${fonts}\n${bundle}\n${bridge}\n${components}\n${type}\n${iconCSS}`);
+fs.writeFileSync('dist/consumer.css', `/* BA Design System v0.2.0 — shared browser consumer entry point */\n${fonts}\n${bundle}\n${bridge}\n${components}\n${type}\n${iconCSS}\n${componentCSS}`);
 const references = [...fs.readFileSync('dist/consumer.css','utf8').matchAll(/var\((--[\w-]+)/g)].map(m=>m[1]);
 const defined = new Set([...fs.readFileSync('dist/consumer.css','utf8').matchAll(/(--[\w-]+)\s*:/g)].map(m=>m[1]));
 const missing = [...new Set(references.filter(n=>!defined.has(n)))];

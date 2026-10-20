@@ -1,5 +1,11 @@
 # VA Design System
 
+## Current component release: v0.2.0
+
+See [COMPONENTS.md](COMPONENTS.md) for the shared React components, semantic surface rules, button variants, input slots and the transition adapter used by the three browser tools. Consumers load `dist/consumer.css` and `dist/adopt.mjs` remotely at `v0.2.0` and contain no local design-system folder. Display headings now use the supplied The Seasons web fonts. All three tools passed browser checks for font loading, matching ghost borders, light/dark modes, text scaling and dynamic component adoption before publication.
+
+The sections below describe the initial token snapshot and distribution history.
+
 ## Shared browser release: v0.1.0
 
 Gradient Creator, Color Palette Visualizer, and Acoustic Matrix load the shared stylesheet from:
