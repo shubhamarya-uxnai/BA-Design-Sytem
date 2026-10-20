@@ -1,0 +1,1385 @@
+/* Generated directly from the live Figma component snapshots. */
+.figma-button { appearance:none; position:relative; display:inline-flex; align-items:center; justify-content:center; isolation:isolate; box-sizing:border-box; margin:0; cursor:pointer; text-decoration:none; outline:none; max-width:600px; flex:none; }
+.figma-button:disabled { cursor:not-allowed; }
+.figma-button > :not(.figma-overlay):not(.figma-focus) { position:relative; z-index:1; }
+.figma-label { margin:0; white-space:nowrap; }
+.figma-icon { display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.figma-icon .material-icons { font-family:'Material Icons'; font-size:inherit; line-height:1; font-weight:normal; font-style:normal; letter-spacing:normal; text-transform:none; font-feature-settings:'liga'; white-space:nowrap; display:block; }
+.figma-overlay,.figma-focus { position:absolute; pointer-events:none; box-sizing:border-box; }
+.figma-overlay { inset:0; border-radius:inherit; z-index:0; }
+.figma-focus { inset:-4px; }
+.figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
+.figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
+.figma-input__label { margin:0; }
+.figma-input__shell { display:flex; align-items:center; width:100%; position:relative; box-sizing:border-box; }
+.figma-input__control { display:flex; align-items:center; flex:1 1 0; min-width:0; position:relative; z-index:1; box-sizing:border-box; }
+.figma-input__input { appearance:none; border:0; outline:0; min-width:1px; width:100%; flex:1 1 0; padding:0; margin:0; background:transparent; box-shadow:none; box-sizing:content-box; }
+.figma-input__input::placeholder { color:inherit; opacity:1; }
+.figma-input__action { display:flex; align-items:center; align-self:stretch; flex:none; position:relative; z-index:1; }
+.figma-input__shell > .figma-focus { display:none; }
+.figma-input[data-focus-ring="true"] .figma-focus,.figma-input__shell:focus-within > .figma-focus { display:block; }
+.figma-button[data-figma-variant="4149:6079"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6079"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6079"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6079"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6079"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6079"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4149:6084"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6084"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6084"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6084"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6084"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6084"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4149:6089"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6089"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6089"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6089"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6089"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6089"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4149:6094"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6094"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6094"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6094"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6094"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6094"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4149:6099"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6099"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6099"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6099"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6099"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6099"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4149:6104"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6104"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6104"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6104"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6104"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6104"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4149:6109"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6109"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6109"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6109"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6109"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6109"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4149:6114"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6114"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6114"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6114"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6114"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4149:6114"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4149:6119"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6119"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6119"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6119"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6119"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4149:6119"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4149:6124"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6124"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6124"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6124"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6124"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6128"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6128"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6128"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6128"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6128"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6132"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-m);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-m);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4149:6132"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6132"][data-default-label="true"] .figma-label {
+  min-width: 3.1875em;
+}
+.figma-button[data-figma-variant="4149:6132"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4149:6132"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7224"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7224"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7224"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7224"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7224"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7224"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4158:7229"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7229"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7229"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7229"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7229"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7229"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4158:7234"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7234"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7234"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7234"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7234"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7234"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-button[data-figma-variant="4158:7239"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7239"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7239"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7239"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7239"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7239"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4158:7244"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7244"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7244"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7244"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7244"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7244"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4158:7249"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7249"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7249"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7249"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7249"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7249"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-button[data-figma-variant="4158:7254"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7254"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7254"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7254"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7254"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7254"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4158:7259"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7259"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7259"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7259"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7259"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-button[data-figma-variant="4158:7259"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4158:7264"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7264"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7264"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7264"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7264"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-button[data-figma-variant="4158:7264"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+}
+.figma-button[data-figma-variant="4158:7269"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7269"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7269"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7269"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7269"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7273"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7273"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7273"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7273"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7273"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7277"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-button[data-figma-variant="4158:7277"] .figma-label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7277"][data-default-label="true"] .figma-label {
+  min-width: 3.1666666666666665em;
+}
+.figma-button[data-figma-variant="4158:7277"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-button[data-figma-variant="4158:7277"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-input[data-figma-variant="4158:7550"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7550"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7557"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-input[data-figma-variant="4158:7557"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7564"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-status-error-border);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-status-error-border);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7564"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7570"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-disabled);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-foreground-disabled);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7570"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7576"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-border-primary);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7576"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7582"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-border-primary);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-input[data-figma-variant="4158:7582"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7589"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7589"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}
+.figma-input[data-figma-variant="4158:7595"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-input__label {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-12);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.399999976158142;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-input__shell {
+  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  min-height: 42px;
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-input__control {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  margin-right: -4px;
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-input__input {
+  font-family: "Inter";
+  font-size: var(--va-typography-font-sizes-16);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-icon--leading {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-input__action {
+  gap: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-m);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+}
+.figma-input[data-figma-variant="4158:7595"] .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+}

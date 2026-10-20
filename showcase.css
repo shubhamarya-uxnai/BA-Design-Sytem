@@ -56,6 +56,14 @@ button,a,input,select { -webkit-tap-highlight-color:transparent; }
 .story-cell { min-height:105px; padding:16px; border:1px solid var(--va-semantic-color-tokens-border-subtle); border-radius:var(--va-screen-size-switch-corner-radius-m); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; }
 .story-cell small { font-size:11px; color:var(--va-semantic-color-tokens-foreground-neutral-subtle); }
 .story-cell > [data-ba-component="Field"] { width:100%; min-width:0; }
+.figma-stories { grid-template-columns:1fr; }
+.figma-stories .story-cell { flex-direction:row; justify-content:space-between; gap:20px; }
+.figma-stories .story-cell small { max-width:45%; font-size:10px; line-height:1.6; }
+.figma-demo { min-height:190px; }
+.control-row input:not([type=checkbox]) { width:180px; min-width:0; }
+.variant-note { font-size:11px; line-height:1.7; color:var(--va-semantic-color-tokens-foreground-neutral-subtle); overflow-wrap:anywhere; }
+.reference-modes { border-top:1px solid var(--va-semantic-color-tokens-border-subtle); padding-top:16px; }
+@media(max-width:500px) { .figma-stories .story-cell { flex-direction:column; } .figma-stories .story-cell small { max-width:100%; } }
 .code-block { white-space:pre-wrap; word-break:break-word; font:12px/1.7 ui-monospace,monospace; background:var(--va-semantic-color-tokens-background-neutral-page); padding:18px; border-radius:var(--va-screen-size-switch-corner-radius-m); }
 [data-ba-component="Field"] label { font-size:12px; }
 [data-ba-component="Field"] p { font-size:12px; margin:0; color:var(--va-semantic-color-tokens-status-error-text); }

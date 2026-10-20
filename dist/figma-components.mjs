@@ -1,0 +1,41 @@
+export const contract=await fetch(new URL('./figma-contract.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Figma component contract unavailable');return r.json()});
+const bool=v=>v===true||v==='True'||v==='true';
+export function resolveButton(props={}){
+ const Enabled=props.Enabled===undefined?true:bool(props.Enabled),Pressed=Enabled&&bool(props.Pressed),Hover=Enabled&&(Pressed||bool(props.Hover));
+ const properties={Type:props.Type||'Primary',Size:props.Size||'Large',Enabled:String(Enabled),Pressed:String(Pressed),Hover:String(Hover)};
+ return contract.button.variants.find(v=>Object.entries(v.properties).every(([k,val])=>val.toLowerCase()===String(properties[k]).toLowerCase()));
+}
+export function resolveInput(props={}){
+ const Active=props.Active===undefined?true:bool(props.Active),Error=Active&&bool(props.Error),Typed=Active&&!Error&&bool(props.Typed),Typing=Active&&!Error&&(Typed||bool(props.Typing)),Hover=Active&&!Error&&bool(props.Hover);
+ const properties={Active,Error,Typed,Typing,Hover};
+ return contract.input.variants.find(v=>Object.entries(v.properties).every(([k,val])=>bool(val)===properties[k]));
+}
+export function createFigmaComponents(React){
+ const {createElement:h,useState,useId}=React;
+ function Icon({name,side}){return h('span',{className:'figma-icon figma-icon--'+side,'aria-hidden':true},typeof name==='string'?h('span',{className:'material-icons'},name):name)}
+ function Button(props){
+   const [hover,setHover]=useState(false),[pressed,setPressed]=useState(false);
+   const enabled=props.Enabled===undefined?true:bool(props.Enabled),live=props.interactive!==false;
+   const variant=resolveButton({...props,Hover:live?(hover||bool(props.Hover)):props.Hover,Pressed:live?(pressed||bool(props.Pressed)):props.Pressed});
+   if(!variant)throw Error('Button properties do not identify a Figma variant');
+   const leading=props['Leading Icon']===undefined?true:bool(props['Leading Icon']),trailing=props['Tailing Icon']===undefined?true:bool(props['Tailing Icon']);
+   return h('button',{id:props.id,className:'figma-button '+(props.className||''),type:props.htmlType||'button',disabled:!enabled,'data-figma-variant':variant.id,'data-default-label':(props.Button??'Button')==='Button','data-focus-ring':bool(props['Focus Ring']),'aria-label':props['aria-label'],onClick:props.onClick,onPointerEnter:()=>setHover(true),onPointerLeave:()=>{setHover(false);setPressed(false)},onPointerDown:()=>setPressed(true),onPointerUp:()=>setPressed(false),onPointerCancel:()=>setPressed(false),onBlur:()=>setPressed(false),onKeyDown:e=>{if(e.key===' '||e.key==='Enter')setPressed(true)},onKeyUp:()=>setPressed(false)},
+     leading&&h(Icon,{name:props['leading-icon']??'download',side:'leading'}),h('span',{className:'figma-label'},props.Button??'Button'),trailing&&h(Icon,{name:props['tailing-icon']??'business',side:'trailing'}),bool(variant.properties.Hover)&&h('span',{className:'figma-overlay'}),h('span',{className:'figma-focus'}));
+ }
+ function InputField(props){
+   const generatedId=useId(),id=props.id||generatedId;
+   const [hover,setHover]=useState(false),[focused,setFocused]=useState(false),[text,setText]=useState('');
+   const active=props.Active===undefined?true:bool(props.Active),live=props.interactive!==false;
+   const value=props.value===undefined?text:props.value;
+   const variant=resolveInput({...props,Hover:live?(hover||bool(props.Hover)):props.Hover,Typing:live?(focused||!!value||bool(props.Typing)):props.Typing,Typed:live?(!!value||bool(props.Typed)):props.Typed});
+   const showLabel=props.Label===undefined?true:bool(props.Label),leading=props['Leading Icon']===undefined?true:bool(props['Leading Icon']),trailing=props['Tailing Icon']===undefined?true:bool(props['Tailing Icon']);
+   const button=bool(props.Button),buttonNode=props.button??h(Button,{Size:'Small'});
+   return h('div',{className:'figma-input '+(props.className||''),'data-figma-variant':variant.id,'data-focus-ring':bool(props['Focus Ring']),onPointerEnter:()=>setHover(true),onPointerLeave:()=>setHover(false)},
+     showLabel&&h('label',{className:'figma-input__label',htmlFor:id},props.label??'Label'),
+     h('div',{className:'figma-input__shell'},variant.focusRing&&h('span',{className:'figma-focus'}),bool(variant.properties.Hover)&&h('span',{className:'figma-overlay'}),
+       h('div',{className:'figma-input__control'},leading&&h(Icon,{name:props['leading-icon']??'supervised_user_circle',side:'leading'}),
+         h('input',{id,className:'figma-input__input',value,placeholder:props.input??'Placeholder',disabled:!active,'aria-label':showLabel?undefined:(props['aria-label']??props.label??'Input'),'aria-invalid':bool(props.Error)||undefined,onChange:e=>{setText(e.target.value);props.onChange?.(e)},onFocus:()=>setFocused(true),onBlur:()=>setFocused(false)}),
+         trailing&&h(Icon,{name:props['tailing-icon']??'date_range',side:'trailing'})),button&&h('div',{className:'figma-input__action'},leading&&buttonNode)));
+ }
+ return {Button,InputField,Icon};
+}

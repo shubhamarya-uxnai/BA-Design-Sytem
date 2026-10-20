@@ -160,7 +160,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 11,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.07999999821186066
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "spread": -1,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": true
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -183,7 +227,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6081",
@@ -216,6 +277,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -259,7 +344,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6083",
@@ -311,7 +413,36 @@
                 "id": "VariableID:4148:1615"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.23137255012989044,
+                "g": 0.40392157435417175,
+                "b": 0.1764705926179886
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1615"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -406,7 +537,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 11,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.07999999821186066
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "spread": -1,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": true
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -429,7 +604,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6086",
@@ -462,6 +654,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -505,7 +721,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6088",
@@ -557,7 +790,36 @@
                 "id": "VariableID:4158:8116"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.7372549176216125,
+                "g": 0,
+                "b": 0.08627451211214066
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4158:8116"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -652,7 +914,31 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -675,7 +961,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6091",
@@ -708,6 +1011,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -751,7 +1078,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6093",
@@ -803,7 +1147,36 @@
                 "id": "VariableID:4148:1615"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.23137255012989044,
+                "g": 0.40392157435417175,
+                "b": 0.1764705926179886
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1615"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -902,7 +1275,68 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          },
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.9843137264251709,
+              "g": 0.9764705896377563,
+              "b": 0.9686274528503418
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4149:6268"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -925,7 +1359,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6096",
@@ -958,6 +1409,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -1001,7 +1476,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6098",
@@ -1037,7 +1529,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -1132,7 +1672,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -1155,7 +1739,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6101",
@@ -1188,6 +1789,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -1231,7 +1856,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6103",
@@ -1267,7 +1909,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -1362,7 +2052,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -1385,7 +2119,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6106",
@@ -1418,6 +2169,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -1461,7 +2236,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6108",
@@ -1497,7 +2289,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -1592,7 +2432,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -1615,7 +2499,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6111",
@@ -1648,6 +2549,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -1691,7 +2616,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6113",
@@ -1727,7 +2669,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -1822,7 +2812,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -1845,7 +2879,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6116",
@@ -1878,6 +2929,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -1921,7 +2996,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6118",
@@ -1957,7 +3049,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -2052,7 +3192,51 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -2075,7 +3259,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6121",
@@ -2108,6 +3309,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -2151,7 +3376,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6123",
@@ -2187,7 +3429,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 10,
+          "topLeftRadius": 10,
+          "topRightRadius": 10,
+          "bottomLeftRadius": 10,
+          "bottomRightRadius": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -2282,7 +3572,31 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -2305,7 +3619,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6126",
@@ -2338,6 +3669,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -2381,7 +3736,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -2476,7 +3848,31 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -2499,7 +3895,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6130",
@@ -2532,6 +3945,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -2575,7 +4012,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -2670,7 +4124,31 @@
         "topLeftRadius": 10,
         "topRightRadius": 10,
         "bottomLeftRadius": 10,
-        "bottomRightRadius": 10
+        "bottomRightRadius": 10,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -2693,7 +4171,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4149:6134",
@@ -2726,6 +4221,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 16,
@@ -2769,7 +4288,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1569"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -2864,7 +4400,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 11,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.07999999821186066
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "spread": -1,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": true
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -2887,7 +4467,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7226",
@@ -2920,6 +4517,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -2963,7 +4584,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7228",
@@ -3015,7 +4653,36 @@
                 "id": "VariableID:4148:1615"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.23137255012989044,
+                "g": 0.40392157435417175,
+                "b": 0.1764705926179886
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1615"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -3110,7 +4777,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 11,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.07999999821186066
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "spread": -1,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": true
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -3133,7 +4844,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7231",
@@ -3166,6 +4894,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -3209,7 +4961,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7233",
@@ -3261,7 +5030,36 @@
                 "id": "VariableID:4158:8116"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.7372549176216125,
+                "g": 0,
+                "b": 0.08627451211214066
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4158:8116"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -3356,7 +5154,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 11,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.07999999821186066
+            },
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "spread": -1,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": true
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -3379,7 +5221,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7236",
@@ -3412,6 +5271,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -3455,7 +5338,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7238",
@@ -3507,7 +5407,36 @@
                 "id": "VariableID:4148:1615"
               }
             ]
-          }
+          },
+          "cornerRadius": 12,
+          "topLeftRadius": 12,
+          "topRightRadius": 12,
+          "bottomLeftRadius": 12,
+          "bottomRightRadius": 12,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.23137255012989044,
+                "g": 0.40392157435417175,
+                "b": 0.1764705926179886
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1615"
+                }
+              }
+            }
+          ],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -3606,7 +5535,68 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          },
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.9843137264251709,
+              "g": 0.9764705896377563,
+              "b": 0.9686274528503418
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4149:6268"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -3629,7 +5619,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7241",
@@ -3662,6 +5669,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -3705,7 +5736,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7243",
@@ -3741,7 +5789,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -3836,7 +5932,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -3859,7 +5999,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7246",
@@ -3892,6 +6049,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -3935,7 +6116,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7248",
@@ -3971,7 +6169,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -4066,7 +6312,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 22,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "spread": -2,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -4089,7 +6379,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7251",
@@ -4122,6 +6429,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -4165,7 +6496,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7253",
@@ -4201,7 +6549,55 @@
                 "id": "VariableID:4149:6268"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.07999999821186066,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6268"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 2.799999952316284,
+              "boundVariables": {},
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0.20999999344348907
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -4296,7 +6692,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.23137255012989044,
+              "g": 0.40392157435417175,
+              "b": 0.1764705926179886
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1650"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -4319,7 +6759,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7256",
@@ -4352,6 +6809,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -4395,7 +6876,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7258",
@@ -4431,7 +6929,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -4526,7 +7072,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.7372549176216125,
+              "g": 0,
+              "b": 0.08627451211214066
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1654"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -4549,7 +7139,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7261",
@@ -4582,6 +7189,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9843137264251709,
+                "g": 0.9764705896377563,
+                "b": 0.9686274528503418
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1665"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -4625,7 +7256,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7263",
@@ -4661,7 +7309,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -4756,7 +7452,51 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1658"
+              }
+            }
+          }
+        ],
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "visible": true,
+            "radius": 3,
+            "boundVariables": {},
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0.1599999964237213
+            },
+            "offset": {
+              "x": 0,
+              "y": 1
+            },
+            "spread": 0,
+            "blendMode": "NORMAL",
+            "showShadowBehindNode": false
+          }
+        ],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -4779,7 +7519,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7266",
@@ -4812,6 +7569,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4148:1658"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -4855,7 +7636,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7268",
@@ -4891,7 +7689,55 @@
                 "id": "VariableID:4149:6269"
               }
             ]
-          }
+          },
+          "cornerRadius": 8,
+          "topLeftRadius": 8,
+          "topRightRadius": 8,
+          "bottomLeftRadius": 8,
+          "bottomRightRadius": 8,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.1599999964237213,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0470588244497776,
+                "b": 0.03529411926865578
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4149:6269"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [
+            {
+              "type": "INNER_SHADOW",
+              "visible": true,
+              "radius": 4,
+              "boundVariables": {},
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 0.46000000834465027
+              },
+              "offset": {
+                "x": 0,
+                "y": 0
+              },
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "maxWidth": null
         }
       ]
     },
@@ -4986,7 +7832,31 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -5009,7 +7879,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7271",
@@ -5042,6 +7929,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -5085,7 +7996,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -5180,7 +8108,31 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -5203,7 +8155,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7275",
@@ -5236,6 +8205,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -5279,7 +8272,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     },
@@ -5374,7 +8384,31 @@
         "topLeftRadius": 8,
         "topRightRadius": 8,
         "bottomLeftRadius": 8,
-        "bottomRightRadius": 8
+        "bottomRightRadius": 8,
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.07999999821186066,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.13725490868091583,
+              "g": 0.11372549086809158,
+              "b": 0.09803921729326248
+            },
+            "boundVariables": {
+              "color": {
+                "type": "VARIABLE_ALIAS",
+                "id": "VariableID:4148:1657"
+              }
+            }
+          }
+        ],
+        "strokes": [],
+        "effects": [],
+        "maxWidth": 600
       },
       "children": [
         {
@@ -5397,7 +8431,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         },
         {
           "id": "4158:7279",
@@ -5430,6 +8481,30 @@
               }
             ]
           },
+          "strokeWeight": 1,
+          "strokeAlign": "OUTSIDE",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 0.47999998927116394,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.13725490868091583,
+                "g": 0.11372549086809158,
+                "b": 0.09803921729326248
+              },
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:4133:5923"
+                }
+              }
+            }
+          ],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null,
           "text": {
             "characters": "Button",
             "fontSize": 12,
@@ -5473,7 +8548,24 @@
               "type": "VARIABLE_ALIAS",
               "id": "VariableID:4139:1568"
             }
-          }
+          },
+          "layoutMode": "NONE",
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "paddingBottom": 0,
+          "itemSpacing": 0,
+          "cornerRadius": 0,
+          "topLeftRadius": 0,
+          "topRightRadius": 0,
+          "bottomLeftRadius": 0,
+          "bottomRightRadius": 0,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "fills": [],
+          "strokes": [],
+          "effects": [],
+          "maxWidth": null
         }
       ]
     }

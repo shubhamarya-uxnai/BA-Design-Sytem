@@ -1,13 +1,13 @@
 {
   "name": "va-design-system",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Token foundation for the VA / Bunny Are design system, sourced from Figma.",
   "type": "module",
   "scripts": {
     "build": "node build/build.mjs",
     "validate": "node build/validate.mjs",
-    "components": "python3 build/generate_components.py && node build/consumer-bundle.mjs",
+    "components": "python3 build/generate_components.py && node build/consumer-bundle.mjs && node build/figma-parity.mjs",
     "check": "npm run validate && npm run build && npm run components"
   }
 }
