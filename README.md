@@ -1,5 +1,9 @@
 # VA Design System
 
+## Component showcase
+
+Open index.html through a static server (for example `python3 -m http.server 8080`) to explore the Button and Input Field components. The site uses the shared React exports and generated CSS directly. Hover or focus a preview to reveal its Open drawer; the sidebar includes live controls, state examples and usage snippets. Mobile users see Open controls without needing hover. The showcase is published from main at https://shubhamarya-uxnai.github.io/BA-Design-Sytem/.
+
 ## Current component release: v0.2.0
 
 See [COMPONENTS.md](COMPONENTS.md) for the shared React components, semantic surface rules, button variants, input slots and the transition adapter used by the three browser tools. Consumers load `dist/consumer.css` and `dist/adopt.mjs` remotely at `v0.2.0` and contain no local design-system folder. Display headings now use the supplied The Seasons web fonts. All three tools passed browser checks for font loading, matching ghost borders, light/dark modes, text scaling and dynamic component adoption before publication.

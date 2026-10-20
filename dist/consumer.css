@@ -1,4 +1,4 @@
-/* BA Design System v0.2.1 — shared browser consumer entry point */
+/* BA Design System v0.3.0 — shared browser consumer entry point */
 /* Font files supplied by the owner, who confirmed permission for web use. */
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
@@ -3242,7 +3242,7 @@ body [data-ba-component][data-ba-size][data-ba-variant="filled"] {
 }
 body [data-ba-component][data-ba-variant="filled"][data-ba-tone="secondary"] { --ba-control-fill: var(--va-semantic-color-tokens-background-secondary-default); }
 body [data-ba-component][data-ba-variant="filled"][data-ba-tone="neutral"] { --ba-control-fill: var(--va-semantic-color-tokens-foreground-neutral-default); }
-body [data-ba-component][data-ba-size="large"] {
+body [data-ba-component][data-ba-variant][data-ba-size="large"] {
   padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m);
   font-size: var(--va-typography-font-sizes-16);
   border-radius: var(--va-screen-size-switch-corner-radius-l);
@@ -3282,6 +3282,9 @@ body [data-ba-component="InputField"], [data-ba-component="InputShell"] {
 [data-ba-component="InputShell"] { display:flex; align-items:center; gap:var(--va-screen-size-switch-gap-xs); }
 [data-ba-component="InputShell"] > input[data-ba-component] { border:0; background:transparent; flex:1; min-width:0; }
 [data-ba-component="InputShell"][data-invalid="true"] { border-color:var(--va-semantic-color-tokens-status-error-border); }
+[data-ba-component="InputShell"]:focus-within { outline:2px solid var(--va-semantic-color-tokens-border-primary); outline-offset:2px; }
+[data-ba-component="InputShell"]:has(input:disabled), body [data-ba-component="InputField"]:disabled { color:var(--va-semantic-color-tokens-foreground-disabled); background:var(--va-semantic-color-tokens-background-disabled); cursor:not-allowed; }
+body [data-ba-component="InputField"][aria-invalid="true"] { border-color:var(--va-semantic-color-tokens-status-error-border); }
 [data-ba-component="Field"] { display:grid; gap:var(--va-screen-size-switch-gap-xs); }
 [data-ba-slot="action"] { display:inline-flex; flex-shrink:0; }
 .ba-settings { width:min(440px,calc(100vw - 32px)); max-height:85vh; overflow:auto; padding:24px; border:1px solid var(--va-semantic-color-tokens-border-default); border-radius:var(--va-screen-size-switch-corner-radius-l); font-family:var(--va-typography-font-family-body),sans-serif; }
