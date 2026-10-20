@@ -1,4 +1,4 @@
-/* BA Design System v0.2.0 — shared browser consumer entry point */
+/* BA Design System v0.2.1 — shared browser consumer entry point */
 /* Font files supplied by the owner, who confirmed permission for web use. */
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: 'The Seasons'; src: url('./fonts/the-seasons-italic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
@@ -3284,3 +3284,10 @@ body [data-ba-component="InputField"], [data-ba-component="InputShell"] {
 [data-ba-component="InputShell"][data-invalid="true"] { border-color:var(--va-semantic-color-tokens-status-error-border); }
 [data-ba-component="Field"] { display:grid; gap:var(--va-screen-size-switch-gap-xs); }
 [data-ba-slot="action"] { display:inline-flex; flex-shrink:0; }
+.ba-settings { width:min(440px,calc(100vw - 32px)); max-height:85vh; overflow:auto; padding:24px; border:1px solid var(--va-semantic-color-tokens-border-default); border-radius:var(--va-screen-size-switch-corner-radius-l); font-family:var(--va-typography-font-family-body),sans-serif; }
+.ba-settings::backdrop { background:rgb(0 0 0 / .55); }
+.ba-settings h2 { margin:0 0 16px; font-family:var(--va-typography-font-family-title),sans-serif; }
+.ba-settings-tabs { display:flex; gap:8px; margin-bottom:16px; }
+.ba-settings-row { display:flex; justify-content:space-between; align-items:center; gap:16px; margin:12px 0; }
+.ba-settings > button:last-child { margin-top:16px; }
+[data-ba-settings] { display:flex; justify-content:flex-end; align-items:center; }
