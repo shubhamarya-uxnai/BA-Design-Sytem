@@ -19,10 +19,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:4004:829"
-        }
+        "3:2": "The Seasons"
       }
     },
     {
@@ -33,7 +30,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": "Inter"
+        "3:2": "Instrument Sans"
       }
     },
     {
@@ -572,10 +569,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:4004:829"
-        }
+        "3:2": "Instrument Sans"
       }
     }
   ]

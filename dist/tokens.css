@@ -506,8 +506,8 @@
   --va-space-4-5: 18;
   --va-space-18: 72;
   --va-space-20: 80;
-  --va-typography-font-family-display: var(--va-language-switch-font-family);
-  --va-typography-font-family-body: "Inter";
+  --va-typography-font-family-display: "The Seasons";
+  --va-typography-font-family-body: "Instrument Sans";
   --va-typography-font-sizes-10: var(--va-font-size-control-10);
   --va-typography-font-sizes-11: var(--va-font-size-control-11);
   --va-typography-font-sizes-12: var(--va-font-size-control-12);
@@ -547,7 +547,7 @@
   --va-typography-font-weights-extrabold-italics: "ExtraBold Italics";
   --va-typography-font-weights-black-regular: "Black";
   --va-typography-font-weights-black-italics: "Black Italics";
-  --va-typography-font-family-title: var(--va-language-switch-font-family);
+  --va-typography-font-family-title: "Instrument Sans";
 }
 
 [data-temperature="cool"] {
