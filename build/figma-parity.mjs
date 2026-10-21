@@ -8,6 +8,7 @@ const bind=(n,k)=>alias(n?.boundVariables?.[k]);
 const px=(n,k)=>bind(n,k)??`${n?.[k]??0}px`;
 const paint=(n,k)=>{const p=n?.[k]?.find(x=>x.visible!==false);return bind(n,k)||alias(p?.boundVariables?.color)||(p?.color?`rgb(${['r','g','b'].map(c=>Math.round(p.color[c]*255)).join(' ')} / ${p.opacity??1})`:'transparent')};
 const shadow=n=>(n.effects||[]).filter(e=>e.visible!==false&&e.type==='DROP_SHADOW').map(e=>`${e.offset.x}px ${e.offset.y}px ${e.radius}px ${e.spread||0}px rgb(${['r','g','b'].map(k=>Math.round(e.color[k]*255)).join(' ')} / ${e.color.a})`).join(', ')||'none';
+const innerShadow=n=>(n.effects||[]).filter(e=>e.visible!==false&&e.type==='INNER_SHADOW').map(e=>`inset ${e.offset.x}px ${e.offset.y}px ${Number(e.radius.toFixed(2))}px ${e.spread||0}px rgb(${['r','g','b'].map(k=>Math.round(e.color[k]*255)).join(' ')} / ${Number(e.color.a.toFixed(2))})`).join(', ')||'none';
 const radius=n=>bind(n,'topLeftRadius')||px(n,'cornerRadius');
 const rule=(selector,items)=>`${selector} {\n${Object.entries(items).filter(([,v])=>v!=null).map(([k,v])=>`  ${k}: ${v};`).join('\n')}\n}\n`;
 const weight=style=>/Semi.?Bold/i.test(style)?600:/Extra.?Bold/i.test(style)?800:/Bold/i.test(style)?700:/Medium/i.test(style)?500:400;
@@ -20,7 +21,7 @@ let css=`/* Generated directly from the live Figma component snapshots. */
 .figma-icon { display:inline-flex; align-items:center; justify-content:center; flex:none; }
 .figma-icon .material-icons { font-family:'Material Icons'; font-size:inherit; line-height:1; font-weight:normal; font-style:normal; letter-spacing:normal; text-transform:none; font-feature-settings:'liga'; white-space:nowrap; display:block; }
 .figma-overlay,.figma-focus { position:absolute; pointer-events:none; box-sizing:border-box; }
-.figma-overlay { inset:0; border-radius:inherit; z-index:0; }
+.figma-overlay { inset:0; border-radius:inherit; z-index:2; }
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
@@ -42,7 +43,7 @@ for(const v of specs.button.variants){
  css+=rule(selector+' .figma-label',textStyle(t));
  css+=rule(selector+'[data-default-label="true"] .figma-label',{'min-width':`${t.width/t.text.fontSize}em`});
  for(let i=0;i<icons.length;i++)css+=rule(selector+` .figma-icon--${i?'trailing':'leading'}`,{width:px(icons[i],'width'),height:px(icons[i],'height'),'font-size':px(icons[i],'width'),color:paint(t,'fills')});
- const overlay=children.find(c=>c.name.includes('Overlay'));if(overlay)css+=rule(selector+' > .figma-overlay',{background:paint(overlay,'fills')});
+ const overlay=children.find(c=>c.name.includes('Overlay'));if(overlay)css+=rule(selector+' > .figma-overlay',{background:paint(overlay,'fills'),'box-shadow':innerShadow(overlay)});
  const focus=children.find(c=>c.name==='Focus Ring');if(focus)css+=rule(selector+' > .figma-focus',{border:`${bind(focus,'strokeTopWeight')||px(focus,'strokeWeight')} solid ${paint(focus,'strokes')}`,'border-radius':radius(focus)});
 }
 for(const v of specs.input.variants){

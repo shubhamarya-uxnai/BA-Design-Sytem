@@ -6,7 +6,7 @@
 .figma-icon { display:inline-flex; align-items:center; justify-content:center; flex:none; }
 .figma-icon .material-icons { font-family:'Material Icons'; font-size:inherit; line-height:1; font-weight:normal; font-style:normal; letter-spacing:normal; text-transform:none; font-feature-settings:'liga'; white-space:nowrap; display:block; }
 .figma-overlay,.figma-focus { position:absolute; pointer-events:none; box-sizing:border-box; }
-.figma-overlay { inset:0; border-radius:inherit; z-index:0; }
+.figma-overlay { inset:0; border-radius:inherit; z-index:2; }
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
@@ -177,6 +177,7 @@
 }
 .figma-button[data-figma-variant="4149:6094"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6099"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -216,6 +217,7 @@
 }
 .figma-button[data-figma-variant="4149:6099"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6104"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -255,6 +257,7 @@
 }
 .figma-button[data-figma-variant="4149:6104"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6109"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -294,6 +297,7 @@
 }
 .figma-button[data-figma-variant="4149:6109"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6114"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -333,6 +337,7 @@
 }
 .figma-button[data-figma-variant="4149:6114"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6119"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -372,6 +377,7 @@
 }
 .figma-button[data-figma-variant="4149:6119"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6124"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -639,6 +645,7 @@
 }
 .figma-button[data-figma-variant="4158:7239"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7244"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -678,6 +685,7 @@
 }
 .figma-button[data-figma-variant="4158:7244"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7249"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -717,6 +725,7 @@
 }
 .figma-button[data-figma-variant="4158:7249"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-hover);
+  box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7254"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -756,6 +765,7 @@
 }
 .figma-button[data-figma-variant="4158:7254"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7259"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -795,6 +805,7 @@
 }
 .figma-button[data-figma-variant="4158:7259"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7264"] {
   gap: var(--va-screen-size-switch-gap-xs);
@@ -834,6 +845,7 @@
 }
 .figma-button[data-figma-variant="4158:7264"] > .figma-overlay {
   background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7269"] {
   gap: var(--va-screen-size-switch-gap-xs);
