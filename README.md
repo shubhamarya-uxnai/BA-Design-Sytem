@@ -1,16 +1,15 @@
 # VA Design System
 
-## Component showcase
+## React component package
 
-### Figma reference components (v0.4.0)
+The repository no longer ships the previous raw HTML/CSS showcase. Use the typed React package instead:
 
-The Button and Input Field previews now use `dist/figma-components.mjs` and `dist/figma-components.css`, generated from fresh Figma snapshots in `source/specs/`. `figma-playgrounds.mjs` exposes the actual property names, defaults, all 24 Button variants and all eight Input Field variants. Labels, icon visibility/swap slots, Button insertion, Focus Ring and state axes follow the source sets. The simplified browser adoption adapter remains available for consumers pinned to earlier versions; it no longer supplies the showcase component previews.
+```tsx
+import { Button, InputField } from "@ba-design-system/react";
+import "@ba-design-system/react/styles.css";
+```
 
-The reference controls use Inter because the live Figma controls still render in Inter. Typography collection overrides requested previously (Instrument Sans and The Seasons) remain available to the website and existing consumer adapter. Icons use the same Google Material Icons names as the source, honoring the requirement to use Google's icons rather than exporting the file's icon instances.
-
-Source quirks are explicit: the Input Field nested Button's visibility is also bound to Leading Icon, and Focus Ring exists only in the resting variant. Unsupported toggle combinations resolve to the source's defined unavailable/error/pressed combinations; the playground displays the actual selected Figma variant.
-
-Open index.html through a static server (for example `python3 -m http.server 8080`) to explore the Button and Input Field components. The site uses the shared React exports and generated CSS directly. Hover or focus a preview to reveal its Open drawer; the sidebar includes live controls, state examples and usage snippets. Mobile users see Open controls without needing hover. The showcase is published from main at https://shubhamarya-uxnai.github.io/BA-Design-Sytem/.
+The React package preserves the Figma property names, defaults, 24 Button variants, and eight Input Field variants.
 
 ## Current component release: v0.2.0
 
