@@ -21,7 +21,7 @@ function Toggle({ label, value, setValue }: { label: string; value: boolean; set
   return <div className="figma-control"><span>{label}</span><Selection Type="Toggle" Checked={value} label={label} showLabel={false} onCheckedChange={setValue} /></div>;
 }
 function SelectControl({ label, value, options, setValue }: { label: string; value: string; options: readonly string[]; setValue: (value: string) => void }) {
-  return <label className="figma-control"><span>{label}</span><select value={value} onChange={e => setValue(e.target.value)}>{options.map(option => <option key={option}>{option}</option>)}</select></label>;
+  return <div className="figma-control"><span>{label}</span><div className="select-control"><Button Type="Ghost" Button={value} interactive={false} tabIndex={-1} aria-hidden="true" {...{"Leading Icon":false,"Tailing Icon":true,"tailing-icon":"keyboard_arrow_down"}} /><select aria-label={label} value={value} onChange={e => setValue(e.target.value)}>{options.map(option => <option key={option}>{option}</option>)}</select></div></div>;
 }
 function TextControl({ label, value, setValue }: { label: string; value: string; setValue: (value: string) => void }) {
   return <label className="figma-control"><span>{label}</span><input value={value} onChange={e => setValue(e.target.value)} /></label>;
