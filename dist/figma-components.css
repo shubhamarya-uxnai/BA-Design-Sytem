@@ -9,6 +9,11 @@
 .figma-overlay { inset:0; border-radius:inherit; z-index:2; }
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
+.figma-icon-button { appearance:none; position:relative; display:inline-flex; align-items:center; justify-content:center; isolation:isolate; box-sizing:border-box; margin:0; cursor:pointer; outline:none; flex:none; }
+.figma-icon-button:disabled { cursor:not-allowed; }
+.figma-icon-button > .figma-icon { position:relative; z-index:1; }
+.figma-icon-button__default-icon { background:currentColor; mask:url("./assets/icon-button-brightness.svg") center / contain no-repeat; }
+.figma-icon-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
 .figma-input--with-button { width:min(368px,100%); }
 .figma-input__label { margin:0; }
@@ -950,6 +955,510 @@
   color: var(--va-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7277"] .figma-icon--trailing {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4149:6137"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6137"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6137"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4158:7386"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7386"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7386"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4149:6140"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6140"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6140"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4158:7389"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7389"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7389"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4149:6143"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6143"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4149:6143"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4158:7392"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7392"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4158:7392"] > .figma-focus {
+  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+}
+.figma-icon-button[data-figma-variant="4149:6146"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6146"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6146"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7395"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7395"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7395"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6149"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6149"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6149"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7398"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7398"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7398"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6152"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6152"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4149:6152"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7401"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7401"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4158:7401"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-hover);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6155"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6155"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6155"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7404"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-primary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7404"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7404"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6158"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6158"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4149:6158"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7407"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-secondary-default);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7407"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+}
+.figma-icon-button[data-figma-variant="4158:7407"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6161"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6161"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4149:6161"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4158:7410"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7410"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+}
+.figma-icon-button[data-figma-variant="4158:7410"] > .figma-overlay {
+  background: var(--va-semantic-color-tokens-pressed);
+  box-shadow: none;
+}
+.figma-icon-button[data-figma-variant="4149:6164"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6164"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4158:7413"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7413"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4149:6166"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6166"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4158:7415"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7415"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-m);
+  height: var(--va-screen-size-switch-width-and-height-m);
+  font-size: var(--va-screen-size-switch-width-and-height-m);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4149:6168"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-s);
+  padding-right: var(--va-screen-size-switch-gap-s);
+  padding-bottom: var(--va-screen-size-switch-gap-s);
+  padding-left: var(--va-screen-size-switch-gap-s);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4149:6168"] > .figma-icon {
+  width: var(--va-screen-size-switch-width-and-height-l);
+  height: var(--va-screen-size-switch-width-and-height-l);
+  font-size: var(--va-screen-size-switch-width-and-height-l);
+  color: var(--va-semantic-color-tokens-foreground-disabled);
+}
+.figma-icon-button[data-figma-variant="4158:7417"] {
+  gap: var(--va-screen-size-switch-gap-xs);
+  padding-top: var(--va-screen-size-switch-gap-xs);
+  padding-right: var(--va-screen-size-switch-gap-xs);
+  padding-bottom: var(--va-screen-size-switch-gap-xs);
+  padding-left: var(--va-screen-size-switch-gap-xs);
+  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: 0px solid transparent;
+  background: var(--va-semantic-color-tokens-background-disabled);
+  box-shadow: none;
+  opacity: 1;
+}
+.figma-icon-button[data-figma-variant="4158:7417"] > .figma-icon {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);

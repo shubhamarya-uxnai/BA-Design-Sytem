@@ -1,0 +1,49 @@
+.figma-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 8px;
+  border: var(--va-screen-size-switch-stroke-default) solid;
+  border-radius: 12px;
+  box-sizing: border-box;
+  height: 23px;
+  width: fit-content;
+  font: 400 11px/1.4 "Instrument Sans", sans-serif;
+  white-space: nowrap;
+}
+.figma-chip[data-style="Filled"] { color: var(--va-semantic-color-tokens-foreground-inverse-default); }
+.figma-chip[data-style="Ghost"] { background: var(--va-semantic-color-tokens-background-neutral-page); }
+.figma-chip[data-type="Primary"][data-style="Filled"] { background: var(--va-semantic-color-tokens-background-primary-default); border-color: var(--va-semantic-color-tokens-border-default); }
+.figma-chip[data-type="Primary"][data-style="Ghost"] { color: var(--va-semantic-color-tokens-foreground-primary-default); border-color: var(--va-semantic-color-tokens-border-default); }
+.figma-chip[data-type="Success"][data-style="Filled"] { background: var(--va-semantic-color-tokens-status-success-fill); border-color: var(--va-semantic-color-tokens-status-success-border); }
+.figma-chip[data-type="Success"][data-style="Ghost"] { color: var(--va-semantic-color-tokens-status-success-text); border-color: var(--va-semantic-color-tokens-status-success-border); }
+.figma-chip[data-type="Error"][data-style="Filled"] { background: var(--va-semantic-color-tokens-status-error-fill); border-color: var(--va-semantic-color-tokens-status-error-border); }
+.figma-chip[data-type="Error"][data-style="Ghost"] { color: var(--va-semantic-color-tokens-status-error-text); border-color: var(--va-semantic-color-tokens-status-error-border); }
+.figma-chip__icon { display: inline-flex; align-items: center; justify-content: center; width: 12px; height: 12px; flex: none; font-size: 12px; }
+.figma-chip__icon--asset { background: center / contain no-repeat url("./assets/chip-user-filled.svg"); }
+.figma-chip[data-type="Primary"][data-style="Ghost"] .figma-chip__icon--asset { background-image: url("./assets/chip-user-primary.svg"); }
+.figma-chip[data-type="Success"][data-style="Ghost"] .figma-chip__icon--asset { background-image: url("./assets/chip-user-success.svg"); }
+.figma-chip[data-type="Error"][data-style="Ghost"] .figma-chip__icon--asset { background-image: url("./assets/chip-user-error.svg"); }
+.figma-chip .figma-icon { width: 12px; height: 12px; font-size: 12px; color: inherit; }
+
+.figma-selection { display: inline-flex; align-items: center; gap: var(--va-screen-size-switch-gap-s); min-height: 44px; width: fit-content; position: relative; cursor: pointer; color: var(--va-semantic-color-tokens-foreground-neutral-default); }
+.figma-selection[data-active="false"] { cursor: not-allowed; color: var(--va-semantic-color-tokens-foreground-disabled); }
+.figma-selection__native { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: inherit; z-index: 2; }
+.figma-selection__hit { width: 44px; height: 44px; flex: none; display: grid; place-items: center; position: relative; border-radius: var(--va-screen-size-switch-corner-radius-m); }
+.figma-selection[data-hover="true"][data-active="true"] .figma-selection__hit { background: var(--va-semantic-color-tokens-background-neutral-raised); box-shadow: inset 0 0 90.8px rgb(0 0 0 / .06); }
+.figma-selection[data-focus="true"] .figma-selection__hit, .figma-selection:has(.figma-selection__native:focus-visible) .figma-selection__hit { outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary); outline-offset: -1px; }
+.figma-selection__label { font: 400 11px/1.4 "Instrument Sans", sans-serif; white-space: nowrap; }
+.figma-selection__control { display: grid; place-items: center; width: 20px; height: 20px; box-sizing: border-box; border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-foreground-neutral-subtle); border-radius: var(--va-screen-size-switch-corner-radius-s); background: var(--va-semantic-color-tokens-background-neutral-default); }
+.figma-selection[data-type="Radio"] .figma-selection__control { border-radius: 50%; }
+.figma-selection[data-active="false"] .figma-selection__control { background: var(--va-semantic-color-tokens-background-disabled); }
+.figma-selection[data-type="Checkbox"][data-checked="true"] .figma-selection__control { border: 0; background: var(--va-semantic-color-tokens-background-primary-default); }
+.figma-selection[data-type="Checkbox"][data-active="false"][data-checked="true"] .figma-selection__control { background: var(--va-semantic-color-tokens-background-disabled); }
+.figma-selection[data-type="Checkbox"][data-checked="true"] .figma-selection__control::after { content:""; width: 16px; height: 16px; background: center / contain no-repeat url("./assets/selection-check.svg"); }
+.figma-selection[data-type="Checkbox"][data-active="false"][data-checked="true"] .figma-selection__control::after { background-image: url("./assets/selection-check-disabled.svg"); }
+.figma-selection[data-type="Radio"][data-checked="true"] .figma-selection__control { border: 0; background: center / contain no-repeat url("./assets/selection-radio.svg"); }
+.figma-selection[data-type="Radio"][data-active="false"][data-checked="true"] .figma-selection__control { background-image: url("./assets/selection-radio-disabled.svg"); }
+.figma-selection__track { width: 36px; height: 20px; display: block; background: center / contain no-repeat url("./assets/selection-toggle-off.svg"); }
+.figma-selection[data-type="Toggle"][data-checked="true"] .figma-selection__track { background-image: url("./assets/selection-toggle-on.svg"); }
+.figma-selection[data-type="Toggle"][data-active="false"][data-checked="false"] .figma-selection__track { background-image: url("./assets/selection-toggle-off-disabled.svg"); }
+.figma-selection[data-type="Toggle"][data-active="false"][data-checked="true"] .figma-selection__track { background-image: url("./assets/selection-toggle-on-disabled.svg"); }

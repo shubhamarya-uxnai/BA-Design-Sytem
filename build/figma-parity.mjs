@@ -2,7 +2,9 @@ import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const tokens=read('dist/tokens.json').tokens;
 const byId=new Map(tokens.map(t=>[t.id,t.cssVariable]));
-const specs={button:read('source/specs/buttons.json'),input:read('source/specs/input-fields.json')};
+const specs={button:read('source/specs/buttons.json'),iconButton:read('source/specs/icon-buttons.json'),input:read('source/specs/input-fields.json')};
+const iconButtonColors=new Map(read('source/specs/icon-vector-bindings.json').iconButtons.map(v=>[v.variantId,aliasColor(v.iconColor)]));
+function aliasColor(value){return value?.type==='VARIABLE_ALIAS'?byId.get(value.id):null}
 const alias=v=>{if(Array.isArray(v))return alias(v[0]);return v?.type==='VARIABLE_ALIAS'&&byId.has(v.id)?`var(${byId.get(v.id)})`:null};
 const bind=(n,k)=>alias(n?.boundVariables?.[k]);
 const px=(n,k)=>bind(n,k)??`${n?.[k]??0}px`;
@@ -24,6 +26,11 @@ let css=`/* Generated directly from the live Figma component snapshots. */
 .figma-overlay { inset:0; border-radius:inherit; z-index:2; }
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
+.figma-icon-button { appearance:none; position:relative; display:inline-flex; align-items:center; justify-content:center; isolation:isolate; box-sizing:border-box; margin:0; cursor:pointer; outline:none; flex:none; }
+.figma-icon-button:disabled { cursor:not-allowed; }
+.figma-icon-button > .figma-icon { position:relative; z-index:1; }
+.figma-icon-button__default-icon { background:currentColor; mask:url("./assets/icon-button-brightness.svg") center / contain no-repeat; }
+.figma-icon-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
 .figma-input--with-button { width:min(368px,100%); }
 .figma-input__label { margin:0; }
@@ -46,6 +53,15 @@ for(const v of specs.button.variants){
  const overlay=children.find(c=>c.name.includes('Overlay'));if(overlay)css+=rule(selector+' > .figma-overlay',{background:paint(overlay,'fills'),'box-shadow':innerShadow(overlay)});
  const focus=children.find(c=>c.name==='Focus Ring');if(focus)css+=rule(selector+' > .figma-focus',{border:`${bind(focus,'strokeTopWeight')||px(focus,'strokeWeight')} solid ${paint(focus,'strokes')}`,'border-radius':radius(focus)});
 }
+for(const v of specs.iconButton.variants){
+ const n=v.root,children=v.children,icon=children.find(c=>c.type==='INSTANCE'),stroke=n.strokes?.some(p=>p.visible!==false),sw=stroke?px(n,'strokeWeight'):'0px';
+ const selector=`.figma-icon-button[data-figma-variant="${v.id}"]`;
+ const padding={};for(const side of ['Top','Right','Bottom','Left'])padding['padding-'+side.toLowerCase()]=stroke?`max(0px,calc(${px(n,'padding'+side)} - ${sw}))`:px(n,'padding'+side);
+ css+=rule(selector,{gap:px(n,'itemSpacing'),...padding,'border-radius':radius(n),border:`${sw} solid ${paint(n,'strokes')}`,background:paint(n,'fills'),'box-shadow':shadow(n),opacity:n.opacity});
+ css+=rule(selector+' > .figma-icon',{width:px(icon,'width'),height:px(icon,'height'),'font-size':px(icon,'width'),color:iconButtonColors.get(v.id)?`var(${iconButtonColors.get(v.id)})`:null});
+ const overlay=children.find(c=>c.name.includes('Overlay'));if(overlay)css+=rule(selector+' > .figma-overlay',{background:paint(overlay,'fills'),'box-shadow':innerShadow(overlay)});
+ const focus=children.find(c=>c.name==='Focus Ring');if(focus)css+=rule(selector+' > .figma-focus',{border:`${bind(focus,'strokeTopWeight')||px(focus,'strokeWeight')} solid ${paint(focus,'strokes')}`,'border-radius':radius(focus)});
+}
 for(const v of specs.input.variants){
  const r=v.root,label=r.children.find(n=>n.type==='TEXT'),shell=r.children.find(n=>n.type==='FRAME'),control=shell.children.find(n=>['Input','Container'].includes(n.name)),text=control.children.find(n=>n.type==='TEXT'),icons=control.children.filter(n=>n.type==='INSTANCE'),button=shell.children.find(n=>n.name==='Button');
  const s=`.figma-input[data-figma-variant="${v.id}"]`;
@@ -60,6 +76,6 @@ for(const v of specs.input.variants){
  const f=focus||baseFocus;css+=rule(s+' .figma-focus',{border:`${bind(f,'strokeTopWeight')||px(f,'strokeWeight')} solid ${paint(f,'strokes')}`,'border-radius':radius(f)});
 }
 fs.writeFileSync('dist/figma-components.css',css);
-fs.writeFileSync('dist/figma-contract.json',JSON.stringify(Object.fromEntries(Object.entries(specs).map(([name,d])=>[name,{source:d.source,variants:d.variants.map(v=>({id:v.id,name:v.name,properties:v.propValues,width:v.root.width,height:v.root.height,focusRing:name==='button'?v.children.some(n=>n.name==='Focus Ring'):v.root.children.some(n=>n.children?.some(c=>c.name==='Focus Ring'))}))}])) ,null,2)+'\n');
+fs.writeFileSync('dist/figma-contract.json',JSON.stringify(Object.fromEntries(Object.entries(specs).map(([name,d])=>[name,{source:d.source,variants:d.variants.map(v=>({id:v.id,name:v.name,properties:v.propValues,width:v.root.width,height:v.root.height,focusRing:name==='input'?v.root.children.some(n=>n.children?.some(c=>c.name==='Focus Ring')):v.children.some(n=>n.name==='Focus Ring')}))}])) ,null,2)+'\n');
 fs.copyFileSync('source/figma-components.mjs','dist/figma-components.mjs');
-console.log('Generated Figma parity CSS and exact property contracts: 24 buttons, 8 fields.');
+console.log('Generated Figma parity CSS and exact property contracts: 24 buttons, 24 icon buttons, 8 fields.');
