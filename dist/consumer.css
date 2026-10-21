@@ -180,14 +180,14 @@
   --va-contrast-control-ondark-background-secondary-raised: var(--va-color-themes-secondary-400);
   --va-contrast-control-onlight-background-secondary-subtle: var(--va-color-themes-secondary-100);
   --va-contrast-control-ondark-background-secondary-subtle: var(--va-color-themes-secondary-900);
-  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-8)%, transparent);
-  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
+  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-8) * 100)%, transparent);
+  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-neutral-default: var(--va-color-themes-base-900);
   --va-contrast-control-ondark-foreground-neutral-default: var(--va-color-themes-base-0);
   --va-contrast-control-onlight-foreground-neutral-subtle: var(--va-color-themes-base-700);
   --va-contrast-control-ondark-foreground-neutral-subtle: var(--va-color-themes-base-200);
-  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-48)%, transparent);
-  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-64)%, transparent);
+  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-48) * 100)%, transparent);
+  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-64) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-primary-default: var(--va-color-themes-primary-900);
   --va-contrast-control-ondark-foreground-primary-default: var(--va-color-themes-primary-0);
   --va-contrast-control-onlight-foreground-primary-subtle: var(--va-color-themes-primary-700);
@@ -480,8 +480,8 @@
   --va-semantic-color-tokens-foreground-inverse-default: var(--va-contrast-control-onlight-foreground-inverse-default);
   --va-semantic-color-tokens-foreground-inverse-subtle: var(--va-contrast-control-onlight-foreground-inverse-subtle);
   --va-semantic-color-tokens-foreground-disabled: var(--va-contrast-control-onlight-foreground-disabled);
-  --va-semantic-color-tokens-hover: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-8)%, transparent);
-  --va-semantic-color-tokens-pressed: color-mix(in srgb, var(--va-color-themes-base-950) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
+  --va-semantic-color-tokens-hover: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-8) * 100)%, transparent);
+  --va-semantic-color-tokens-pressed: color-mix(in srgb, var(--va-color-themes-base-950) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
   --va-semantic-color-tokens-border-secondary: var(--va-contrast-control-onlight-border-secondary);
   --va-space-0: 0;
   --va-space-0-025: 0.10000000149011612;
@@ -733,14 +733,14 @@
   --va-contrast-control-ondark-background-secondary-raised: var(--va-color-themes-secondary-400);
   --va-contrast-control-onlight-background-secondary-subtle: var(--va-color-themes-secondary-100);
   --va-contrast-control-ondark-background-secondary-subtle: var(--va-color-themes-secondary-900);
-  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
-  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
+  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
+  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-neutral-default: var(--va-color-themes-base-900);
   --va-contrast-control-ondark-foreground-neutral-default: var(--va-color-themes-base-0);
   --va-contrast-control-onlight-foreground-neutral-subtle: var(--va-color-themes-base-700);
   --va-contrast-control-ondark-foreground-neutral-subtle: var(--va-color-themes-base-200);
-  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-64)%, transparent);
-  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-72)%, transparent);
+  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-64) * 100)%, transparent);
+  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-72) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-primary-default: var(--va-color-themes-primary-900);
   --va-contrast-control-ondark-foreground-primary-default: var(--va-color-themes-primary-0);
   --va-contrast-control-onlight-foreground-primary-subtle: var(--va-color-themes-primary-700);
@@ -838,14 +838,14 @@
   --va-contrast-control-ondark-background-secondary-raised: var(--va-color-themes-secondary-300);
   --va-contrast-control-onlight-background-secondary-subtle: var(--va-color-themes-secondary-200);
   --va-contrast-control-ondark-background-secondary-subtle: var(--va-color-themes-secondary-800);
-  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
-  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-32)%, transparent);
+  --va-contrast-control-onlight-background-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
+  --va-contrast-control-ondark-background-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-32) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-neutral-default: var(--va-color-themes-base-900);
   --va-contrast-control-ondark-foreground-neutral-default: var(--va-color-themes-base-0);
   --va-contrast-control-onlight-foreground-neutral-subtle: var(--va-color-themes-base-700);
   --va-contrast-control-ondark-foreground-neutral-subtle: var(--va-color-themes-base-200);
-  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) var(--va-screen-size-switch-color-variable-opacity-72)%, transparent);
-  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-80)%, transparent);
+  --va-contrast-control-onlight-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-900) calc(var(--va-screen-size-switch-color-variable-opacity-72) * 100)%, transparent);
+  --va-contrast-control-ondark-foreground-disabled: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-80) * 100)%, transparent);
   --va-contrast-control-onlight-foreground-primary-default: var(--va-color-themes-primary-900);
   --va-contrast-control-ondark-foreground-primary-default: var(--va-color-themes-primary-0);
   --va-contrast-control-onlight-foreground-primary-subtle: var(--va-color-themes-primary-700);
@@ -1195,8 +1195,8 @@
   --va-semantic-color-tokens-foreground-inverse-default: var(--va-contrast-control-ondark-foreground-inverse-default);
   --va-semantic-color-tokens-foreground-inverse-subtle: var(--va-contrast-control-ondark-foreground-inverse-subtle);
   --va-semantic-color-tokens-foreground-disabled: var(--va-contrast-control-ondark-foreground-disabled);
-  --va-semantic-color-tokens-hover: color-mix(in srgb, var(--va-color-themes-base-0) var(--va-screen-size-switch-color-variable-opacity-16)%, transparent);
-  --va-semantic-color-tokens-pressed: color-mix(in srgb, var(--va-color-themes-base-950) var(--va-screen-size-switch-color-variable-opacity-32)%, transparent);
+  --va-semantic-color-tokens-hover: color-mix(in srgb, var(--va-color-themes-base-0) calc(var(--va-screen-size-switch-color-variable-opacity-16) * 100)%, transparent);
+  --va-semantic-color-tokens-pressed: color-mix(in srgb, var(--va-color-themes-base-950) calc(var(--va-screen-size-switch-color-variable-opacity-32) * 100)%, transparent);
   --va-semantic-color-tokens-border-secondary: var(--va-contrast-control-ondark-border-secondary);
 }
 

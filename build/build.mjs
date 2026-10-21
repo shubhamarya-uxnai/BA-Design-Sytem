@@ -87,7 +87,15 @@ const cssValue = (value, variable, namesById, variablesById) => {
   }
   if (variable.resolvedType === "COLOR" && value && typeof value === "object" && "color" in value) {
     const color = cssValue(value.color, { resolvedType: "COLOR", scopes: [] }, namesById, variablesById);
-    const opacity = cssValue(value.opacity ?? 1, { resolvedType: "FLOAT", scopes: [] }, namesById, variablesById);
+    // Figma COLOR_OPACITY variables are normalized floats (0.08 = 8%), unlike
+    // ordinary percentage-like token values. Keep aliases as CSS custom
+    // properties, but normalize resolved numbers before emitting color-mix.
+    const opacityValue = value.opacity ?? 1;
+    const opacity = isAlias(opacityValue)
+      ? `calc(${cssValue(opacityValue, { resolvedType: "FLOAT", scopes: [] }, namesById, variablesById)} * 100)`
+      : typeof opacityValue === "number" && opacityValue <= 1
+        ? String(opacityValue * 100)
+        : cssValue(opacityValue, { resolvedType: "FLOAT", scopes: [] }, namesById, variablesById);
     return `color-mix(in srgb, ${color} ${opacity}%, transparent)`;
   }
   if (variable.resolvedType === "COLOR") return colorValue(value);
