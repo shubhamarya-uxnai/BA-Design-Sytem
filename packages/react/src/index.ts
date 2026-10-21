@@ -6,7 +6,7 @@ export type FigmaBoolean = boolean | "True" | "False" | "true" | "false";
 export type MaterialIconSet = "symbols" | "classic";
 export type MaterialIconProps = { iconSet?: MaterialIconSet; iconFill?: 0 | 1; iconWeight?: number; iconGrade?: number; iconOpticalSize?: number };
 
-export type ButtonProps = Omit<ComponentProps<"button">, "children" | "disabled"> & MaterialIconProps & {
+export type ButtonProps = Omit<ComponentProps<"button">, "disabled"> & MaterialIconProps & {
   Type?: ButtonType;
   Hover?: FigmaBoolean;
   Enabled?: FigmaBoolean;
