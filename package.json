@@ -1,13 +1,25 @@
 {
-  "name": "va-design-system",
+  "name": "@ba-design-system/workspace",
   "version": "0.4.0",
   "private": true,
-  "description": "Token foundation for the VA / Bunny Are design system, sourced from Figma.",
+  "description": "BA Design System monorepo, sourced from Figma.",
   "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "build": "node build/build.mjs",
     "validate": "node build/validate.mjs",
     "components": "python3 build/generate_components.py && node build/consumer-bundle.mjs && node build/figma-parity.mjs",
-    "check": "npm run validate && npm run build && npm run components"
+    "check": "npm run validate && npm run build && npm run components",
+    "typecheck": "tsc --noEmit -p packages/react/tsconfig.json",
+    "test": "node --test packages/react/test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "react": "^19.3.1",
+    "typescript": "^7.0.2"
   }
 }

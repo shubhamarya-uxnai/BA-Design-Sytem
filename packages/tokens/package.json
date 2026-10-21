@@ -1,0 +1,12 @@
+{
+  "name": "@ba-design-system/tokens",
+  "version": "0.5.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./css": "./dist/tokens.css",
+    "./json": "./dist/tokens.json"
+  },
+  "files": ["src", "dist"],
+  "scripts": { "build": "node ../../build/build.mjs" }
+}

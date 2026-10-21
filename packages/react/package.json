@@ -1,0 +1,14 @@
+{
+  "name": "@ba-design-system/react",
+  "version": "0.5.0",
+  "type": "module",
+  "peerDependencies": { "react": ">=18" },
+  "dependencies": { "@ba-design-system/tokens": "workspace:*" },
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css",
+    "./contract": "../../../dist/figma-contract.json"
+  },
+  "files": ["src", "dist"],
+  "scripts": { "typecheck": "tsc --noEmit -p tsconfig.json" }
+}
