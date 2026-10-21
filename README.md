@@ -1,4 +1,4 @@
-# VA Design System
+# BA Design System
 
 ## React component package
 
