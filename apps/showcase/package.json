@@ -1,0 +1,10 @@
+{
+  "name": "@ba-design-system/showcase",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ba-design-system/react": "workspace:*",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
