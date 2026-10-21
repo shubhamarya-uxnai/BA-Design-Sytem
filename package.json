@@ -16,6 +16,7 @@
     "check": "npm run validate && npm run build && npm run components",
     "typecheck": "tsc --noEmit -p packages/react/tsconfig.json",
     "test": "node --test packages/react/test/*.test.mjs",
+    "showcase:dev": "vite --config apps/showcase/vite.config.ts",
     "showcase:build": "vite build --config apps/showcase/vite.config.ts"
   },
   "devDependencies": {

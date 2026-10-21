@@ -11,6 +11,16 @@ export default defineConfig({
   base: "/BA-Design-Sytem/",
   plugins: [react(), {
     name: "figma-contract-asset",
+    configureServer(server) {
+      server.middlewares.use((request, response, next) => {
+        if (request.url?.endsWith("figma-contract.json")) {
+          response.setHeader("Content-Type", "application/json");
+          response.end(readFileSync(resolve(root, "../../dist/figma-contract.json")));
+          return;
+        }
+        next();
+      });
+    },
     generateBundle() {
       this.emitFile({ type: "asset", fileName: "assets/figma-contract.json", source: readFileSync(resolve(root, "../../dist/figma-contract.json")) });
     },
