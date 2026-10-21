@@ -3,8 +3,10 @@ import React, { type ComponentProps, type ReactNode } from "react";
 export type ButtonType = "Primary" | "Default" | "Ghost";
 export type ButtonSize = "Large" | "Small";
 export type FigmaBoolean = boolean | "True" | "False" | "true" | "false";
+export type MaterialIconSet = "symbols" | "classic";
+export type MaterialIconProps = { iconSet?: MaterialIconSet; iconFill?: 0 | 1; iconWeight?: number; iconGrade?: number; iconOpticalSize?: number };
 
-export type ButtonProps = Omit<ComponentProps<"button">, "children" | "disabled"> & {
+export type ButtonProps = Omit<ComponentProps<"button">, "children" | "disabled"> & MaterialIconProps & {
   Type?: ButtonType;
   Hover?: FigmaBoolean;
   Enabled?: FigmaBoolean;
@@ -20,7 +22,7 @@ export type ButtonProps = Omit<ComponentProps<"button">, "children" | "disabled"
   children?: ReactNode;
 };
 
-export type InputFieldProps = Omit<ComponentProps<"input">, "value" | "defaultValue"> & {
+export type InputFieldProps = Omit<ComponentProps<"input">, "value" | "defaultValue"> & MaterialIconProps & {
   Active?: FigmaBoolean;
   Error?: FigmaBoolean;
   Typed?: FigmaBoolean;
@@ -49,4 +51,4 @@ const runtime = createFigmaComponents(React);
 export { createFigmaComponents, resolveButton, resolveInput };
 export const Button = runtime.Button as React.ComponentType<ButtonProps>;
 export const InputField = runtime.InputField as React.ComponentType<InputFieldProps>;
-export const Icon = runtime.Icon as React.ComponentType<{ name?: ReactNode; side?: "leading" | "trailing" }>;
+export const Icon = runtime.Icon as React.ComponentType<{ name?: ReactNode; side?: "leading" | "trailing" } & MaterialIconProps>;
