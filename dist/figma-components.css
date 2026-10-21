@@ -10,6 +10,7 @@
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
+.figma-input--with-button { width:min(368px,100%); }
 .figma-input__label { margin:0; }
 .figma-input__shell { display:flex; align-items:center; width:100%; position:relative; box-sizing:border-box; }
 .figma-input__control { display:flex; align-items:center; flex:1 1 0; min-width:0; position:relative; z-index:1; box-sizing:border-box; }
@@ -975,13 +976,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
 }
-.figma-input[data-figma-variant="4158:7550"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7550"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
 }
-.figma-input[data-figma-variant="4158:7550"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7550"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1029,13 +1030,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
 }
-.figma-input[data-figma-variant="4158:7557"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7557"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
 }
-.figma-input[data-figma-variant="4158:7557"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7557"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1086,13 +1087,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7564"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7564"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-status-error-border);
 }
-.figma-input[data-figma-variant="4158:7564"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7564"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1140,13 +1141,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-disabled);
 }
-.figma-input[data-figma-variant="4158:7570"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7570"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-foreground-disabled);
 }
-.figma-input[data-figma-variant="4158:7570"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7570"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1194,13 +1195,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7576"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7576"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-border-primary);
 }
-.figma-input[data-figma-variant="4158:7576"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7576"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1248,13 +1249,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7582"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7582"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-border-primary);
 }
-.figma-input[data-figma-variant="4158:7582"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7582"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1305,13 +1306,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7589"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7589"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7589"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7589"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
@@ -1359,13 +1360,13 @@
   letter-spacing: normal;
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7595"] .figma-icon--leading {
+.figma-input[data-figma-variant="4158:7595"] .figma-input__control > .figma-icon--leading {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);
   color: var(--va-semantic-color-tokens-foreground-neutral-default);
 }
-.figma-input[data-figma-variant="4158:7595"] .figma-icon--trailing {
+.figma-input[data-figma-variant="4158:7595"] .figma-input__control > .figma-icon--trailing {
   width: var(--va-screen-size-switch-width-and-height-m);
   height: var(--va-screen-size-switch-width-and-height-m);
   font-size: var(--va-screen-size-switch-width-and-height-m);

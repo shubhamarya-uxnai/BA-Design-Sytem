@@ -24,6 +24,7 @@ let css=`/* Generated directly from the live Figma component snapshots. */
 .figma-focus { inset:-4px; }
 .figma-button:not([data-focus-ring="true"]):not(:focus-visible) > .figma-focus { display:none; }
 .figma-input { display:flex; flex-direction:column; align-items:stretch; width:217px; max-width:100%; position:relative; }
+.figma-input--with-button { width:min(368px,100%); }
 .figma-input__label { margin:0; }
 .figma-input__shell { display:flex; align-items:center; width:100%; position:relative; box-sizing:border-box; }
 .figma-input__control { display:flex; align-items:center; flex:1 1 0; min-width:0; position:relative; z-index:1; box-sizing:border-box; }
@@ -51,7 +52,7 @@ for(const v of specs.input.variants){
  css+=rule(s+' .figma-input__shell',{background:paint(shell,'fills'),border:`${bind(shell,'strokeTopWeight')||px(shell,'strokeWeight')} solid ${paint(shell,'strokes')}`,'border-radius':radius(shell),'min-height':`${shell.height}px`});
  css+=rule(s+' .figma-input__control',{gap:px(control,'itemSpacing'),padding:['Top','Right','Bottom','Left'].map(x=>px(control,'padding'+x)).join(' '),'border-radius':radius(control),'margin-right':shell.itemSpacing<0?`${shell.itemSpacing}px`:null});
  css+=rule(s+' .figma-input__input',textStyle(text));
- for(let i=0;i<icons.length;i++){const vector=icons[i].children?.find(n=>n.type==='VECTOR'&&paint(n,'fills')!=='transparent');css+=rule(s+` .figma-icon--${i?'trailing':'leading'}`,{width:px(icons[i],'width'),height:px(icons[i],'height'),'font-size':px(icons[i],'width'),color:vector?paint(vector,'fills'):paint(text,'fills')});}
+ for(let i=0;i<icons.length;i++){const vector=icons[i].children?.find(n=>n.type==='VECTOR'&&paint(n,'fills')!=='transparent');css+=rule(s+` .figma-input__control > .figma-icon--${i?'trailing':'leading'}`,{width:px(icons[i],'width'),height:px(icons[i],'height'),'font-size':px(icons[i],'width'),color:vector?paint(vector,'fills'):paint(text,'fills')});}
  if(button)css+=rule(s+' .figma-input__action',{gap:px(button,'itemSpacing'),'padding-right':px(button,'paddingRight'),'border-radius':radius(button)});
  const overlay=shell.children.find(n=>n.name.includes('Overlay'));if(overlay)css+=rule(s+' .figma-overlay',{background:paint(overlay,'fills')});
  const focus=shell.children.find(n=>n.name==='Focus Ring');const baseFocus=specs.input.variants[0].root.children.find(n=>n.type==='FRAME').children.find(n=>n.name==='Focus Ring');
