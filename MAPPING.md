@@ -21,11 +21,12 @@ The separator collection is also retained in the export manifest, even though it
 
 ## Generated CSS naming
 
-Each Figma variable becomes a namespaced CSS custom property:
+Each Figma variable becomes a namespaced CSS custom property with the `--ba-` prefix (and a `--va-` alias for backward compatibility):
 
 ```text
 Figma:  Semantic Color Tokens / Background / Neutral / Page Default
-CSS:    --va-semantic-color-tokens-background-neutral-page-default
+CSS:    --ba-semantic-color-tokens-background-neutral-page-default
+Alias:  --va-semantic-color-tokens-background-neutral-page-default
 ```
 
 Variable aliases become CSS `var(...)` references to the target variable's generated name. This preserves the mapping chain across collections such as Semantic Color Tokens → Contrast Control → Primitive Color Tokens.

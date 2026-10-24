@@ -143,10 +143,10 @@
     "fontWeightAdapter": "Figma exposes font-weight variables as string labels for italic support; generated CSS uses the equivalent numeric CSS weight and preserves the source token in each size spec.",
     "buttonSizes": {
       "Large": {
-        "fontWeightToken": "var(--va-typography-font-weights-medium-regular)"
+        "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)"
       },
       "Small": {
-        "fontWeightToken": "var(--va-typography-font-weights-regular-regular)"
+        "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)"
       }
     }
   },
@@ -155,9 +155,9 @@
       "name": "Title/Small",
       "className": "va-text-title-small",
       "sourceStyleId": "S:be54dca184c8ed1b14c38b7d6dff68e070e2e0be,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-36)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-36)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -165,9 +165,9 @@
       "name": "Title/Medium",
       "className": "va-text-title-medium",
       "sourceStyleId": "S:857b14fbd4c906cb5c75333363fc1df916b9e5bb,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-40)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-40)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -175,9 +175,9 @@
       "name": "Title/Large",
       "className": "va-text-title-large",
       "sourceStyleId": "S:78677ea364bf80ca29d7cb69dc5b185eb6b7d081,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-48)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-48)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -185,9 +185,9 @@
       "name": "Heading/Small",
       "className": "va-text-heading-small",
       "sourceStyleId": "S:80559c5c9ecf8a75178d7ab1528f5b571c9f2983,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-24)",
-      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-24)",
+      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
       "fontWeightCss": 600,
       "fontStyle": "normal"
     },
@@ -195,9 +195,9 @@
       "name": "Heading/Medium",
       "className": "va-text-heading-medium",
       "sourceStyleId": "S:ecc72f3f01128227bbf510f0b93ee1b6f66e6090,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-28)",
-      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-28)",
+      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
       "fontWeightCss": 600,
       "fontStyle": "normal"
     },
@@ -205,9 +205,9 @@
       "name": "Heading/Large",
       "className": "va-text-heading-large",
       "sourceStyleId": "S:54e79c71351016c799701202649e3674ab7eac28,",
-      "fontFamilyToken": "var(--va-typography-font-family-title)",
-      "fontSizeToken": "var(--va-typography-font-sizes-32)",
-      "fontWeightToken": "var(--va-typography-font-weights-semibold-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-title)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-32)",
+      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
       "fontWeightCss": 600,
       "fontStyle": "normal"
     },
@@ -215,9 +215,9 @@
       "name": "Body/XS",
       "className": "va-text-body-xs",
       "sourceStyleId": "S:adf321a99b94f54f50c72849808b012310123433,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-14)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-14)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -225,9 +225,9 @@
       "name": "Body/Small",
       "className": "va-text-body-small",
       "sourceStyleId": "S:0b52e1b893abed05b02734a3660bac3fdbfe5301,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-16)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-16)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -235,9 +235,9 @@
       "name": "Body/Medium",
       "className": "va-text-body-medium",
       "sourceStyleId": "S:7fbbed5b59fa6d125d1921f690b07f51963c50ac,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-20)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -245,9 +245,9 @@
       "name": "Body/Large",
       "className": "va-text-body-large",
       "sourceStyleId": "S:e9de991473ff7e8347138854bf84be99defc254e,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-22)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-22)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -255,9 +255,9 @@
       "name": "Body/Emphasis/Small",
       "className": "va-text-body-emphasis-small",
       "sourceStyleId": "S:5ad9e64f0939444fff3547ffb827b2b759937489,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-16)",
-      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-16)",
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
     },
@@ -265,9 +265,9 @@
       "name": "Body/Emphasis/Medium",
       "className": "va-text-body-emphasis-medium",
       "sourceStyleId": "S:1c16739a1d1b3cc262a104dd50bc8bcaba318f32,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-20)",
-      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
     },
@@ -275,9 +275,9 @@
       "name": "Body/Emphasis/Large",
       "className": "va-text-body-emphasis-large",
       "sourceStyleId": "S:127d44ad68bce7f806814caf1afd7e2b243b4c5a,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-22)",
-      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-22)",
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
     },
@@ -285,9 +285,9 @@
       "name": "Body/Italic/Small",
       "className": "va-text-body-italic-small",
       "sourceStyleId": "S:cacd01f8e3eaf02362287c513c0f1a5d751d685b,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-16)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-16)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "italic"
     },
@@ -295,9 +295,9 @@
       "name": "Body/Italic/Medium",
       "className": "va-text-body-italic-medium",
       "sourceStyleId": "S:0cd976a1915f2a0067e36b71b2ae611c3b5e2a9b,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-20)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "italic"
     },
@@ -305,9 +305,9 @@
       "name": "Label/Small",
       "className": "va-text-label-small",
       "sourceStyleId": "S:bbdf5988717328aa4b3a490c2a018e1c357be74d,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-10)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-10)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -315,9 +315,9 @@
       "name": "Label/Medium",
       "className": "va-text-label-medium",
       "sourceStyleId": "S:4e9272518d33800ff074f96eb57177a1ede51db1,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-11)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-11)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -325,9 +325,9 @@
       "name": "Label/Large",
       "className": "va-text-label-large",
       "sourceStyleId": "S:d334ddb73c15f51a1cbbee5ecf1bc6dbe6d65eae,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-12)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     },
@@ -335,9 +335,9 @@
       "name": "Label/Emphasis",
       "className": "va-text-label-emphasis",
       "sourceStyleId": "S:770297faf02b0fae4f8db37a5c77a33f03307ba0,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-12)",
-      "fontWeightToken": "var(--va-typography-font-weights-medium-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
     },
@@ -345,9 +345,9 @@
       "name": "Legend/Small",
       "className": "va-text-legend-small",
       "sourceStyleId": "S:a3a02a8ef8d24d5a8bb8dad7de19fae08c9e9bcf,",
-      "fontFamilyToken": "var(--va-typography-font-family-body)",
-      "fontSizeToken": "var(--va-typography-font-sizes-10)",
-      "fontWeightToken": "var(--va-typography-font-weights-regular-regular)",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-10)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
     }
@@ -570,10 +570,10 @@
         },
         "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-foreground-neutral-subtle)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-subtle)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-default)"
       },
       {
         "name": "Hover=True, Typing=False, Error=False, Typed=False, Active=True",
@@ -586,10 +586,10 @@
         },
         "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-subtle)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-foreground-neutral-subtle)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-subtle)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-default)"
       },
       {
         "name": "Hover=False, Typing=False, Error=True, Typed=False, Active=True",
@@ -602,10 +602,10 @@
         },
         "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"true\"][data-typed=\"false\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-status-error-border)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-status-error-border)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-status-error-border)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-status-error-border)"
       },
       {
         "name": "Hover=False, Typing=False, Error=False, Typed=False, Active=False",
@@ -618,10 +618,10 @@
         },
         "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"false\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"false\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-disabled)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-disabled)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-disabled)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-foreground-disabled)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-foreground-disabled)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-disabled)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-disabled)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-foreground-disabled)"
       },
       {
         "name": "Hover=False, Typing=True, Error=False, Typed=False, Active=True",
@@ -634,10 +634,10 @@
         },
         "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-border-primary)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-primary)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-border-primary)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-primary)"
       },
       {
         "name": "Hover=True, Typing=True, Error=False, Typed=False, Active=True",
@@ -650,10 +650,10 @@
         },
         "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"false\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-border-primary)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-primary)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-border-primary)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-primary)"
       },
       {
         "name": "Hover=False, Typing=True, Error=False, Typed=True, Active=True",
@@ -666,10 +666,10 @@
         },
         "selector": ".va-input-field[data-hover=\"false\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"true\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-default)"
       },
       {
         "name": "Hover=True, Typing=True, Error=False, Typed=True, Active=True",
@@ -682,10 +682,10 @@
         },
         "selector": ".va-input-field[data-hover=\"true\"][data-typing=\"true\"][data-error=\"false\"][data-typed=\"true\"][data-active=\"true\"]",
         "hasButtonSlot": true,
-        "leadingIconToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "placeholderToken": "var(--va-semantic-color-tokens-foreground-neutral-default)",
-        "shellFillToken": "var(--va-semantic-color-tokens-background-neutral-default)",
-        "shellStrokeToken": "var(--va-semantic-color-tokens-border-default)"
+        "leadingIconToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "placeholderToken": "var(--ba-semantic-color-tokens-foreground-neutral-default)",
+        "shellFillToken": "var(--ba-semantic-color-tokens-background-neutral-default)",
+        "shellStrokeToken": "var(--ba-semantic-color-tokens-border-default)"
       }
     ],
     "materialIconPolicy": "Use Google Material Symbols/Material Icons in the leading and trailing slots; embedded Figma icon instances are not imported.",

@@ -22,10 +22,10 @@ function resolve(name, seen = new Set()) {
   const alias = value.match(/^var\((--[\w-]+)\)$/);
   return alias ? resolve(alias[1], seen) : value;
 }
-const va = n => `var(--va-${n})`;
+const va = n => `var(--ba-${n}, var(--va-${n}))`;
 const sem = n => va('semantic-color-tokens-' + n);
 const names = new Set([...`${components}\n${type}\n${shadcn}`.matchAll(/--ds-[\w-]+/g)].map(m => m[0]));
-for (const m of tokens.matchAll(/--va-typography-font-sizes-(\d+):/g)) names.add('--ds-font-size-' + m[1]);
+for (const m of tokens.matchAll(/--(?:ba|va)-typography-font-sizes-(\d+):/g)) names.add('--ds-font-size-' + m[1]);
 for (const n of ['font-family-primary','font-family-secondary','text-body-weight-default','text-body-weight-medium']) names.add('--ds-'+n);
 const aliases = [];
 for (const name of [...names].sort()) {

@@ -27,7 +27,7 @@ def slug(value: Any) -> str:
 
 
 def css_var(collection: str, name: str) -> str:
-    return "--va-{}-{}".format(slug(collection), "-".join(slug(part) for part in name.split("/")))
+    return "--ba-{}-{}".format(slug(collection), "-".join(slug(part) for part in name.split("/")))
 
 
 tokens = json.loads((DIST / "tokens.json").read_text())
@@ -41,7 +41,7 @@ def ref(value: Any) -> str | None:
         return ref(value[0]) if value else None
     if isinstance(value, dict) and value.get("type") == "VARIABLE_ALIAS":
         variable = token_by_id.get(value.get("id"))
-        return f"var({variable})" if variable else f"var(--va-unresolved-{slug(value.get('id'))})"
+        return f"var({variable})" if variable else f"var(--ba-unresolved-{slug(value.get('id'))})"
     return None
 
 

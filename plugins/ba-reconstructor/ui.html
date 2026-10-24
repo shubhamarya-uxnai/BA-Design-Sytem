@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BA Design System Reconstructor</title>
+  <style>
+    :root {
+      --bg: #080c17;
+      --card: #111219;
+      --secondary: #171a24;
+      --input: #1a1e2d;
+      --border: #242838;
+      --primary: #70a3d9;
+      --primary-hover: #8cb8e6;
+      --foreground: #e9eaf2;
+      --muted: #8e95ad;
+      --subtle: #5f6680;
+      --success: #3ddc97;
+      --warning: #ffcb5b;
+      --warning-bg: rgba(255, 203, 91, 0.1);
+      --error: #ff5c77;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--foreground);
+      padding: 16px;
+      font-size: 12px;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--foreground);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-badge {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .bridge-pill {
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--secondary);
+      border: 1px solid var(--border);
+    }
+    .bridge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--subtle);
+    }
+    .bridge-pill.online .bridge-dot { background: var(--success); }
+    .bridge-pill.online { color: var(--success); border-color: rgba(61, 220, 151, 0.3); }
+    .bridge-pill.offline .bridge-dot { background: var(--error); }
+    .bridge-pill.offline { color: var(--error); border-color: rgba(255, 92, 119, 0.3); }
+
+    .view-screen {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      background: var(--input);
+      border: 1px solid var(--border);
+      color: var(--foreground);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+    input[type="text"]:focus {
+      border-color: var(--primary);
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .toggle-info h4 {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 2px;
+    }
+    .toggle-info p {
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: var(--input);
+      border: 1px solid var(--border);
+      transition: .2s;
+      border-radius: 20px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 2px;
+      bottom: 2px;
+      background-color: var(--muted);
+      transition: .2s;
+      border-radius: 50%;
+    }
+    input:checked + .slider { background-color: var(--primary); border-color: var(--primary); }
+    input:checked + .slider:before { transform: translateX(16px); background-color: var(--bg); }
+
+    .quick-chips {
+      display: flex;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .quick-chip {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 10px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .quick-chip:hover {
+      border-color: var(--primary);
+      color: var(--foreground);
+    }
+
+    .btn-replicate {
+      width: 100%;
+      background: var(--primary);
+      color: var(--bg);
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.15s ease, opacity 0.15s ease;
+      margin-top: 4px;
+    }
+    .btn-replicate:hover:not(:disabled) { background: var(--primary-hover); }
+    .btn-replicate:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 11px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .btn-secondary:hover { color: var(--foreground); border-color: var(--muted); }
+
+    /* PARITY AUDIT MODAL SCREEN */
+    .audit-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .audit-card-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--foreground);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .icon-pills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+    .icon-pill {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-family: ui-monospace, monospace;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      background: var(--input);
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+    .radio-option:hover {
+      border-color: var(--primary);
+    }
+    .radio-option input[type="radio"] {
+      margin-top: 2px;
+    }
+    .radio-text h5 {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--foreground);
+    }
+    .radio-text p {
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .warning-box {
+      background: var(--warning-bg);
+      border: 1px solid rgba(255, 203, 91, 0.3);
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+    }
+    .warning-box h5 {
+      color: var(--warning);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 4px;
+    }
+    .warning-box p {
+      font-size: 10px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .color-swatches {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+    .color-swatch-badge {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-family: ui-monospace, monospace;
+    }
+    .color-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+    }
+
+    .console-box {
+      margin-top: 12px;
+      background: #04060c;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+      font-size: 10px;
+      color: var(--muted);
+      height: 110px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .console-line { display: flex; gap: 6px; word-break: break-all; }
+    .console-line.info { color: var(--primary); }
+    .console-line.success { color: var(--success); font-weight: 600; }
+    .console-line.warning { color: var(--warning); font-weight: 600; }
+    .console-line.error { color: var(--error); font-weight: 600; }
+
+    .help-hint {
+      margin-top: auto;
+      font-size: 10px;
+      color: var(--subtle);
+      text-align: center;
+      padding-top: 8px;
+    }
+    .help-hint code {
+      color: var(--primary);
+      background: var(--secondary);
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">
+      <span>BA Reconstructor</span>
+      <span class="brand-badge">v1.1</span>
+    </div>
+    <div id="bridgePill" class="bridge-pill">
+      <span class="bridge-dot"></span>
+      <span id="bridgeStatusText">Checking bridge...</span>
+    </div>
+  </header>
+
+  <!-- SCREEN 1: INPUT URL -->
+  <div id="screenInput" class="view-screen">
+    <div class="form-group">
+      <label>Target Website URL or Local Path</label>
+      <input type="text" id="targetUrl" value="http://localhost:5173" placeholder="https://example.com or local path" />
+      <div class="quick-chips">
+        <span class="quick-chip" onclick="setPreset('http://localhost:5173')">Local Dev (5173)</span>
+        <span class="quick-chip" onclick="setPreset('consumers/Gradient-Creator/index.html')">Gradient Studio</span>
+        <span class="quick-chip" onclick="setPreset('apps/showcase/index.html')">Showcase</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Design System Registry / Source URL</label>
+      <input type="text" id="dsUrl" value="https://github.com/shubhamarya-uxnai/BA-Design-Sytem" />
+    </div>
+
+    <div class="toggle-row">
+      <div class="toggle-info">
+        <h4>Components in This File</h4>
+        <p>Use local BA component sets vs. Team Library keys</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="sameFileToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button id="btnAnalyze" class="btn-replicate" onclick="startAnalysis()">
+      <span>⚡ Replicate in Figma</span>
+    </button>
+  </div>
+
+  <!-- SCREEN 2: INTERACTIVE PARITY & AUDIT MODAL -->
+  <div id="screenAudit" class="view-screen" style="display: none;">
+    <div class="audit-card">
+      <div class="audit-card-title">
+        <span>📍 Icons Identified (<span id="iconCountBadge">0</span>)</span>
+      </div>
+      <p style="font-size: 10px; color: var(--muted); margin-bottom: 8px;">
+        The target page uses the following icon elements:
+      </p>
+      <div class="icon-pills-list" id="iconPillsContainer"></div>
+
+      <label style="margin-top: 8px;">Resolve Icons From:</label>
+      <label class="radio-option">
+        <input type="radio" name="iconLib" value="local" checked>
+        <div class="radio-text">
+          <h5>Local "Icons" Page (Recommended)</h5>
+          <p>Instantiate matching symbols from page 25:98 in this document</p>
+        </div>
+      </label>
+      <label class="radio-option">
+        <input type="radio" name="iconLib" value="material">
+        <div class="radio-text">
+          <h5>Material Design System (Published Library)</h5>
+          <p>Import Material Design System icon components</p>
+        </div>
+      </label>
+    </div>
+
+    <div class="audit-card" id="unmappedSection">
+      <div class="audit-card-title">
+        <span>⚠️ Design System Parity Audit</span>
+      </div>
+      <div class="warning-box">
+        <h5><span>⚠️</span> Elements Not in BA Design System</h5>
+        <p>
+          Found styles that do not belong to canonical BA tokens. They will be created with visual warning tags so you can inspect them on the canvas.
+        </p>
+        <div class="color-swatches" id="unmappedColorsContainer"></div>
+      </div>
+      <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--foreground);">
+        <input type="checkbox" id="chkAddWarnings" checked>
+        <span>Add warning prefix (⚠️) on unmapped canvas layers</span>
+      </label>
+    </div>
+
+    <button id="btnProceed" class="btn-replicate" onclick="proceedWithReplication()">
+      <span>🚀 Confirm & Build on Canvas</span>
+    </button>
+    <button class="btn-secondary" onclick="backToInput()">
+      <span>← Change Target URL</span>
+    </button>
+  </div>
+
+  <!-- ACTIVITY CONSOLE -->
+  <div class="console-box" id="consoleBox">
+    <div class="console-line info">[System] Ready. Enter a BA Design System URL and click Replicate.</div>
+  </div>
+
+  <div class="help-hint">
+    Bridge runs on port 4040. Run <code>npm run bridge</code> if offline.
+  </div>
+
+  <script>
+    const BRIDGE_HOST = "http://localhost:4040";
+    let extractedData = null;
+
+    function log(msg, type = "normal") {
+      const box = document.getElementById("consoleBox");
+      const line = document.createElement("div");
+      line.className = `console-line ${type}`;
+      line.innerText = `> ${msg}`;
+      box.appendChild(line);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    function setPreset(url) {
+      document.getElementById("targetUrl").value = url;
+    }
+
+    async function checkBridge() {
+      const pill = document.getElementById("bridgePill");
+      const statusText = document.getElementById("bridgeStatusText");
+      try {
+        const res = await fetch(`${BRIDGE_HOST}/health`, { signal: AbortSignal.timeout(2000) });
+        if (res.ok) {
+          pill.className = "bridge-pill online";
+          statusText.innerText = "Bridge Online";
+          return true;
+        }
+      } catch (_) {}
+      pill.className = "bridge-pill offline";
+      statusText.innerText = "Bridge Offline";
+      return false;
+    }
+
+    checkBridge();
+    setInterval(checkBridge, 6000);
+
+    parent.postMessage({ pluginMessage: { type: "CHECK_LOCAL_SYSTEM" } }, "*");
+
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      if (!msg) return;
+
+      if (msg.type === "SYSTEM_STATUS") {
+        log(`Document: "${msg.fileName}" (${msg.foundComponents} BA components, ${msg.iconCount || 1600}+ icons)`);
+      } else if (msg.type === "PROGRESS") {
+        log(msg.step, "info");
+      } else if (msg.type === "BUILD_COMPLETE") {
+        log(`✓ Replicated successfully! Built ${msg.createdNodesCount} nodes (${msg.unmappedWarningsCount} unmapped elements flagged).`, "success");
+        document.getElementById("btnProceed").disabled = false;
+        document.getElementById("btnProceed").innerHTML = "<span>🚀 Confirm & Build on Canvas</span>";
+      } else if (msg.type === "ERROR") {
+        log(`Error: ${msg.message}`, "error");
+        document.getElementById("btnProceed").disabled = false;
+        document.getElementById("btnProceed").innerHTML = "<span>🚀 Confirm & Build on Canvas</span>";
+      }
+    };
+
+    async function startAnalysis() {
+      const btn = document.getElementById("btnAnalyze");
+      const url = document.getElementById("targetUrl").value.trim();
+
+      if (!url) {
+        log("Please provide a valid website URL or local path.", "error");
+        return;
+      }
+
+      btn.disabled = true;
+      btn.innerHTML = "<span>⏳ Extracting & Auditing...</span>";
+
+      log(`1. Inspecting page & extracting AST from ${url}...`, "info");
+      const isOnline = await checkBridge();
+      if (!isOnline) {
+        log("Bridge offline on :4040. Run `npm run bridge` in terminal.", "error");
+        btn.disabled = false;
+        btn.innerHTML = "<span>⚡ Replicate in Figma</span>";
+        return;
+      }
+
+      try {
+        const res = await fetch(`${BRIDGE_HOST}/extract`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url, viewport: { width: 1440, height: 900 } })
+        });
+
+        const data = await res.json();
+        if (!res.ok || !data.success) {
+          throw new Error(data.error || "Extraction failed");
+        }
+
+        extractedData = data;
+        log(`✓ Extracted: ${data.title} (${data.viewport.width}×${data.viewport.height})`, "success");
+
+        // Populate Audit Screen
+        renderAuditScreen(data.audit);
+
+        // Switch to Screen 2
+        document.getElementById("screenInput").style.display = "none";
+        document.getElementById("screenAudit").style.display = "flex";
+
+      } catch (err) {
+        log(err.message, "error");
+        btn.disabled = false;
+        btn.innerHTML = "<span>⚡ Replicate in Figma</span>";
+      }
+    }
+
+    function renderAuditScreen(audit) {
+      const icons = audit?.detectedIcons || [];
+      const unmappedColors = audit?.unmappedColors || [];
+
+      document.getElementById("iconCountBadge").innerText = icons.length;
+      const pillsContainer = document.getElementById("iconPillsContainer");
+      pillsContainer.innerHTML = "";
+
+      if (icons.length === 0) {
+        pillsContainer.innerHTML = "<span style='color: var(--muted); font-size: 10px;'>No standalone icons detected.</span>";
+      } else {
+        icons.forEach(ic => {
+          const pill = document.createElement("span");
+          pill.className = "icon-pill";
+          pill.innerText = ic;
+          pillsContainer.appendChild(pill);
+        });
+      }
+
+      const colorsContainer = document.getElementById("unmappedColorsContainer");
+      colorsContainer.innerHTML = "";
+      if (unmappedColors.length === 0) {
+        document.getElementById("unmappedSection").style.display = "none";
+      } else {
+        document.getElementById("unmappedSection").style.display = "block";
+        unmappedColors.slice(0, 8).forEach(c => {
+          if (c.hex) {
+            const badge = document.createElement("div");
+            badge.className = "color-swatch-badge";
+            badge.innerHTML = `<span class="color-dot" style="background: ${c.hex};"></span><span>${c.hex}</span>`;
+            colorsContainer.appendChild(badge);
+          }
+        });
+      }
+    }
+
+    function backToInput() {
+      document.getElementById("screenAudit").style.display = "none";
+      document.getElementById("screenInput").style.display = "flex";
+      document.getElementById("btnAnalyze").disabled = false;
+      document.getElementById("btnAnalyze").innerHTML = "<span>⚡ Replicate in Figma</span>";
+    }
+
+    function proceedWithReplication() {
+      if (!extractedData) return;
+      const btn = document.getElementById("btnProceed");
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = "<span>⏳ Synthesizing Canvas Layout...</span>";
+      }
+
+      const sameFileToggle = document.getElementById("sameFileToggle");
+      const sameFile = sameFileToggle ? sameFileToggle.checked : true;
+      const iconRadio = document.querySelector("input[name='iconLib']:checked");
+      const selectedIconLib = iconRadio ? iconRadio.value : "local";
+      const chk = document.getElementById("chkAddWarnings");
+      const addWarnings = chk ? chk.checked : true;
+
+      log("Building native Figma Auto-Layout hierarchy...", "info");
+      parent.postMessage({
+        pluginMessage: {
+          type: "REPLICATE_PAGE",
+          scene: extractedData.scene,
+          title: extractedData.title,
+          mode: sameFile ? "local" : "library",
+          iconResolution: selectedIconLib,
+          auditSettings: {
+            addWarnings: addWarnings
+          }
+        }
+      }, "*");
+    }
+  </script>
+</body>
+</html>

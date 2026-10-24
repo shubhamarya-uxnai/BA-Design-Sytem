@@ -25,1883 +25,1883 @@
 .figma-input__shell > .figma-focus { display:none; }
 .figma-input[data-focus-ring="true"] .figma-focus,.figma-input__shell:focus-within > .figma-focus { display:block; }
 .figma-button[data-figma-variant="4149:6079"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6079"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6079"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6079"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6079"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6079"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4149:6084"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6084"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6084"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6084"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6084"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6084"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-secondary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4149:6089"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6089"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6089"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6089"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6089"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6089"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4149:6094"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6094"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6094"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6094"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6094"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6094"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6099"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6099"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6099"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6099"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6099"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6099"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6104"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6104"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6104"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6104"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6104"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6104"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4149:6109"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6109"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6109"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6109"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6109"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6109"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6114"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6114"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6114"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6114"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6114"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4149:6114"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6119"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-m) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-m) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6119"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6119"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6119"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6119"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4149:6119"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4149:6124"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6124"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6124"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6124"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6124"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6128"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6128"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6128"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6128"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6128"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6132"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-m);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-m);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-m);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-m);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4149:6132"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6132"][data-default-label="true"] .figma-label {
   min-width: 3.1875em;
 }
 .figma-button[data-figma-variant="4149:6132"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4149:6132"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7224"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7224"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7224"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7224"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7224"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7224"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4158:7229"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7229"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7229"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7229"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7229"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7229"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-secondary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4158:7234"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: 0px 2px 11px -1px rgb(0 0 0 / 0.07999999821186066);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7234"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7234"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7234"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7234"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7234"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-button[data-figma-variant="4158:7239"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7239"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7239"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7239"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7239"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7239"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7244"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7244"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7244"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7244"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7244"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7244"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7249"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: 0px 6px 22px -2px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7249"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7249"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7249"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7249"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7249"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: inset 0px 0px 2.8px 0px rgb(0 0 0 / 0.21);
 }
 .figma-button[data-figma-variant="4158:7254"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7254"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7254"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7254"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7254"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7254"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7259"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7259"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7259"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7259"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7259"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-button[data-figma-variant="4158:7259"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7264"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-right: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  padding-bottom: max(0px,calc(var(--va-screen-size-switch-gap-xs) - 1px));
-  padding-left: max(0px,calc(var(--va-screen-size-switch-gap-s) - 1px));
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
-  border: 1px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-right: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  padding-bottom: max(0px,calc(var(--ba-screen-size-switch-gap-xs) - 1px));
+  padding-left: max(0px,calc(var(--ba-screen-size-switch-gap-s) - 1px));
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
+  border: 1px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1599999964237213);
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7264"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7264"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7264"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7264"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-button[data-figma-variant="4158:7264"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: inset 0px 0px 4px 0px rgb(255 255 255 / 0.46);
 }
 .figma-button[data-figma-variant="4158:7269"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7269"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7269"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7269"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7269"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7273"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7273"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7273"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7273"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7273"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7277"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-button[data-figma-variant="4158:7277"] .figma-label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7277"][data-default-label="true"] .figma-label {
   min-width: 3.1666666666666665em;
 }
 .figma-button[data-figma-variant="4158:7277"] .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-button[data-figma-variant="4158:7277"] .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4149:6137"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6137"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6137"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4158:7386"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7386"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7386"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4149:6140"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6140"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6140"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-secondary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4158:7389"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7389"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7389"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-secondary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-secondary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4149:6143"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6143"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4149:6143"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4158:7392"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7392"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4158:7392"] > .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-xl);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-xl);
 }
 .figma-icon-button[data-figma-variant="4149:6146"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6146"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6146"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7395"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7395"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7395"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6149"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6149"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6149"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7398"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7398"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7398"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6152"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6152"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4149:6152"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7401"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7401"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4158:7401"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6155"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6155"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6155"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7404"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-primary-default);
+  background: var(--ba-semantic-color-tokens-background-primary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7404"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7404"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6158"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6158"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4149:6158"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7407"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-secondary-default);
+  background: var(--ba-semantic-color-tokens-background-secondary-default);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7407"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-inverse-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
 }
 .figma-icon-button[data-figma-variant="4158:7407"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6161"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6161"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4149:6161"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4158:7410"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
-  border: 0px solid var(--va-semantic-color-tokens-foreground-neutral-default);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
+  border: 0px solid var(--ba-semantic-color-tokens-foreground-neutral-default);
   background: transparent;
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7410"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-icon-button[data-figma-variant="4158:7410"] > .figma-overlay {
-  background: var(--va-semantic-color-tokens-pressed);
+  background: var(--ba-semantic-color-tokens-pressed);
   box-shadow: none;
 }
 .figma-icon-button[data-figma-variant="4149:6164"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6164"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4158:7413"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7413"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4149:6166"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6166"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4158:7415"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7415"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4149:6168"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-s);
-  padding-bottom: var(--va-screen-size-switch-gap-s);
-  padding-left: var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-s);
+  padding-bottom: var(--ba-screen-size-switch-gap-s);
+  padding-left: var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4149:6168"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-l);
-  height: var(--va-screen-size-switch-width-and-height-l);
-  font-size: var(--va-screen-size-switch-width-and-height-l);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-l);
+  height: var(--ba-screen-size-switch-width-and-height-l);
+  font-size: var(--ba-screen-size-switch-width-and-height-l);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-icon-button[data-figma-variant="4158:7417"] {
-  gap: var(--va-screen-size-switch-gap-xs);
-  padding-top: var(--va-screen-size-switch-gap-xs);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  padding-bottom: var(--va-screen-size-switch-gap-xs);
-  padding-left: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  gap: var(--ba-screen-size-switch-gap-xs);
+  padding-top: var(--ba-screen-size-switch-gap-xs);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  padding-bottom: var(--ba-screen-size-switch-gap-xs);
+  padding-left: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
   border: 0px solid transparent;
-  background: var(--va-semantic-color-tokens-background-disabled);
+  background: var(--ba-semantic-color-tokens-background-disabled);
   box-shadow: none;
   opacity: 1;
 }
 .figma-icon-button[data-figma-variant="4158:7417"] > .figma-icon {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-input[data-figma-variant="4158:7550"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-default);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7550"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7557"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-default);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
 }
 .figma-input[data-figma-variant="4158:7557"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7564"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-status-error-border);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-status-error-border);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-status-error-border);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-status-error-border);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7564"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7570"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-disabled);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-foreground-disabled);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-disabled);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-foreground-disabled);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7570"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7576"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-border-primary);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-border-primary);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7576"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7582"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-border-primary);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-border-primary);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
 }
 .figma-input[data-figma-variant="4158:7582"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7589"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-default);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7589"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }
 .figma-input[data-figma-variant="4158:7595"] {
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__label {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-12);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.399999976158142;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-default);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   min-height: 42px;
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__control {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
   margin-right: -4px;
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__input {
   font-family: "Instrument Sans";
-  font-size: var(--va-typography-font-sizes-16);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__control > .figma-icon--leading {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__control > .figma-icon--trailing {
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
-  font-size: var(--va-screen-size-switch-width-and-height-m);
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
+  font-size: var(--ba-screen-size-switch-width-and-height-m);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-input__action {
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-overlay {
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
 }
 .figma-input[data-figma-variant="4158:7595"] .figma-focus {
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
-  border-radius: var(--va-screen-size-switch-corner-radius-l);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
+  border-radius: var(--ba-screen-size-switch-corner-radius-l);
 }

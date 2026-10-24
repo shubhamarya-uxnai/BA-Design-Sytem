@@ -3,8 +3,8 @@
 /* Rebuild with: npm run components */
 
 .va-text-title-small {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-36);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-36);
   font-weight: 400;
   font-style: normal;
   line-height: 1.15;
@@ -12,8 +12,8 @@
 }
 
 .va-text-title-medium {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-40);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-40);
   font-weight: 400;
   font-style: normal;
   line-height: 1.15;
@@ -21,8 +21,8 @@
 }
 
 .va-text-title-large {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-48);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-48);
   font-weight: 400;
   font-style: normal;
   line-height: 1.15;
@@ -30,8 +30,8 @@
 }
 
 .va-text-heading-small {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-24);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-24);
   font-weight: 600;
   font-style: normal;
   line-height: 1.25;
@@ -39,8 +39,8 @@
 }
 
 .va-text-heading-medium {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-28);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-28);
   font-weight: 600;
   font-style: normal;
   line-height: 1.25;
@@ -48,8 +48,8 @@
 }
 
 .va-text-heading-large {
-  font-family: var(--va-typography-font-family-title);
-  font-size: var(--va-typography-font-sizes-32);
+  font-family: var(--ba-typography-font-family-title);
+  font-size: var(--ba-typography-font-sizes-32);
   font-weight: 600;
   font-style: normal;
   line-height: 1.25;
@@ -57,8 +57,8 @@
 }
 
 .va-text-body-xs {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-14);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-14);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -66,8 +66,8 @@
 }
 
 .va-text-body-small {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-16);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -75,8 +75,8 @@
 }
 
 .va-text-body-medium {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-20);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-20);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -84,8 +84,8 @@
 }
 
 .va-text-body-large {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-22);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-22);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -93,8 +93,8 @@
 }
 
 .va-text-body-emphasis-small {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-16);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
@@ -102,8 +102,8 @@
 }
 
 .va-text-body-emphasis-medium {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-20);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-20);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
@@ -111,8 +111,8 @@
 }
 
 .va-text-body-emphasis-large {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-22);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-22);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
@@ -120,8 +120,8 @@
 }
 
 .va-text-body-italic-small {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-16);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-16);
   font-weight: 400;
   font-style: italic;
   line-height: 1.5;
@@ -129,8 +129,8 @@
 }
 
 .va-text-body-italic-medium {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-20);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-20);
   font-weight: 400;
   font-style: italic;
   line-height: 1.5;
@@ -138,8 +138,8 @@
 }
 
 .va-text-label-small {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-10);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-10);
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;
@@ -148,8 +148,8 @@
 }
 
 .va-text-label-medium {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-11);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-11);
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;
@@ -157,8 +157,8 @@
 }
 
 .va-text-label-large {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-12);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;
@@ -166,8 +166,8 @@
 }
 
 .va-text-label-emphasis {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-12);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 500;
   font-style: normal;
   line-height: 1.4;
@@ -175,8 +175,8 @@
 }
 
 .va-text-legend-small {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-10);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-10);
   font-weight: 400;
   font-style: normal;
   line-height: 1.4;

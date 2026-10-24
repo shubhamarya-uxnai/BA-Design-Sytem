@@ -19,6 +19,12 @@ const slugify = (value) => {
 };
 
 const cssNameFor = (collectionName, variableName) =>
+  `--ba-${slugify(collectionName)}-${String(variableName)
+    .split("/")
+    .map(slugify)
+    .join("-")}`;
+
+const legacyCssNameFor = (collectionName, variableName) =>
   `--va-${slugify(collectionName)}-${String(variableName)
     .split("/")
     .map(slugify)
@@ -81,7 +87,7 @@ const colorValue = (value) => {
 
 const cssValue = (value, variable, namesById, variablesById) => {
   if (isAlias(value)) {
-    const reference = `var(${namesById.get(value.id) || `--va-unresolved-${slugify(value.id)}`})`;
+    const reference = `var(${namesById.get(value.id) || `--ba-unresolved-${slugify(value.id)}`})`;
     const target = variablesById.get(value.id);
     return lengthLike(variable) && target && !lengthLike(target) ? `calc(${reference} * 1px)` : reference;
   }
@@ -109,12 +115,14 @@ const files = (await readdir(COLLECTIONS)).filter((file) => file.endsWith(".json
 const collections = await Promise.all(files.map(async (file) => JSON.parse(await readFile(join(COLLECTIONS, file), "utf8"))));
 const variables = collections.flatMap((entry) => entry.variables.map((variable) => ({ ...variable, collection: entry.collection })));
 const namesById = new Map(variables.map((variable) => [variable.id, cssNameFor(variable.collection.name, variable.name)]));
+const legacyNamesById = new Map(variables.map((variable) => [variable.id, legacyCssNameFor(variable.collection.name, variable.name)]));
 const variablesById = new Map(variables.map((variable) => [variable.id, variable]));
 const tokenRecords = [];
 const rules = new Map([":root", "@media (min-width: 768px)"].map((selector) => [selector, []]));
 
 for (const variable of variables) {
   const cssName = namesById.get(variable.id);
+  const legacyName = legacyNamesById.get(variable.id);
   const modeValues = {};
   for (const mode of variable.collection.modes) {
     if (!(mode.modeId in variable.valuesByMode)) continue;
@@ -123,6 +131,7 @@ for (const variable of variables) {
     const selector = mode.modeId === variable.collection.defaultModeId ? ":root" : selectorFor(variable.collection.name, mode.name);
     if (!rules.has(selector)) rules.set(selector, []);
     rules.get(selector).push(`  ${cssName}: ${cssValue(raw, variable, namesById, variablesById)};`);
+    rules.get(selector).push(`  ${legacyName}: var(${cssName});`);
   }
   tokenRecords.push({
     id: variable.id,
@@ -132,6 +141,7 @@ for (const variable of variables) {
     resolvedType: variable.resolvedType,
     scopes: variable.scopes || [],
     cssVariable: cssName,
+    legacyCssVariable: legacyName,
     valuesByMode: modeValues,
     description: variable.description || ""
   });

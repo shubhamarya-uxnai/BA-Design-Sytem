@@ -4,12 +4,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-xs);
   width: 100%;
 }
 .va-input-field__label {
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-12);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-12);
   font-weight: 400;
   line-height: 1.4;
 }
@@ -19,9 +19,9 @@
   align-items: stretch;
   width: 100%;
   min-height: 42px;
-  border-radius: var(--va-screen-size-switch-corner-radius-m);
-  border: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-default);
-  background: var(--va-semantic-color-tokens-background-neutral-default);
+  border-radius: var(--ba-screen-size-switch-corner-radius-m);
+  border: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
   box-sizing: border-box;
 }
 .va-input-field__control {
@@ -31,8 +31,8 @@
   flex: 1 1 auto;
   min-width: 0;
   z-index: 1;
-  gap: var(--va-screen-size-switch-gap-s);
-  padding: var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-m) var(--va-screen-size-switch-gap-s) var(--va-screen-size-switch-gap-s);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding: var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-m) var(--ba-screen-size-switch-gap-s) var(--ba-screen-size-switch-gap-s);
   box-sizing: border-box;
 }
 .va-input-field__input {
@@ -44,8 +44,8 @@
   padding: 0;
   margin: 0;
   background: transparent;
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-16);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-16);
   line-height: 1.5;
   color: inherit;
 }
@@ -55,8 +55,8 @@
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  width: var(--va-screen-size-switch-width-and-height-m);
-  height: var(--va-screen-size-switch-width-and-height-m);
+  width: var(--ba-screen-size-switch-width-and-height-m);
+  height: var(--ba-screen-size-switch-width-and-height-m);
   color: inherit;
 }
 .va-input-field__icon-slot .material-symbols-rounded, .va-input-field__icon-slot .material-symbols-outlined, .va-input-field__icon-slot .material-icons {
@@ -78,182 +78,182 @@
   flex: 0 0 auto;
   position: relative;
   z-index: 1;
-  gap: var(--va-screen-size-switch-gap-s);
-  padding-right: var(--va-screen-size-switch-gap-xs);
+  gap: var(--ba-screen-size-switch-gap-s);
+  padding-right: var(--ba-screen-size-switch-gap-xs);
 }
 .va-input-field[data-button="true"] .va-input-field__button-slot, .va-input-field[data-has-button="true"] .va-input-field__button-slot { display: inline-flex; }
 .va-input-field__button-slot > * { flex: 0 0 auto; }
 .va-input-field__message {
   display: none;
   margin: 0;
-  font-family: var(--va-typography-font-family-body);
-  font-size: var(--va-typography-font-sizes-12);
+  font-family: var(--ba-typography-font-family-body);
+  font-size: var(--ba-typography-font-sizes-12);
   line-height: 1.4;
-  color: var(--va-semantic-color-tokens-status-error-text);
+  color: var(--ba-semantic-color-tokens-status-error-text);
 }
 .va-input-field[data-message="true"] .va-input-field__message, .va-input-field[data-error="true"] .va-input-field__message { display: block; }
 .va-input-field[data-leading-icon="false"] .va-input-field__slot--leading, .va-input-field[data-trailing-icon="false"] .va-input-field__slot--trailing { display: none; }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-default);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell:focus-within, .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input:focus-visible {
-  outline: var(--va-screen-size-switch-stroke-default) solid var(--va-semantic-color-tokens-border-primary);
+  outline: var(--ba-screen-size-switch-stroke-default) solid var(--ba-semantic-color-tokens-border-primary);
   outline-offset: 3px;
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-default);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-foreground-neutral-subtle);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-subtle);
 }
 .va-input-field[data-hover="true"][data-typing="false"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   pointer-events: none;
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="true"][data-typed="false"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-status-error-border);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-status-error-border);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="true"][data-typed="false"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="true"][data-typed="false"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="true"][data-typed="false"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="true"][data-typed="false"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-status-error-border);
+  color: var(--ba-semantic-color-tokens-status-error-border);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="false"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-disabled);
-  border-color: var(--va-semantic-color-tokens-foreground-disabled);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-disabled);
+  border-color: var(--ba-semantic-color-tokens-foreground-disabled);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="false"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="false"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="false"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .va-input-field[data-hover="false"][data-typing="false"][data-error="false"][data-typed="false"][data-active="false"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-foreground-disabled);
+  color: var(--ba-semantic-color-tokens-foreground-disabled);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-primary);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-border-primary);
+  color: var(--ba-semantic-color-tokens-border-primary);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-primary);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-border-primary);
+  color: var(--ba-semantic-color-tokens-border-primary);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="false"][data-active="true"] .va-input-field__shell::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   pointer-events: none;
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-default);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="false"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__shell {
-  background: var(--va-semantic-color-tokens-background-neutral-default);
-  border-color: var(--va-semantic-color-tokens-border-default);
-  border-width: var(--va-screen-size-switch-stroke-default);
+  background: var(--ba-semantic-color-tokens-background-neutral-default);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+  border-width: var(--ba-screen-size-switch-stroke-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__label {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__input {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__input::placeholder {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__icon-slot {
-  color: var(--va-semantic-color-tokens-foreground-neutral-default);
+  color: var(--ba-semantic-color-tokens-foreground-neutral-default);
 }
 .va-input-field[data-hover="true"][data-typing="true"][data-error="false"][data-typed="true"][data-active="true"] .va-input-field__shell::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: var(--va-semantic-color-tokens-hover);
+  background: var(--ba-semantic-color-tokens-hover);
   pointer-events: none;
 }

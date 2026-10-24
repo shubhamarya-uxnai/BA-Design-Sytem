@@ -1,0 +1,552 @@
+/* Progress Indicator & Stepper Component Styles — BA Design System */
+
+/* =========================================================================
+   1. PROGRESS BAR (Linear)
+   ========================================================================= */
+.figma-progress-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+  width: 120px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.figma-progress-bar[data-type="Error"],
+.figma-progress-bar[data-type="Warning"],
+.figma-progress-bar[data-type="Success"] {
+  gap: var(--va-screen-size-switch-gap-xs, 4px);
+}
+
+.figma-progress-bar__track-container {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  align-self: stretch;
+  min-width: 0;
+}
+
+.figma-progress-bar__track {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  height: 8px;
+  max-height: 8px;
+  min-width: 0;
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7);
+  border: 0.4px solid var(--va-semantic-color-tokens-border-subtle, #b7aa9d);
+}
+
+.figma-progress-bar[data-type="In Progress"] .figma-progress-bar__track {
+  border-color: var(--va-semantic-color-tokens-status-info-border, #a496dc);
+}
+
+.figma-progress-bar[data-type="Error"] .figma-progress-bar__track {
+  background: var(--va-semantic-color-tokens-status-error-surface, #fff8f8);
+  border-color: var(--va-semantic-color-tokens-status-error-border, #dc8889);
+}
+
+.figma-progress-bar[data-type="Warning"] .figma-progress-bar__track {
+  background: var(--va-semantic-color-tokens-status-warning-surface, #fff8f0);
+  border-color: var(--va-semantic-color-tokens-status-warning-border, #d1924f);
+}
+
+.figma-progress-bar[data-type="Success"] .figma-progress-bar__track {
+  background: var(--va-semantic-color-tokens-status-success-surface, #f0fdf4);
+  border: none;
+}
+
+.figma-progress-bar__fill {
+  height: 100%;
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.figma-progress-bar[data-type="Not Started"] .figma-progress-bar__fill {
+  background: var(--va-semantic-color-tokens-foreground-disabled, #231d19);
+}
+
+.figma-progress-bar[data-type="In Progress"] .figma-progress-bar__fill {
+  background: var(--va-semantic-color-tokens-status-info-fill, #6f2ee1);
+}
+
+.figma-progress-bar[data-type="Error"] .figma-progress-bar__fill {
+  background: var(--va-semantic-color-tokens-status-error-fill, #bc0016);
+}
+
+.figma-progress-bar[data-type="Warning"] .figma-progress-bar__fill {
+  background: var(--va-semantic-color-tokens-status-warning-fill, #a53800);
+}
+
+.figma-progress-bar[data-type="Success"] .figma-progress-bar__fill {
+  background: var(--va-semantic-color-tokens-status-success-fill, #006c2c);
+}
+
+.figma-progress-bar__legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--va-screen-size-switch-gap-xs, 4px);
+  flex-shrink: 0;
+  font: 400 10px/1.4 "IBM Plex Mono", "Instrument Sans", monospace, sans-serif;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  min-width: 30px;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+}
+
+.figma-progress-bar[data-type="Success"] .figma-progress-bar__legend {
+  color: var(--va-semantic-color-tokens-status-success-text, #005524);
+}
+
+.figma-progress-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.figma-progress-status-icon--error {
+  color: var(--va-semantic-color-tokens-status-error-fill, #bc0016);
+}
+
+.figma-progress-status-icon--warning {
+  color: var(--va-semantic-color-tokens-status-warning-fill, #a53800);
+}
+
+.figma-progress-status-icon--success {
+  color: var(--va-semantic-color-tokens-status-success-fill, #006c2c);
+}
+
+
+/* =========================================================================
+   2. PROGRESS PIE (Pie Chart)
+   ========================================================================= */
+.figma-progress-pie {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 48px;
+  box-sizing: border-box;
+}
+
+.figma-progress-pie__visual {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.figma-progress-pie__legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--va-screen-size-switch-gap-xs, 4px);
+  width: 100%;
+  margin-top: 4px;
+  font: 400 10px/1.4 "IBM Plex Mono", "Instrument Sans", monospace, sans-serif;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+}
+
+
+/* =========================================================================
+   3. PROGRESS DONUT (Hollow Ring with Center Legend)
+   ========================================================================= */
+.figma-progress-donut {
+  display: inline-flex;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.figma-progress-donut__svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.figma-progress-donut__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font: 400 10px/1.4 "IBM Plex Mono", "Instrument Sans", monospace, sans-serif;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+  pointer-events: none;
+}
+
+
+/* =========================================================================
+   4. LOADERS (Circular, Bar, Skeleton)
+   ========================================================================= */
+.figma-loader {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Circular Loader */
+.figma-loader--circular {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.figma-loader__spinner {
+  width: 100%;
+  height: 100%;
+  animation: figma-spin 1s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes figma-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Bar Loader */
+.figma-loader--bar {
+  width: 221px;
+  height: 2px;
+  max-height: 8px;
+  background: var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7);
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  overflow: hidden;
+  position: relative;
+}
+
+.figma-loader__bar-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--va-semantic-color-tokens-status-info-fill, #6f2ee1);
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  animation: figma-bar-slide 1.5s ease-in-out infinite;
+}
+
+@keyframes figma-bar-slide {
+  0% { left: -35%; right: 100%; }
+  60% { left: 100%; right: -90%; }
+  100% { left: 100%; right: -90%; }
+}
+
+/* Skeleton Loader */
+.figma-loader--skeleton {
+  width: 221px;
+  height: 91px;
+  background: var(--va-semantic-color-tokens-background-neutral-raised, #e5e0db);
+  border-radius: var(--va-screen-size-switch-corner-radius-m, 8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.figma-loader--skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: figma-shimmer 1.8s infinite;
+}
+
+@keyframes figma-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+/* =========================================================================
+   5. SEGMENTED CHILD (Segmented Stage Component)
+   ========================================================================= */
+.figma-segmented-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 130px;
+  box-sizing: border-box;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+}
+
+.figma-segmented-child[data-description="false"] {
+  gap: var(--va-screen-size-switch-gap-xs, 4px);
+}
+
+.figma-segmented-child__header {
+  display: flex;
+  align-items: center;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+  width: 100%;
+}
+
+.figma-segmented-child__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7);
+  border-radius: var(--va-screen-size-switch-corner-radius-s, 4px);
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+}
+
+.figma-segmented-child[data-description="false"] .figma-segmented-child__icon-wrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.figma-segmented-child[data-type="In Progress"] .figma-segmented-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-border-primary, #3b672d);
+}
+
+.figma-segmented-child[data-type="Error"] .figma-segmented-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-status-error-surface, #fff8f8);
+}
+
+.figma-segmented-child[data-type="Warning"] .figma-segmented-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-status-warning-surface, #fff8f0);
+}
+
+.figma-segmented-child__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figma-segmented-child__details {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.figma-segmented-child__title {
+  font: 600 18px/1.25 "DM Sans", "Instrument Sans", sans-serif;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+  margin: 0;
+  width: 100%;
+}
+
+.figma-segmented-child[data-description="false"] .figma-segmented-child__title {
+  font: 500 14px/1.5 "Inter", "Instrument Sans", sans-serif;
+}
+
+.figma-segmented-child__body {
+  font: 400 14px/1.5 "Inter", "Instrument Sans", sans-serif;
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle, #564636);
+  margin: 0;
+  width: 100%;
+}
+
+.figma-segmented-child__progress {
+  height: 4px;
+  width: 100%;
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  flex-shrink: 0;
+  background: var(--va-semantic-color-tokens-foreground-neutral-subtle, #564636);
+}
+
+.figma-segmented-child[data-type="In Progress"] .figma-segmented-child__progress {
+  background: var(--va-semantic-color-tokens-border-primary, #3b672d);
+}
+
+.figma-segmented-child[data-type="Completed"] .figma-segmented-child__progress {
+  background: var(--va-semantic-color-tokens-status-success-fill, #006c2c);
+}
+
+.figma-segmented-child[data-type="Error"] .figma-segmented-child__progress {
+  background: var(--va-semantic-color-tokens-status-error-fill, #bc0016);
+}
+
+.figma-segmented-child[data-type="Warning"] .figma-segmented-child__progress {
+  background: var(--va-semantic-color-tokens-status-warning-fill, #a53800);
+}
+
+
+/* =========================================================================
+   6. STEPPER CHILD (Ordered Step Component)
+   ========================================================================= */
+.figma-stepper-child {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+}
+
+.figma-stepper-child[data-description="false"] {
+  gap: var(--va-screen-size-switch-gap-xs, 4px);
+}
+
+.figma-stepper-child__track {
+  width: 4px;
+  border-radius: var(--va-screen-size-switch-corner-radius-l, 10px);
+  flex-shrink: 0;
+  background: var(--va-semantic-color-tokens-foreground-neutral-subtle, #564636);
+  min-height: 24px;
+}
+
+.figma-stepper-child[data-type="In Progress"] .figma-stepper-child__track {
+  background: var(--va-semantic-color-tokens-border-primary, #3b672d);
+}
+
+.figma-stepper-child[data-type="Completed"] .figma-stepper-child__track {
+  background: var(--va-semantic-color-tokens-status-success-fill, #006c2c);
+}
+
+.figma-stepper-child[data-type="Error"] .figma-stepper-child__track {
+  background: var(--va-semantic-color-tokens-status-error-fill, #bc0016);
+}
+
+.figma-stepper-child[data-type="Warning"] .figma-stepper-child__track {
+  background: var(--va-semantic-color-tokens-status-warning-fill, #a53800);
+}
+
+.figma-stepper-child__content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.figma-stepper-child__header {
+  display: flex;
+  align-items: center;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+  width: 100%;
+}
+
+.figma-stepper-child__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7);
+  border-radius: var(--va-screen-size-switch-corner-radius-s, 4px);
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+}
+
+.figma-stepper-child[data-description="false"] .figma-stepper-child__icon-wrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.figma-stepper-child[data-type="In Progress"] .figma-stepper-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-border-primary, #3b672d);
+}
+
+.figma-stepper-child[data-type="Error"] .figma-stepper-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-status-error-surface, #fff8f8);
+}
+
+.figma-stepper-child[data-type="Warning"] .figma-stepper-child__icon-wrapper {
+  border: 1px solid var(--va-semantic-color-tokens-status-warning-surface, #fff8f0);
+}
+
+.figma-stepper-child__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figma-stepper-child__details {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.figma-stepper-child__title {
+  font: 600 18px/1.25 "DM Sans", "Instrument Sans", sans-serif;
+  color: var(--va-semantic-color-tokens-foreground-neutral-default, #231d19);
+  margin: 0;
+  width: 100%;
+}
+
+.figma-stepper-child[data-description="false"] .figma-stepper-child__title {
+  font: 500 14px/1.5 "Inter", "Instrument Sans", sans-serif;
+}
+
+.figma-stepper-child__body {
+  font: 400 14px/1.5 "Inter", "Instrument Sans", sans-serif;
+  color: var(--va-semantic-color-tokens-foreground-neutral-subtle, #564636);
+  margin: 0;
+  width: 100%;
+}
+
+.figma-stepper-child__slot {
+  flex: 1 1 0%;
+  min-height: 0;
+  width: 100%;
+}
+
+/* =========================================================================
+   7. CONTAINER LAYOUTS
+   ========================================================================= */
+.figma-segmented-progress {
+  display: flex;
+  align-items: stretch;
+  gap: var(--va-screen-size-switch-gap-s, 8px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.figma-stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}

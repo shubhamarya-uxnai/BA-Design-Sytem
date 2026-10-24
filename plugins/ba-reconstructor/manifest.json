@@ -1,0 +1,14 @@
+{
+  "name": "BA Design System Reconstructor",
+  "id": "ba-design-system-reconstructor",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "Communicates with local extractor bridge to inspect live websites and load components."
+  }
+}

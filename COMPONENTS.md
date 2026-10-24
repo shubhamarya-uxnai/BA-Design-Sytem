@@ -41,5 +41,11 @@ The adapter imports React 19.1.0 and React DOM through esm.sh. It observes added
 - Display: The Seasons; other typography: Instrument Sans.
 - Icon dimensions: Screen Size Switch / Width and Height / L.
 - InputField keeps independent leading, trailing and action slots; action can contain a complete button or dropdown control.
+- ProgressBar: Linear track supporting Not Started, In Progress, Error, Warning, and Success states with percentage legend and status icons.
+- ProgressPie: 48px circular pie indicator with external percentage legend.
+- ProgressDonut: 48px hollow donut indicator with centered percentage legend and status indicators.
+- Loader: Indeterminate loading indicators supporting Circular spinner, Bar slide, and Skeleton pulse.
+- SegmentedChild: Named process stage child with Default, In Progress, Completed, Error, and Warning states and optional description.
+- StepperChild: Ordered step child with status tracking bar, title, description, and extensible children slot.
 
 Versions are pinned. Updating BA alone does not change a consumer until its stylesheet and adapter URLs adopt the new version.

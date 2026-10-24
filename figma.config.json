@@ -1,0 +1,5 @@
+{
+  "codeConnect": {
+    "include": ["packages/react/src/**/*.figma.ts"]
+  }
+}
