@@ -1,6 +1,6 @@
 /** Shared component contracts. Consumer tools keep their own layout and behavior. */
-export const VERSION = '0.2.0';
-export const componentNames = ['Page','Sidebar','Topbar','Surface','Button','IconButton','InputField','Display'];
+export const VERSION = '0.3.0';
+export const componentNames = ['Page','Sidebar','Topbar','Surface','Button','IconButton','InputField','Display','ProgressBar','ProgressPie','ProgressDonut','Loader','SegmentedChild','StepperChild'];
 export function componentAttributes(name, props = {}) {
   const attrs = {'data-ba-component': name};
   if (name === 'Button' || name === 'IconButton') {
@@ -9,6 +9,16 @@ export function componentAttributes(name, props = {}) {
     attrs['data-ba-size'] = props.size || 'small';
   }
   if (name === 'Surface') attrs['data-ba-surface'] = props.surface || 'default';
+  if (name === 'ProgressBar' || name === 'ProgressPie' || name === 'ProgressDonut') {
+    attrs['data-ba-progress'] = props.progress !== undefined ? String(props.progress) : '0';
+    attrs['data-ba-type'] = props.type || 'Default';
+  }
+  if (name === 'Loader') {
+    attrs['data-ba-type'] = props.type || 'Circular';
+  }
+  if (name === 'SegmentedChild' || name === 'StepperChild') {
+    attrs['data-ba-status'] = props.status || 'Default';
+  }
   return attrs;
 }
 export function adoptComponent(element, name, props = {}) {
@@ -21,11 +31,11 @@ export function adoptComponent(element, name, props = {}) {
 /** React is passed in so consumers use a single React instance. */
 export function createReactComponents(React) {
   const {createElement: h, useLayoutEffect} = React;
-  const make = (name, tag) => function Component({target, children, variant, tone, size, surface, ...props}) {
-    const attrs = componentAttributes(name,{variant,tone,size,surface});
+  const make = (name, tag) => function Component({target, children, variant, tone, size, surface, progress, type, status, ...props}) {
+    const attrs = componentAttributes(name,{variant,tone,size,surface,progress,type,status});
     useLayoutEffect(() => {
-      if (target) adoptComponent(target,name,{variant,tone,size,surface});
-    },[target,variant,tone,size,surface]);
+      if (target) adoptComponent(target,name,{variant,tone,size,surface,progress,type,status});
+    },[target,variant,tone,size,surface,progress,type,status]);
     // Adoption keeps the original DOM node and its existing application listeners.
     if (target) return null;
     if (name === 'Button' || name === 'IconButton') props.type ??= 'button';
@@ -35,7 +45,13 @@ export function createReactComponents(React) {
     Page: make('Page','main'), Sidebar: make('Sidebar','aside'),
     Topbar: make('Topbar','header'), Surface: make('Surface','section'),
     Button: make('Button','button'), IconButton: make('IconButton','button'),
-    Display: make('Display','h1')
+    Display: make('Display','h1'),
+    ProgressBar: make('ProgressBar','div'),
+    ProgressPie: make('ProgressPie','div'),
+    ProgressDonut: make('ProgressDonut','div'),
+    Loader: make('Loader','div'),
+    SegmentedChild: make('SegmentedChild','div'),
+    StepperChild: make('StepperChild','div')
   };
   components.InputField = function InputField({target,id,label,leading,trailing,action,message,invalid,disabled,...props}) {
     useLayoutEffect(()=>{if(target)adoptComponent(target,'InputField')},[target]);
@@ -72,5 +88,7 @@ export function collectComponents(document) {
     }});
   });
   add('input:not([type=file]):not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]), textarea, select','InputField');
+  add('.progress, .progress-bar, progress, [role="progressbar"]','ProgressBar');
+  add('.loader, .loading, .spinner','Loader');
   return [...entries.values()];
 }

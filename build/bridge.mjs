@@ -42,11 +42,16 @@ const KNOWN_BA_COLORS = [
   "rgb(95, 102, 128)",
   "rgb(16, 12, 9)",
   "rgb(63, 51, 41)",
+  "rgb(154, 131, 109)",
   "rgb(251, 249, 247)",
   "rgb(194, 185, 175)",
+  "rgb(35, 29, 25)",
+  "rgb(98, 148, 81)",
+  "rgb(127, 171, 112)",
   "rgb(125, 140, 255)",
   "rgb(73, 179, 116)",
-  "rgb(215, 43, 51)"
+  "rgb(215, 43, 51)",
+  "rgb(220, 136, 137)"
 ];
 
 async function resolveNavigableUrl(target) {
@@ -131,7 +136,7 @@ export async function extractPageToFigmaAST(targetInput, viewport = { width: 144
 
     const { sceneAST, audit } = await page.evaluate(async (knownColors) => {
       const TOKEN_MAP = {
-        // Core Design System Tokens
+        // Standard Cool Dark Tokens
         "rgb(8, 12, 23)": { name: "Background/Neutral/Page", token: "--background", variableId: "VariableID:4148:1645" },
         "rgb(17, 18, 25)": { name: "Background/Neutral/Default", token: "--card", variableId: "VariableID:4148:1646" },
         "rgb(23, 26, 36)": { name: "Background/Neutral/Raised", token: "--secondary", variableId: "VariableID:4148:1647" },
@@ -146,12 +151,17 @@ export async function extractPageToFigmaAST(targetInput, viewport = { width: 144
 
         // Studio Warm Dark Theme mappings
         "rgb(16, 12, 9)": { name: "Background/Neutral/Page", token: "--background", variableId: "VariableID:4148:1645" },
-        "rgb(63, 51, 41)": { name: "border/default", token: "--border", variableId: "VariableID:4148:1613" },
+        "rgb(63, 51, 41)": { name: "Background/Neutral/Raised", token: "--card", variableId: "VariableID:4148:1647" },
+        "rgb(154, 131, 109)": { name: "border/default", token: "--border", variableId: "VariableID:4148:1613" },
         "rgb(251, 249, 247)": { name: "Foreground/Neutral/Default", token: "--foreground", variableId: "VariableID:4148:1658" },
         "rgb(194, 185, 175)": { name: "Foreground/Neutral/Subtle", token: "--muted-foreground", variableId: "VariableID:4148:1659" },
+        "rgb(35, 29, 25)": { name: "Foreground/Inverse/Default", token: "--foreground-inverse", variableId: "VariableID:4148:1665" },
+        "rgb(98, 148, 81)": { name: "Background/Primary/Default", token: "--primary", variableId: "VariableID:4148:1650" },
+        "rgb(127, 171, 112)": { name: "border/Primary", token: "--border-primary", variableId: "VariableID:4148:1615" },
         "rgb(125, 140, 255)": { name: "Background/Primary/Default", token: "--primary", variableId: "VariableID:4148:1650" },
         "rgb(73, 179, 116)": { name: "status/success/surface", token: "--success", variableId: "VariableID:4148:1624" },
-        "rgb(215, 43, 51)": { name: "status/error/surface", token: "--destructive", variableId: "VariableID:4148:1616" }
+        "rgb(215, 43, 51)": { name: "status/error/surface", token: "--destructive", variableId: "VariableID:4148:1616" },
+        "rgb(220, 136, 137)": { name: "status/error/border", token: "--border-destructive", variableId: "VariableID:4148:1619" }
       };
 
       const detectedIconsSet = new Set();
@@ -691,6 +701,10 @@ export async function extractPageToFigmaAST(targetInput, viewport = { width: 144
 
         const borderWidth = parseFloat(cs.borderWidth) || 0;
         const borderColor = borderWidth > 0 ? parseRgb(cs.borderColor) : null;
+        let boundBorderToken = null;
+        if (borderWidth > 0 && cs.borderColor && TOKEN_MAP[cs.borderColor]) {
+          boundBorderToken = TOKEN_MAP[cs.borderColor];
+        }
 
         // Traverse childNodes (preserves inline text nodes next to elements)
         const children = [];
@@ -712,6 +726,7 @@ export async function extractPageToFigmaAST(targetInput, viewport = { width: 144
                 fontFamily: fontFam,
                 isUnmappedFont: !isInter,
                 color: parseRgb(cs.color) || { r: 0.9, g: 0.9, b: 0.95, a: 1 },
+                boundToken: TOKEN_MAP[cs.color] || null,
                 textAlign: cs.textAlign.toUpperCase() === "CENTER" ? "CENTER" : "LEFT"
               });
             }
@@ -733,10 +748,11 @@ export async function extractPageToFigmaAST(targetInput, viewport = { width: 144
           cornerRadius: Math.round(radius),
           fill: bgColor,
           boundToken,
-          isUnmappedColor,
-          unmappedHex,
           borderWidth: Math.round(borderWidth),
           borderColor,
+          boundBorderToken,
+          isUnmappedColor,
+          unmappedHex,
           children
         };
       }
@@ -802,6 +818,24 @@ export function startBridgeServer() {
           timestamp: new Date().toISOString()
         })
       );
+    }
+
+    if (req.method === "GET" && parsedUrl.pathname === "/extract") {
+      const targetUrl = parsedUrl.searchParams.get("url");
+      if (!targetUrl) {
+        res.writeHead(400, { "Content-Type": "application/json" });
+        return res.end(JSON.stringify({ error: "Missing 'url' query parameter" }));
+      }
+      try {
+        console.log(`[Bridge GET] Extracting URL: ${targetUrl}`);
+        const result = await extractPageToFigmaAST(targetUrl);
+        res.writeHead(200, { "Content-Type": "application/json" });
+        return res.end(JSON.stringify(result));
+      } catch (err) {
+        console.error(`[Bridge Error] ${err.message}`);
+        res.writeHead(500, { "Content-Type": "application/json" });
+        return res.end(JSON.stringify({ error: err.message }));
+      }
     }
 
     if (req.method === "POST" && parsedUrl.pathname === "/extract") {

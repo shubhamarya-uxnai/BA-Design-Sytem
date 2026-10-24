@@ -72,7 +72,7 @@ for (const name of [...names].sort()) {
 }
 const scope = ':root, [data-theme], [data-contrast], [data-temperature], [data-text-scale], [data-screen], [lang]';
 const bridge = `${scope} {\n${aliases.join('\n')}\n}\n${shadcn}\n`;
-const bundle = ['tokens.css','components.css','text-styles.css','input-fields.css'].map(f=>read('dist/'+f)).join('\n');
+const bundle = ['tokens.css','components.css','text-styles.css','input-fields.css','chips-selection.css','progress-indicator.css'].map(f=>read('dist/'+f)).join('\n');
 const iconCSS = `.ds-button .ph, .ds-icon-button .ph { width: var(--va-screen-size-switch-width-and-height-l); height: var(--va-screen-size-switch-width-and-height-l); font-size: var(--va-screen-size-switch-width-and-height-l); }
 .material-symbols-rounded.ph { display: inline-flex; align-items: center; justify-content: center; font-family: 'Material Symbols Rounded'; font-weight: 400; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; white-space: nowrap; word-wrap: normal; font-feature-settings: 'liga'; }
 `;

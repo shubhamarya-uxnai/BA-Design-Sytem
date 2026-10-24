@@ -61,12 +61,37 @@ function base64ToUint8Array(base64) {
   return bytes;
 }
 
+async function getNodeSafely(id) {
+  if (!id) return null;
+  try {
+    if (typeof figma.getNodeByIdAsync === "function") {
+      const n = await figma.getNodeByIdAsync(id);
+      if (n) return n;
+    }
+  } catch (_) {}
+  try {
+    return figma.getNodeById(id);
+  } catch (_) {}
+  return null;
+}
+
+async function ensurePagesLoaded() {
+  for (const page of figma.root.children) {
+    if (page && typeof page.loadAsync === "function") {
+      try {
+        await page.loadAsync();
+      } catch (_) {}
+    }
+  }
+}
+
 figma.ui.onmessage = async (msg) => {
   if (msg.type === "CHECK_LOCAL_SYSTEM") {
+    await ensurePagesLoaded();
     let foundComponents = 0;
     for (const [name, id] of Object.entries(LOCAL_COMPONENT_MAP)) {
       try {
-        const node = figma.getNodeById(id);
+        const node = await getNodeSafely(id);
         if (node) foundComponents++;
       } catch (_) {}
     }
@@ -186,7 +211,7 @@ figma.ui.onmessage = async (msg) => {
       const componentSetCache = new Map();
       for (const [name, id] of Object.entries(LOCAL_COMPONENT_MAP)) {
         try {
-          let node = figma.getNodeById(id);
+          let node = await getNodeSafely(id);
           if (!node) {
             node = figma.root.findOne(
               (n) => n && n.type === "COMPONENT_SET" && n.name && (n.name === name || n.name.toLowerCase().includes(name.toLowerCase()))
@@ -208,6 +233,11 @@ figma.ui.onmessage = async (msg) => {
           iconComponentMap.set(cName, comp);
           const cleanName = cName.replace(/^(bxs?-|bx-|icon-|material-symbols-)/, "");
           iconComponentMap.set(cleanName, comp);
+          const parts = cName.split("/");
+          const baseName = parts[parts.length - 1].trim();
+          iconComponentMap.set(baseName, comp);
+          const cleanBase = baseName.replace(/^(bxs?-|bx-|icon-|material-symbols-)/, "");
+          iconComponentMap.set(cleanBase, comp);
         }
       } catch (err) {
         console.warn("Could not index components:", err);
@@ -329,7 +359,7 @@ figma.ui.onmessage = async (msg) => {
                 // 1. Try resolving exact variant by variantId if available
                 if (spec.variantId) {
                   try {
-                    const node = figma.getNodeById(spec.variantId);
+                    const node = await getNodeSafely(spec.variantId);
                     if (node && (node.type === "COMPONENT" || node.type === "COMPONENT_SET")) {
                       matchedVariant = node;
                     }
@@ -364,7 +394,8 @@ figma.ui.onmessage = async (msg) => {
 
               if (matchedVariant && typeof matchedVariant.createInstance === "function") {
                 const instance = matchedVariant.createInstance();
-                instance.name = spec.props?.Button ? `Button / ${spec.props.Button}` : (spec.name || spec.component);
+                const buttonLabel = String(spec.props?.Button || spec.label || "Button");
+                instance.name = `Button / ${buttonLabel}`;
 
                 const currentProps = instance.componentProperties || {};
                 const propsToSet = {};
@@ -372,8 +403,8 @@ figma.ui.onmessage = async (msg) => {
                 if (spec.component === "Button") {
                   for (const [propName, propDef] of Object.entries(currentProps)) {
                     if (!propDef) continue;
-                    if (propDef.type === "TEXT" && spec.props?.Button) {
-                      propsToSet[propName] = String(spec.props.Button);
+                    if (propDef.type === "TEXT") {
+                      propsToSet[propName] = buttonLabel;
                     }
                     if (propDef.type === "BOOLEAN" && propName.toLowerCase().includes("leading")) {
                       propsToSet[propName] = Boolean(spec.props?.hasLeadingIcon);
@@ -405,28 +436,42 @@ figma.ui.onmessage = async (msg) => {
                   }
                 }
 
-                if (Object.keys(propsToSet).length > 0) {
+                for (const [propKey, propVal] of Object.entries(propsToSet)) {
                   try {
-                    instance.setProperties(propsToSet);
+                    instance.setProperties({ [propKey]: propVal });
                   } catch (err) {
-                    console.warn(`setProperties warning on ${spec.component}:`, err);
+                    console.warn(`setProperties warning on ${spec.component} [${propKey}]:`, err);
                   }
                 }
 
                 // Guarantee text layer and style is directly updated on the instance
-                if (spec.component === "Button" && spec.props?.Button) {
+                if (spec.component === "Button") {
                   const textChildren = instance.findAllWithCriteria({ types: ["TEXT"] });
                   for (const child of textChildren) {
                     if (child) {
                       try {
                         await figma.loadFontAsync(child.fontName);
-                        child.characters = String(spec.props.Button);
-                        const btnStyle = resolveTextStyle(12, "Medium");
+                        child.characters = buttonLabel;
+                        const btnStyle = resolveTextStyle(12, "Medium") || resolveTextStyle(12, "Regular");
                         if (btnStyle) {
                           await figma.loadFontAsync(btnStyle.fontName);
                           child.textStyleId = btnStyle.id;
                         }
                       } catch (_) {}
+                    }
+                  }
+
+                  // Explicitly toggle icon layer visibility if leading/tailing icon isn't desired
+                  if (!spec.props?.hasLeadingIcon) {
+                    const leadingNodes = instance.findAll((n) => n.name === "download" || n.name.toLowerCase().includes("leading"));
+                    for (const n of leadingNodes) {
+                      try { n.visible = false; } catch (_) {}
+                    }
+                  }
+                  if (!spec.props?.hasTailingIcon) {
+                    const tailingNodes = instance.findAll((n) => n.name === "business" || n.name.toLowerCase().includes("tailing"));
+                    for (const n of tailingNodes) {
+                      try { n.visible = false; } catch (_) {}
                     }
                   }
                 }
@@ -529,7 +574,24 @@ figma.ui.onmessage = async (msg) => {
           }
 
           if (spec.color) {
-            t.fills = [{ type: "SOLID", color: { r: spec.color.r, g: spec.color.g, b: spec.color.b } }];
+            const solidPaint = { type: "SOLID", color: { r: spec.color.r, g: spec.color.g, b: spec.color.b } };
+            if (spec.boundToken) {
+              const varNode =
+                variableMap.get(spec.boundToken.variableId) ||
+                variableMap.get(spec.boundToken.name.toLowerCase());
+              if (varNode) {
+                try {
+                  const bound = figma.variables.setBoundVariableForPaint(solidPaint, "color", varNode);
+                  t.fills = [bound];
+                } catch (_) {
+                  t.fills = [solidPaint];
+                }
+              } else {
+                t.fills = [solidPaint];
+              }
+            } else {
+              t.fills = [solidPaint];
+            }
           }
           t.textAlignHorizontal = spec.textAlign || "LEFT";
           if (t.characters.length > 50) {
@@ -557,12 +619,14 @@ figma.ui.onmessage = async (msg) => {
           } catch (_) {}
         }
 
-        frame.layoutMode = spec.layoutMode || "VERTICAL";
         if (spec.layoutWrap === "WRAP") {
+          frame.layoutMode = "HORIZONTAL";
           try {
             frame.layoutWrap = "WRAP";
             frame.counterAxisSpacing = spec.itemSpacing || 8;
           } catch (_) {}
+        } else {
+          frame.layoutMode = spec.layoutMode || "VERTICAL";
         }
         frame.itemSpacing = spec.itemSpacing || 0;
         frame.cornerRadius = spec.cornerRadius || 0;
@@ -593,8 +657,10 @@ figma.ui.onmessage = async (msg) => {
             color: { r: spec.borderColor.r, g: spec.borderColor.g, b: spec.borderColor.b },
             opacity: spec.borderColor.a !== undefined ? spec.borderColor.a : 1
           };
+          const borderToken = spec.boundBorderToken || { variableId: "VariableID:4148:1613", name: "border/default" };
           const borderVar =
-            variableMap.get("VariableID:4148:1613") ||
+            variableMap.get(borderToken.variableId) ||
+            variableMap.get(borderToken.name.toLowerCase()) ||
             variableMap.get("border/default") ||
             variableMap.get("borderdefault");
           if (borderVar) {
@@ -618,7 +684,12 @@ figma.ui.onmessage = async (msg) => {
               if (childNode) {
                 frame.appendChild(childNode);
                 if ("layoutSizingHorizontal" in childNode) {
-                  if (childSpec.layoutWrap === "WRAP" || childSpec.flexGrow > 0 || (frame.layoutMode === "VERTICAL" && childSpec.width >= (spec.width || 1000) * 0.85)) {
+                  if (frame.layoutWrap === "WRAP") {
+                    childNode.layoutSizingHorizontal = "FIXED";
+                    if (childSpec.width && childSpec.height) {
+                      try { childNode.resize(childSpec.width, childSpec.height); } catch (_) {}
+                    }
+                  } else if (childSpec.layoutWrap === "WRAP" || childSpec.flexGrow > 0 || (frame.layoutMode === "VERTICAL" && childSpec.width >= (spec.width || 1000) * 0.85)) {
                     childNode.layoutSizingHorizontal = "FILL";
                   } else if (childSpec.type === "FRAME" && (!childSpec.children || childSpec.children.length === 0)) {
                     childNode.layoutSizingHorizontal = "FIXED";
@@ -627,7 +698,7 @@ figma.ui.onmessage = async (msg) => {
                   }
                 }
                 if ("layoutSizingVertical" in childNode) {
-                  if (childSpec.name?.includes("aside")) {
+                  if (childSpec.name?.includes("aside") || childSpec.name?.includes("settings") || childSpec.name?.includes("presets")) {
                     childNode.layoutSizingVertical = "HUG";
                   } else if (childSpec.flexGrow > 0 && frame.layoutMode === "VERTICAL") {
                     childNode.layoutSizingVertical = "FILL";
