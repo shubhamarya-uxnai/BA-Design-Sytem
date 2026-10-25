@@ -8,7 +8,11 @@ const root = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   root,
-  base: "/BA-Design-Sytem/",
+  base: "./",
+  server: {
+    port: 5174,
+    host: true,
+  },
   plugins: [react(), {
     name: "figma-contract-asset",
     configureServer(server) {

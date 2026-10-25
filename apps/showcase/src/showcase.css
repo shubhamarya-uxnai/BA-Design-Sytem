@@ -49,3 +49,8 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px cla
 .loader-preview .figma-loader--skeleton { width:180px; height:60px; }
 .segmented-preview { display:flex; gap:12px; width:100%; justify-content:center; overflow-x:auto; }
 .stepper-preview { display:flex; flex-direction:column; gap:14px; width:100%; max-width:260px; }
+.compound-segmented-preview { display: flex; width: 100%; padding: 24px; align-items: center; justify-content: center; }
+.compound-segmented-preview .figma-segmented-progress { width: 100%; }
+.compound-stepper-preview { display: flex; width: 100%; padding: 20px 24px; align-items: center; justify-content: center; }
+.compound-stepper-preview .figma-stepper { width: 100%; max-width: 280px; }
+
