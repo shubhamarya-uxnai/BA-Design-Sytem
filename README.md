@@ -2,7 +2,7 @@
 
 ## Native SwiftUI package
 
-`packages/swiftui/` is the native implementation of BA tokens and the first controls used by the mockup editor. Run `npm run swiftui:tokens` to regenerate its token resource from the same Figma export as React, then `cd packages/swiftui && swift test`. See [the SwiftUI package README](packages/swiftui/README.md).
+`packages/swiftui/` is the native implementation of BA tokens and the first controls used by the mockup editor. Run `npm run swiftui:tokens` to regenerate its token resource from the same Figma export as React, then `swift test` from the repository root. The root `Package.swift` lets other Swift apps depend directly on this GitHub repository. See [the SwiftUI package README](packages/swiftui/README.md).
 
 ## React component package
 
