@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "node build/build.mjs",
+    "swiftui:tokens": "node build/swiftui-tokens.mjs",
     "validate": "node build/validate.mjs",
     "components": "python3 build/generate_components.py && node build/consumer-bundle.mjs && node build/figma-parity.mjs",
     "code-connect": "node build/code-connect.mjs status",
