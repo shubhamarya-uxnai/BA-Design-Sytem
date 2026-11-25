@@ -3,11 +3,11 @@
   "brand": "Bunny Are",
   "source": {
     "type": "figma",
-    "fileKey": "TeshjuZ2KBKj4xhK9r2OHU",
-    "fileName": "BA Design System",
-    "url": "https://www.figma.com/design/TeshjuZ2KBKj4xhK9r2OHU/BA-Design-System",
-    "exportedAt": "2026-10-20",
-    "note": "Token foundation export only; component implementation is intentionally deferred."
+    "fileKey": "EefilJXthzHkwOYQtwI4nd",
+    "fileName": "DUSQ",
+    "url": "https://www.figma.com/design/EefilJXthzHkwOYQtwI4nd/DUSQ",
+    "exportedAt": "2026-11-16",
+    "note": "DUSQ Design System live file based on BA Design System token architecture."
   },
   "collections": [
     { "name": "Typography", "file": "collections/typography.json" },

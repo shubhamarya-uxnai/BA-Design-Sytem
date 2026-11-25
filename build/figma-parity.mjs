@@ -14,7 +14,7 @@ const innerShadow=n=>(n.effects||[]).filter(e=>e.visible!==false&&e.type==='INNE
 const radius=n=>bind(n,'topLeftRadius')||px(n,'cornerRadius');
 const rule=(selector,items)=>`${selector} {\n${Object.entries(items).filter(([,v])=>v!=null).map(([k,v])=>`  ${k}: ${v};`).join('\n')}\n}\n`;
 const weight=style=>/Semi.?Bold/i.test(style)?600:/Extra.?Bold/i.test(style)?800:/Bold/i.test(style)?700:/Medium/i.test(style)?500:400;
-const textStyle=n=>({'font-family':JSON.stringify(n.text.fontName.family==='Inter'?'Instrument Sans':n.text.fontName.family),'font-size':px(n,'fontSize')==='0px'?`${n.text.fontSize}px`:px(n,'fontSize'),'font-weight':weight(n.text.fontName.style),'font-style':/Italic/.test(n.text.fontName.style)?'italic':'normal','line-height':n.text.lineHeight.unit==='PERCENT'?String(n.text.lineHeight.value/100):n.text.lineHeight.unit==='PIXELS'?`${n.text.lineHeight.value}px`:'normal','letter-spacing':n.text.letterSpacing.value?`${n.text.letterSpacing.value}px`:'normal',color:paint(n,'fills')});
+const textStyle=n=>({'font-family':`${JSON.stringify(n.text.fontName.family==='Inter'?'Instrument Sans':n.text.fontName.family)}, sans-serif`,'font-size':px(n,'fontSize')==='0px'?`${n.text.fontSize}px`:px(n,'fontSize'),'font-weight':weight(n.text.fontName.style),'font-style':/Italic/.test(n.text.fontName.style)?'italic':'normal','line-height':n.text.lineHeight.unit==='PERCENT'?String(n.text.lineHeight.value/100):n.text.lineHeight.unit==='PIXELS'?`${n.text.lineHeight.value}px`:'normal','letter-spacing':n.text.letterSpacing.value?`${n.text.letterSpacing.value}px`:'normal',color:paint(n,'fills')});
 let css=`/* Generated directly from the live Figma component snapshots. */
 .figma-button { appearance:none; position:relative; display:inline-flex; align-items:center; justify-content:center; isolation:isolate; box-sizing:border-box; margin:0; cursor:pointer; text-decoration:none; outline:none; max-width:600px; flex:none; }
 .figma-button:disabled { cursor:not-allowed; }
@@ -78,4 +78,5 @@ for(const v of specs.input.variants){
 fs.writeFileSync('dist/figma-components.css',css);
 fs.writeFileSync('dist/figma-contract.json',JSON.stringify(Object.fromEntries(Object.entries(specs).map(([name,d])=>[name,{source:d.source,variants:d.variants.map(v=>({id:v.id,name:v.name,properties:v.propValues,width:v.root.width,height:v.root.height,focusRing:name==='input'?v.root.children.some(n=>n.children?.some(c=>c.name==='Focus Ring')):v.children.some(n=>n.name==='Focus Ring')}))}])) ,null,2)+'\n');
 fs.copyFileSync('source/figma-components.mjs','dist/figma-components.mjs');
+if(fs.existsSync('source/progress-indicator.css'))fs.copyFileSync('source/progress-indicator.css','dist/progress-indicator.css');
 console.log('Generated Figma parity CSS and exact property contracts: 24 buttons, 24 icon buttons, 8 fields.');

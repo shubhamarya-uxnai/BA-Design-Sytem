@@ -275,13 +275,14 @@ def generate_text_styles() -> tuple[str, list[dict[str, Any]]]:
         "/* Rebuild with: npm run components */",
     ]
     records: list[dict[str, Any]] = []
+    mobile_lines: list[str] = []
     for style in spec["styles"]:
         parts = style["name"].split("/")
         group = parts[0]
         class_name = ".va-text-" + "-".join(slug(part) for part in parts)
         size = style["fontSize"]
         size_name = str(int(size)) if float(size).is_integer() else str(size)
-        family_group = "Title" if group in {"Title", "Heading"} else "Body"
+        family_group = "Display" if group == "Title" else "Title" if group == "Heading" else "Body"
         family_token = named_ref("Typography", f"Font Family/{family_group}")
         weight_name, weight_number, font_style = weight_info(style.get("fontName"))
         weight_token = named_ref("Typography", f"Font Weights/{weight_name}/Regular")
@@ -303,6 +304,10 @@ def generate_text_styles() -> tuple[str, list[dict[str, Any]]]:
         if style.get("textDecoration") == "UNDERLINE":
             items.append(("text-decoration", "underline"))
         lines.append(class_name + " {\n" + "\n".join(declarations(items)) + "\n}")
+        mobile_size = style.get("mobileFontSize")
+        if mobile_size is not None and mobile_size != size:
+            mobile_name = str(int(mobile_size)) if float(mobile_size).is_integer() else str(mobile_size)
+            mobile_lines.append(class_name + " { font-size: " + named_ref("Typography", f"Font Sizes/{mobile_name}") + "; }")
         records.append({
             "name": style["name"],
             "className": class_name[1:],
@@ -313,6 +318,8 @@ def generate_text_styles() -> tuple[str, list[dict[str, Any]]]:
             "fontWeightCss": weight_number,
             "fontStyle": font_style,
         })
+    if mobile_lines:
+        lines.append("@media (max-width: 767px) {\n" + "\n".join(mobile_lines) + "\n}")
     return "\n\n".join(lines) + "\n", records
 
 

@@ -1,4 +1,8 @@
-node_modules/
-.DS_Store
-*.log
-site/
+node_modules
+apps/dusq-preview/dist/
+apps/dusq-storybook/dist/
+apps/showcase/dist/
+.vercel
+.bridge/
+
+

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedSideEffectImports": false,
+    "paths": {
+      "@dusq-design-system/react": ["../../packages/react/src/index.ts"],
+      "@dusq-design-system/tokens/*": ["../../dist/*"],
+      "@ba-design-system/react": ["../../packages/react/src/index.ts"],
+      "@ba-design-system/tokens/*": ["../../dist/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

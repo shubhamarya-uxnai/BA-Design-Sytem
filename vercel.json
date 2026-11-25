@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "npm run dusq:build && npm run storybook:build && cp -R apps/dusq-storybook/dist apps/dusq-preview/dist/storybook",
+  "outputDirectory": "apps/dusq-preview/dist",
+  "rewrites": [
+    {
+      "source": "/storybook",
+      "destination": "/storybook/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

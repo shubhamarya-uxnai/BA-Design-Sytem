@@ -19,7 +19,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": "The Seasons"
+        "3:2": "Plus Jakarta Sans"
       }
     },
     {
@@ -30,7 +30,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": "Instrument Sans"
+        "3:2": "Arial"
       }
     },
     {
@@ -569,7 +569,7 @@
       "description": "",
       "hiddenFromPublishing": false,
       "valuesByMode": {
-        "3:2": "Instrument Sans"
+        "3:2": "Helvetica Neue"
       }
     }
   ]

@@ -44,7 +44,9 @@ export function createFigmaComponents(React){
    const enabled=props.Enabled===undefined?true:bool(props.Enabled),live=props.interactive!==false;
    const variant=resolveButton({...props,Hover:live?(hover||bool(props.Hover)):props.Hover,Pressed:live?(pressed||bool(props.Pressed)):props.Pressed});
    if(!variant)throw Error('Button properties do not identify a Figma variant');
-   const leading=props['Leading Icon']===undefined?true:bool(props['Leading Icon']),trailing=props['Tailing Icon']===undefined?true:bool(props['Tailing Icon']);
+   const leadingRaw=props['Leading Icon']??props['Leading-Icon']??props.leadingIcon;
+   const trailingRaw=props['Tailing Icon']??props['Tailing-Icon']??props['Trailing Icon']??props.tailingIcon??props.trailingIcon;
+   const leading=leadingRaw===undefined?true:bool(leadingRaw),trailing=trailingRaw===undefined?true:bool(trailingRaw);
    const label=props.Button??props.children??'Button';
    return h('button',{id:props.id,className:'figma-button '+(props.className||''),type:props.htmlType||'button',disabled:!enabled,'data-figma-variant':variant.id,'data-figma-hover':bool(variant.properties.Hover),'data-figma-pressed':bool(variant.properties.Pressed),'data-default-label':label==='Button','data-focus-ring':bool(props['Focus Ring']),'aria-label':props['aria-label'],onClick:props.onClick,onPointerEnter:()=>{setHover(true);props.onMouseEnter?.()},onPointerLeave:()=>{setHover(false);setPressed(false);props.onMouseLeave?.()},onPointerDown:e=>{setPressed(true);props.onMouseDown?.(e)},onPointerUp:e=>{setPressed(false);props.onMouseUp?.(e)},onPointerCancel:()=>setPressed(false),onBlur:e=>{setPressed(false);props.onBlur?.(e)},onFocus:props.onFocus,onKeyDown:e=>{if(e.key===' '||e.key==='Enter')setPressed(true);props.onKeyDown?.(e)},onKeyUp:e=>{setPressed(false);props.onKeyUp?.(e)},title:props.title},
      leading&&h(Icon,{name:props['leading-icon']??'download',side:'leading',iconSet:props.iconSet,fill:props.iconFill,weight:props.iconWeight,grade:props.iconGrade,opsz:props.iconOpticalSize}),h('span',{className:'figma-label'},label),trailing&&h(Icon,{name:props['tailing-icon']??'business',side:'trailing',iconSet:props.iconSet,fill:props.iconFill,weight:props.iconWeight,grade:props.iconGrade,opsz:props.iconOpticalSize}),bool(variant.properties.Hover)&&h('span',{className:'figma-overlay','data-layer':'hover-pressed'}),h('span',{className:'figma-focus'}));
@@ -81,7 +83,9 @@ export function createFigmaComponents(React){
    const active=props.Active===undefined?true:bool(props.Active),live=props.interactive!==false;
    const value=props.value===undefined?text:props.value;
    const variant=resolveInput({...props,Hover:live?(hover||bool(props.Hover)):props.Hover,Typing:live?(focused||!!value||bool(props.Typing)):props.Typing,Typed:live?(!!value||bool(props.Typed)):props.Typed});
-   const showLabel=props.Label===undefined?true:bool(props.Label),leading=props['Leading Icon']===undefined?true:bool(props['Leading Icon']),trailing=props['Tailing Icon']===undefined?true:bool(props['Tailing Icon']);
+   const leadingRaw=props['Leading Icon']??props['Leading-Icon']??props.leadingIcon;
+   const trailingRaw=props['Tailing Icon']??props['Tailing-Icon']??props['Trailing Icon']??props.tailingIcon??props.trailingIcon;
+   const showLabel=props.Label===undefined?true:bool(props.Label),leading=leadingRaw===undefined?true:bool(leadingRaw),trailing=trailingRaw===undefined?true:bool(trailingRaw);
    const button=bool(props.Button),buttonNode=props.button??h(Button,{Size:'Small'});
    return h('div',{className:'figma-input '+(button?'figma-input--with-button ':'')+(props.className||''),'data-figma-variant':variant.id,'data-focus-ring':bool(props['Focus Ring']),onPointerEnter:()=>setHover(true),onPointerLeave:()=>setHover(false)},
      showLabel&&h('label',{className:'figma-input__label',htmlFor:id},props.label??'Label'),
@@ -113,13 +117,13 @@ export function createFigmaComponents(React){
    const standardValues={'Not Started':0,'In Progress':32,'Error':32,'Warning':32,'Success':100};
    const val=props.value!==undefined?Number(props.value):(standardValues[Type]??0);
    const pct=Type==='Not Started'?0:Type==='Success'?100:val;
-   const fillColors={'Not Started':'var(--va-semantic-color-tokens-border-subtle, #b7aa9d)','In Progress':'var(--va-semantic-color-tokens-status-info-fill, #6f2ee1)','Error':'var(--va-semantic-color-tokens-status-error-fill, #bc0016)','Warning':'var(--va-semantic-color-tokens-status-warning-fill, #a53800)','Success':'var(--va-semantic-color-tokens-status-success-fill, #006c2c)'};
-   const trackColors={'Error':'var(--va-semantic-color-tokens-status-error-surface, #fff8f8)','Warning':'var(--va-semantic-color-tokens-status-warning-surface, #fff8f0)','Success':'var(--va-semantic-color-tokens-status-success-surface, #f0fdf4)','In Progress':'var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7)','Not Started':'var(--va-semantic-color-tokens-background-neutral-default, #fbf9f7)'};
+   const fillColors={'Not Started':'var(--ba-semantic-color-tokens-border-subtle, #b7aa9d)','In Progress':'var(--ba-semantic-color-tokens-status-info-fill, #6f2ee1)','Error':'var(--ba-semantic-color-tokens-status-error-fill, #bc0016)','Warning':'var(--ba-semantic-color-tokens-status-warning-fill, #a53800)','Success':'var(--ba-semantic-color-tokens-status-success-fill, #006c2c)'};
+   const trackColors={'Error':'var(--ba-semantic-color-tokens-status-error-surface, #fff8f8)','Warning':'var(--ba-semantic-color-tokens-status-warning-surface, #fff8f0)','Success':'var(--ba-semantic-color-tokens-status-success-surface, #f0fdf4)','In Progress':'var(--ba-semantic-color-tokens-background-neutral-raised, #e5e0db)','Not Started':'var(--ba-semantic-color-tokens-background-neutral-raised, #e5e0db)'};
    const fillColor=fillColors[Type]||fillColors['In Progress'],trackColor=trackColors[Type]||trackColors['In Progress'];
    const degrees=pct*3.6;
    const conic=Type==='Success'?fillColor:Type==='Not Started'?trackColor:`conic-gradient(from -90deg, ${fillColor} 0deg ${degrees}deg, ${trackColor} ${degrees}deg 360deg)`;
    return h('div',{className:'figma-progress-pie '+(props.className||''),'data-type':Type,role:'progressbar','aria-valuenow':val,'aria-valuemin':0,'aria-valuemax':100,style:props.style},
-     h('div',{className:'figma-progress-pie__visual',style:{background:conic,border:'0.4px solid var(--va-semantic-color-tokens-border-subtle, #b7aa9d)'}}),
+     h('div',{className:'figma-progress-pie__visual',style:{background:conic,border:'0.4px solid var(--ba-semantic-color-tokens-border-subtle, #b7aa9d)'}}),
      showLegend&&h('div',{className:'figma-progress-pie__legend'},
        Type==='Error'&&h('span',{className:'figma-progress-status-icon figma-progress-status-icon--error'},h(Icon,{name:'error_outline',iconSet:props.iconSet})),
        Type==='Warning'&&h('span',{className:'figma-progress-status-icon figma-progress-status-icon--warning'},h(Icon,{name:'warning_amber',iconSet:props.iconSet})),
@@ -132,11 +136,11 @@ export function createFigmaComponents(React){
    const val=props.value!==undefined?Number(props.value):(standardValues[Type]??0);
    const pct=Type==='Not Started'?0:Type==='Success'?100:val;
    const r=19,circumference=2*Math.PI*r,offset=circumference*(1-pct/100);
-   const fillColors={'Not Started':'transparent','In Progress':'var(--va-semantic-color-tokens-status-info-fill, #6f2ee1)','Error':'var(--va-semantic-color-tokens-status-error-fill, #bc0016)','Warning':'var(--va-semantic-color-tokens-status-warning-fill, #a53800)','Success':'var(--va-semantic-color-tokens-status-success-fill, #006c2c)'};
-   const trackColors={'Error':'var(--va-semantic-color-tokens-status-error-surface, #fff8f8)','Warning':'var(--va-semantic-color-tokens-status-warning-surface, #fff8f0)','Success':'var(--va-semantic-color-tokens-status-success-surface, #f0fdf4)','In Progress':'#e8e2dc','Not Started':'#e8e2dc'};
+   const fillColors={'Not Started':'transparent','In Progress':'var(--ba-semantic-color-tokens-status-info-fill, #6f2ee1)','Error':'var(--ba-semantic-color-tokens-status-error-fill, #bc0016)','Warning':'var(--ba-semantic-color-tokens-status-warning-fill, #a53800)','Success':'var(--ba-semantic-color-tokens-status-success-fill, #006c2c)'};
+   const trackColors={'Error':'var(--ba-semantic-color-tokens-status-error-surface, #fff8f8)','Warning':'var(--ba-semantic-color-tokens-status-warning-surface, #fff8f0)','Success':'var(--ba-semantic-color-tokens-status-success-surface, #f0fdf4)','In Progress':'var(--ba-semantic-color-tokens-background-neutral-raised, #e5e0db)','Not Started':'var(--ba-semantic-color-tokens-background-neutral-raised, #e5e0db)'};
    return h('div',{className:'figma-progress-donut '+(props.className||''),'data-type':Type,role:'progressbar','aria-valuenow':val,'aria-valuemin':0,'aria-valuemax':100,style:props.style},
      h('svg',{className:'figma-progress-donut__svg',viewBox:'0 0 48 48'},
-       h('circle',{cx:24,cy:24,r,fill:'none',stroke:trackColors[Type]||'#e8e2dc',strokeWidth:4.5}),
+       h('circle',{cx:24,cy:24,r,fill:'none',stroke:trackColors[Type]||'var(--ba-semantic-color-tokens-background-neutral-raised, #e5e0db)',strokeWidth:4.5}),
        pct>0&&h('circle',{cx:24,cy:24,r,fill:'none',stroke:fillColors[Type]||fillColors['In Progress'],strokeWidth:4.5,strokeDasharray:circumference,strokeDashoffset:offset,strokeLinecap:'round'})),
      showLegend&&h('div',{className:'figma-progress-donut__center'},
        Type==='Error'&&h('span',{className:'figma-progress-status-icon figma-progress-status-icon--error'},h(Icon,{name:'error_outline',iconSet:props.iconSet})),
@@ -148,8 +152,8 @@ export function createFigmaComponents(React){
    if(Type==='Circular'){
      return h('div',{className:'figma-loader figma-loader--circular '+(props.className||''),style:props.style,role:'status','aria-label':'Loading'},
        h('svg',{className:'figma-loader__spinner',viewBox:'0 0 48 48'},
-         h('circle',{cx:24,cy:24,r:19,fill:'none',stroke:'var(--va-semantic-color-tokens-border-subtle, #e8e2dc)',strokeWidth:4}),
-         h('circle',{cx:24,cy:24,r:19,fill:'none',stroke:'var(--va-semantic-color-tokens-border-primary, #3b672d)',strokeWidth:4,strokeDasharray:'119.38',strokeDashoffset:'80',strokeLinecap:'round'})));
+         h('circle',{cx:24,cy:24,r:19,fill:'none',stroke:'var(--ba-semantic-color-tokens-border-subtle, #b7aa9d)',strokeWidth:4}),
+         h('circle',{cx:24,cy:24,r:19,fill:'none',stroke:'var(--ba-semantic-color-tokens-border-primary, #a53800)',strokeWidth:4,strokeDasharray:'119.38',strokeDashoffset:'80',strokeLinecap:'round'})));
    }
    if(Type==='Bar'){
      return h('div',{className:'figma-loader figma-loader--bar '+(props.className||''),style:props.style,role:'status','aria-label':'Loading'},
@@ -160,13 +164,14 @@ export function createFigmaComponents(React){
  function SegmentedChild(props){
    const Type=props.Type??props.type??'Default';
    const showDesc=props.Description!==undefined?bool(props.Description):(props.description!==undefined?bool(props.description):true);
-   const showIcon=props.Icon!==undefined?bool(props.Icon):(props.icon!==undefined?bool(props.icon):true);
+   const showIcon=props.Icon!==undefined?bool(props.Icon):(props.icon===false||props.icon==='False'||props.icon==='false'?false:true);
    const title=props.title??'Title',body=props.body??'Body';
    const iconNode=props.iconNode??(typeof props.icon==='object'?props.icon:null);
+   const iconName=typeof props.icon==='string'&&!['true','false'].includes(props.icon.toLowerCase())?props.icon:'home';
    return h('div',{className:'figma-segmented-child '+(props.className||''),'data-type':Type,'data-description':showDesc,style:props.style,onClick:props.onClick},
      h('div',{className:'figma-segmented-child__header'},
        showIcon&&h('div',{className:'figma-segmented-child__icon-wrapper'},
-         iconNode||h(Icon,{name:'home',side:'leading',iconSet:props.iconSet}),
+         iconNode||h(Icon,{name:iconName,side:'leading',iconSet:props.iconSet}),
          Type==='Error'&&h('span',{className:'figma-segmented-child__badge figma-progress-status-icon--error'},h(Icon,{name:'error',iconSet:props.iconSet})),
          Type==='Warning'&&h('span',{className:'figma-segmented-child__badge figma-progress-status-icon--warning'},h(Icon,{name:'warning',iconSet:props.iconSet}))),
        h('div',{className:'figma-segmented-child__details'},
@@ -177,16 +182,17 @@ export function createFigmaComponents(React){
  function StepperChild(props){
    const Type=props.Type??props.type??'Default';
    const showDesc=props.Description!==undefined?bool(props.Description):(props.description!==undefined?bool(props.description):true);
-   const showIcon=props.Icon!==undefined?bool(props.Icon):(props.icon!==undefined?bool(props.icon):true);
+   const showIcon=props.Icon!==undefined?bool(props.Icon):(props.icon===false||props.icon==='False'||props.icon==='false'?false:true);
    const title=props.title??'Title',body=props.body??'Body';
    const slotVisible=props.slotVisible!==undefined?bool(props.slotVisible):!!props.children;
    const iconNode=props.iconNode??(typeof props.icon==='object'?props.icon:null);
+   const iconName=typeof props.icon==='string'&&!['true','false'].includes(props.icon.toLowerCase())?props.icon:'home';
    return h('div',{className:'figma-stepper-child '+(props.className||''),'data-type':Type,'data-description':showDesc,style:props.style,onClick:props.onClick},
      h('div',{className:'figma-stepper-child__track'}),
      h('div',{className:'figma-stepper-child__content'},
        h('div',{className:'figma-stepper-child__header'},
          showIcon&&h('div',{className:'figma-stepper-child__icon-wrapper'},
-           iconNode||h(Icon,{name:'home',side:'leading',iconSet:props.iconSet}),
+           iconNode||h(Icon,{name:iconName,side:'leading',iconSet:props.iconSet}),
            Type==='Error'&&h('span',{className:'figma-stepper-child__badge figma-progress-status-icon--error'},h(Icon,{name:'error',iconSet:props.iconSet})),
            Type==='Warning'&&h('span',{className:'figma-stepper-child__badge figma-progress-status-icon--warning'},h(Icon,{name:'warning',iconSet:props.iconSet}))),
          h('div',{className:'figma-stepper-child__details'},

@@ -1,0 +1,556 @@
+/* ==========================================================================
+   DUSQ — Motion, Audio-Sync & Accessibility Layer
+   Import AFTER mobile-app.css. Token values mirror @dusq-design-system/react.
+   ========================================================================== */
+
+.dusq-mobile-page,
+.device-screen {
+  --dusq-amber: var(--ba-color-themes-primary-300, #F7A366);
+  --dusq-orange: var(--ba-color-themes-primary-400, #F0650D);
+  --dusq-green: var(--ba-semantic-color-tokens-status-success-fill, #49B374);
+  --dusq-ice: var(--ba-primitive-color-tokens-blue-200, #A1BDDF);
+  --dusq-ink: var(--ba-semantic-color-tokens-foreground-neutral-default, #FAF8F5);
+  --dusq-void: var(--ba-semantic-color-tokens-background-neutral-page, #111111);
+  --dusq-surface: var(--ba-semantic-color-tokens-background-neutral-default, #1A1816);
+  --dusq-focus: var(--ba-color-themes-primary-400, #F0650D);
+  --dusq-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Bedside Glance: pure R channel only. Contrast on #000:
+     #FF0000 = 5.25:1 (AA body text) · #C00000 = 3.24:1 (large text / UI borders only) */
+  --glance-red: #FF0000;
+  --glance-red-large: #C00000;
+  --glance-red-ui: #C00000;
+}
+
+/* ---------- Utilities ---------- */
+.dusq-sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dusq-list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Focus (WCAG 2.4.7) ---------- */
+.dusq-mobile-page :is(button, a, input, textarea, [role='tab'], [tabindex]):focus-visible {
+  outline: 2px solid var(--dusq-focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Contrast fixes (WCAG 1.4.3) ---------- */
+.dusq-day-letter { font-size: 11px; color: var(--dusq-text-muted); }
+.dusq-timeline-tab.is-active { color: var(--ba-semantic-color-tokens-foreground-inverse-default); }
+.dusq-day-pill.is-tonight { border-color: rgba(250, 248, 245, 0.4); }
+
+/* ---------- Card stack physics (clear of right-edge glance tab & left arc) ---------- */
+.dusq-card-stack {
+  position: relative;
+  padding: 0 16px 0 6px;
+}
+
+.dusq-card-stack-container {
+  position: relative;
+  height: 314px;
+  min-height: 0;
+  margin-top: 22px;
+  perspective: 1100px;
+  --dusq-swipe-p: 0;
+}
+
+.dusq-chrono-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 188px;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  will-change: transform;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    transform 0.5s var(--dusq-ease-out),
+    height 0.5s var(--dusq-ease-out),
+    opacity 0.4s ease,
+    filter 0.4s ease;
+}
+
+.dusq-chrono-card.is-active {
+  height: 188px;
+  z-index: 10;
+  opacity: 1;
+  filter: none;
+  transform: none;
+  cursor: grab;
+}
+
+.dusq-card-stack-container.is-dragging .dusq-chrono-card.is-active { cursor: grabbing; }
+.dusq-card-stack-container.is-dragging .dusq-chrono-card { transition: none; }
+
+.dusq-chrono-card.is-stacked {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(112px + 76px * var(--dusq-swipe-p));
+  z-index: 5;
+  opacity: calc(0.82 + 0.18 * var(--dusq-swipe-p));
+  filter: brightness(calc(0.76 + 0.24 * var(--dusq-swipe-p)));
+  transform:
+    translate3d(0, calc(200px * (1 - var(--dusq-swipe-p))), 0)
+    scale(calc(0.92 + 0.08 * var(--dusq-swipe-p)));
+  animation: dusq-card-enter 0.45s var(--dusq-ease-out);
+  cursor: pointer;
+}
+
+.dusq-chrono-card.is-stacked .dusq-chrono-card__content {
+  padding: 13px 16px 14px;
+}
+
+.dusq-chrono-card.is-stacked .dusq-chrono-card__title {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.dusq-chrono-card.is-stacked:hover {
+  filter: brightness(calc(0.9 + 0.1 * var(--dusq-swipe-p)));
+}
+
+@keyframes dusq-card-enter {
+  from { opacity: 0; }
+}
+
+.dusq-chrono-pill-hotspot:focus-visible {
+  outline: 2px solid var(--dusq-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(11, 13, 14, 0.85);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Dots: 6px visual, 44×44 touch target */
+.dusq-card-stack-dots {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 2px;
+}
+
+.dusq-card-dot {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.dusq-card-dot::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: width 0.3s var(--dusq-ease-out), background 0.3s ease;
+}
+
+.dusq-card-dot.is-active::before {
+  width: 18px;
+  background: var(--dusq-ink);
+}
+
+/* ---------- Surge waveform ---------- */
+.dusq-wave-canvas-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.dusq-surge-canvas {
+  display: block;
+  width: 100%;
+}
+
+.dusq-surge-narrative {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--dusq-text-secondary);
+}
+
+/* ---------- Vagal pacer ---------- */
+.dusq-pacer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.dusq-pacer {
+  position: relative;
+  width: 196px;
+  height: 196px;
+}
+
+.dusq-pacer__ring {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+}
+
+.dusq-pacer__track { stroke: rgba(255, 255, 255, 0.08); }
+
+.dusq-pacer__progress {
+  stroke: var(--dusq-ice);
+  stroke-linecap: round;
+  transition: stroke 0.6s ease;
+}
+
+.dusq-pacer-block[data-phase='hold'] .dusq-pacer__progress { stroke: var(--dusq-amber); }
+.dusq-pacer-block[data-phase='exhale'] .dusq-pacer__progress,
+.dusq-pacer-block[data-phase='complete'] .dusq-pacer__progress { stroke: var(--dusq-green); }
+
+.dusq-pacer__orb {
+  position: absolute;
+  inset: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 42%, rgba(125, 211, 252, 0.34), rgba(125, 211, 252, 0.08) 62%, transparent 74%);
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  transform: scale(0.62);
+  will-change: transform;
+  transition: box-shadow 0.8s ease, border-color 0.8s ease, background 0.8s ease;
+}
+
+.dusq-pacer-block[data-phase='hold'] .dusq-pacer__orb {
+  border-color: color-mix(in srgb, var(--dusq-orange) 50%, transparent);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--dusq-orange) 12%, transparent), 0 0 36px color-mix(in srgb, var(--dusq-orange) 25%, transparent);
+}
+
+.dusq-pacer-block[data-phase='exhale'] .dusq-pacer__orb {
+  border-color: color-mix(in srgb, var(--dusq-green) 48%, transparent);
+  background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--dusq-green) 26%, transparent), color-mix(in srgb, var(--dusq-green) 6%, transparent) 62%, transparent 74%);
+}
+
+/* Text sits on its own unscaled layer so it never shrinks while reading. */
+.dusq-pacer__readout {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.dusq-pacer__phase {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--dusq-ink);
+}
+
+.dusq-pacer__count {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--dusq-ink);
+}
+
+.dusq-pacer__cycle {
+  font-size: 11.5px;
+  color: var(--dusq-text-secondary);
+}
+
+.dusq-pacer__segments {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 7fr 8fr;
+  gap: 6px;
+}
+
+.dusq-pacer__seg { color: var(--dusq-ice); }
+.dusq-pacer__seg.is-hold { color: var(--dusq-amber); }
+.dusq-pacer__seg.is-exhale { color: var(--dusq-green); }
+
+.dusq-pacer__seg-track {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(250, 248, 245, 0.1);
+  overflow: hidden;
+}
+
+.dusq-pacer__seg-fill {
+  height: 100%;
+  background: currentColor;
+  transform-origin: left center;
+  transition: transform 0.2s linear;
+}
+
+.dusq-pacer__seg-label {
+  display: block;
+  margin-top: 5px;
+  font-size: 11.5px;
+  color: var(--dusq-text-muted);
+}
+
+.dusq-pacer__seg.is-current .dusq-pacer__seg-label {
+  color: var(--dusq-ink);
+  font-weight: 600;
+}
+
+.dusq-pacer-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--dusq-text-secondary);
+}
+
+button.dusq-hardware-check-tile {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* ---------- Check-in ---------- */
+.dusq-checkin-fieldset {
+  border: 0;
+  margin: 0 0 18px;
+  padding: 0;
+  min-width: 0;
+}
+
+.dusq-checkin-legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+}
+
+.dusq-cognitive-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.dusq-cognitive-pill.is-active {
+  background: var(--dusq-ink);
+  border-color: var(--dusq-ink);
+  color: var(--dusq-surface);
+  font-weight: 600;
+}
+
+.dusq-cognitive-pill:has(input:focus-visible) {
+  outline: 2px solid var(--dusq-focus);
+  outline-offset: 2px;
+}
+
+.dusq-checkin-counter {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+.dusq-inline-warning {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--ba-semantic-color-tokens-status-error-text);
+}
+
+.dusq-mini-audio-btn {
+  min-width: 56px;
+  min-height: 44px;
+}
+
+/* ---------- Touch Target Enhancements (Apple HIG 44pt / Google M3) ---------- */
+.dusq-card-dot {
+  position: relative;
+  background: transparent;
+}
+.dusq-card-dot::before {
+  background: rgba(250, 248, 245, 0.45);
+}
+.dusq-card-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+}
+
+.dusq-bedside-edge-tab {
+  min-height: 44px;
+}
+.dusq-bedside-edge-tab::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+}
+
+.dusq-chrono-card {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Surge timeline tabs: crisp 2x2 grid with >=44px touch targets */
+.dusq-surge-selector-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0 14px;
+  overflow: visible;
+}
+.dusq-surge-timeline-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 14px;
+}
+.dusq-surge-tab,
+.dusq-timeline-tab {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 248, 245, 0.16);
+  background: rgba(250, 248, 245, 0.05);
+  color: var(--dusq-ink);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.dusq-surge-tab.is-active,
+.dusq-timeline-tab.is-active {
+  background: var(--ba-semantic-color-tokens-background-primary-default);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
+  font-weight: 600;
+}
+.surge-tab-dot,
+.tab-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.dusq-mini-audio-btn[aria-pressed='true'] {
+  border-color: var(--dusq-orange);
+  color: var(--dusq-orange);
+}
+
+/* ---------- Bedside Glance: monochrome red only ---------- */
+.dusq-bedside-glance-mode {
+  background: #000 !important;
+  color: var(--glance-red) !important;
+}
+
+.dusq-bedside-glance-mode :focus-visible {
+  outline-color: var(--glance-red) !important; /* ice-blue ring would emit blue light */
+}
+
+.dusq-glance-dot {
+  background: var(--glance-red);
+  box-shadow: none;
+}
+
+.dusq-glance-exit-btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 16px;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid var(--glance-red);
+  color: var(--glance-red);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dusq-glance-time { color: var(--glance-red-large); }
+
+.dusq-glance-sub,
+.glance-label {
+  opacity: 1;
+  color: var(--glance-red);
+}
+
+.dusq-glance-status-card {
+  background: rgba(255, 0, 0, 0.05);
+  border-color: var(--glance-red-ui);
+}
+
+.dusq-glance-note { color: var(--glance-red); }
+
+.dusq-glance-burst-btn {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 999px;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid var(--glance-red);
+  color: var(--glance-red);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dusq-glance-burst-btn[aria-pressed='true'] { background: rgba(255, 0, 0, 0.12); }
+
+/* ---------- Reduced motion (WCAG 2.3.3) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .dusq-chrono-card,
+  .dusq-card-dot::before,
+  .dusq-pacer__orb,
+  .dusq-pacer__progress,
+  .dusq-pacer__seg-fill,
+  .dusq-cognitive-pill {
+    transition: none !important;
+    animation: none !important;
+  }
+}

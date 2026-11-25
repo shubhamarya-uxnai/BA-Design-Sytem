@@ -9,6 +9,13 @@ const root = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   root,
   base: "./",
+  resolve: {
+    alias: {
+      "@ba-design-system/react/styles.css": resolve(root, "../../packages/react/src/styles.css"),
+      "@ba-design-system/react": resolve(root, "../../packages/react/src/index.ts"),
+      "@ba-design-system/tokens": resolve(root, "../../dist"),
+    },
+  },
   server: {
     port: 5174,
     host: true,

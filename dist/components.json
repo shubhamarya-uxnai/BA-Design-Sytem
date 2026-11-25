@@ -155,8 +155,8 @@
       "name": "Title/Small",
       "className": "va-text-title-small",
       "sourceStyleId": "S:be54dca184c8ed1b14c38b7d6dff68e070e2e0be,",
-      "fontFamilyToken": "var(--ba-typography-font-family-title)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-36)",
+      "fontFamilyToken": "var(--ba-typography-font-family-display)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-40)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -165,8 +165,8 @@
       "name": "Title/Medium",
       "className": "va-text-title-medium",
       "sourceStyleId": "S:857b14fbd4c906cb5c75333363fc1df916b9e5bb,",
-      "fontFamilyToken": "var(--ba-typography-font-family-title)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-40)",
+      "fontFamilyToken": "var(--ba-typography-font-family-display)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-48)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -175,8 +175,8 @@
       "name": "Title/Large",
       "className": "va-text-title-large",
       "sourceStyleId": "S:78677ea364bf80ca29d7cb69dc5b185eb6b7d081,",
-      "fontFamilyToken": "var(--ba-typography-font-family-title)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-48)",
+      "fontFamilyToken": "var(--ba-typography-font-family-display)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-60)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -187,8 +187,8 @@
       "sourceStyleId": "S:80559c5c9ecf8a75178d7ab1528f5b571c9f2983,",
       "fontFamilyToken": "var(--ba-typography-font-family-title)",
       "fontSizeToken": "var(--ba-typography-font-sizes-24)",
-      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
-      "fontWeightCss": 600,
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
       "fontStyle": "normal"
     },
     {
@@ -197,8 +197,8 @@
       "sourceStyleId": "S:ecc72f3f01128227bbf510f0b93ee1b6f66e6090,",
       "fontFamilyToken": "var(--ba-typography-font-family-title)",
       "fontSizeToken": "var(--ba-typography-font-sizes-28)",
-      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
-      "fontWeightCss": 600,
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
       "fontStyle": "normal"
     },
     {
@@ -206,9 +206,9 @@
       "className": "va-text-heading-large",
       "sourceStyleId": "S:54e79c71351016c799701202649e3674ab7eac28,",
       "fontFamilyToken": "var(--ba-typography-font-family-title)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-32)",
-      "fontWeightToken": "var(--ba-typography-font-weights-semibold-regular)",
-      "fontWeightCss": 600,
+      "fontSizeToken": "var(--ba-typography-font-sizes-36)",
+      "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
+      "fontWeightCss": 500,
       "fontStyle": "normal"
     },
     {
@@ -236,7 +236,7 @@
       "className": "va-text-body-medium",
       "sourceStyleId": "S:7fbbed5b59fa6d125d1921f690b07f51963c50ac,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-18)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -266,7 +266,7 @@
       "className": "va-text-body-emphasis-medium",
       "sourceStyleId": "S:1c16739a1d1b3cc262a104dd50bc8bcaba318f32,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-18)",
       "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
@@ -296,7 +296,7 @@
       "className": "va-text-body-italic-medium",
       "sourceStyleId": "S:0cd976a1915f2a0067e36b71b2ae611c3b5e2a9b,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-20)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-18)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "italic"
@@ -306,7 +306,7 @@
       "className": "va-text-label-small",
       "sourceStyleId": "S:bbdf5988717328aa4b3a490c2a018e1c357be74d,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-10)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -316,7 +316,7 @@
       "className": "va-text-label-medium",
       "sourceStyleId": "S:4e9272518d33800ff074f96eb57177a1ede51db1,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-11)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -326,7 +326,7 @@
       "className": "va-text-label-large",
       "sourceStyleId": "S:d334ddb73c15f51a1cbbee5ecf1bc6dbe6d65eae,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-14)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"
@@ -336,7 +336,7 @@
       "className": "va-text-label-emphasis",
       "sourceStyleId": "S:770297faf02b0fae4f8db37a5c77a33f03307ba0,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
-      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-14)",
       "fontWeightToken": "var(--ba-typography-font-weights-medium-regular)",
       "fontWeightCss": 500,
       "fontStyle": "normal"
@@ -347,6 +347,16 @@
       "sourceStyleId": "S:a3a02a8ef8d24d5a8bb8dad7de19fae08c9e9bcf,",
       "fontFamilyToken": "var(--ba-typography-font-family-body)",
       "fontSizeToken": "var(--ba-typography-font-sizes-10)",
+      "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
+      "fontWeightCss": 400,
+      "fontStyle": "normal"
+    },
+    {
+      "name": "Legend/Medium",
+      "className": "va-text-legend-medium",
+      "sourceStyleId": "DUSQ:Legend:Medium",
+      "fontFamilyToken": "var(--ba-typography-font-family-body)",
+      "fontSizeToken": "var(--ba-typography-font-sizes-12)",
       "fontWeightToken": "var(--ba-typography-font-weights-regular-regular)",
       "fontWeightCss": 400,
       "fontStyle": "normal"

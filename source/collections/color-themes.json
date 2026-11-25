@@ -20,16 +20,16 @@
       "name": "primary/0",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 0 of 900\nCool  -&gt; blue/0  #F6FAFF  tone 98  vs white 1.05:1\nWarm  -&gt; warm green/0  #F4FCF1  tone 98  vs white 1.05:1\nCool theme  -  on light surfaces worst 1.00:1 (decorative only)  |  on dark surfaces worst 11.77:1 (AA text)\nWarm theme  -  on light surfaces worst 1.00:1 (decorative only)  |  on dark surfaces worst 11.67:1 (AA text)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:820"
+          "id": "VariableID:2109:850"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:880"
+          "id": "VariableID:2109:850"
         }
       }
     },
@@ -38,16 +38,16 @@
       "name": "primary/100",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 100 of 900\nCool  -&gt; blue/100  #CAD9ED  tone 86  vs white 1.43:1\nWarm  -&gt; warm green/100  #CCDDC4  tone 86  vs white 1.43:1\nCool theme  -  on light surfaces worst 1.00:1 (decorative only)  |  on dark surfaces worst 8.61:1 (AA text)\nWarm theme  -  on light surfaces worst 1.00:1 (decorative only)  |  on dark surfaces worst 8.57:1 (AA text)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:821"
+          "id": "VariableID:2109:851"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:881"
+          "id": "VariableID:2109:851"
         }
       }
     },
@@ -56,16 +56,16 @@
       "name": "primary/200",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 200 of 900\nCool  -&gt; blue/200  #A1BDDF  tone 76  vs white 1.93:1\nWarm  -&gt; warm green/200  #A3C397  tone 75  vs white 1.94:1\nCool theme  -  on light surfaces worst 1.35:1 (decorative only)  |  on dark surfaces worst 6.38:1 (AA text)\nWarm theme  -  on light surfaces worst 1.36:1 (decorative only)  |  on dark surfaces worst 6.30:1 (AA text)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:822"
+          "id": "VariableID:2109:852"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:882"
+          "id": "VariableID:2109:852"
         }
       }
     },
@@ -74,16 +74,16 @@
       "name": "primary/300",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 300 of 900\nCool  -&gt; blue/300  #70A3D9  tone 65  vs white 2.65:1\nWarm  -&gt; warm green/300  #7FAB70  tone 66  vs white 2.64:1\nCool theme  -  on light surfaces worst 1.85:1 (decorative only)  |  on dark surfaces worst 4.66:1 (AA text)\nWarm theme  -  on light surfaces worst 1.85:1 (decorative only)  |  on dark surfaces worst 4.64:1 (AA text)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:823"
+          "id": "VariableID:2109:853"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:883"
+          "id": "VariableID:2109:853"
         }
       }
     },
@@ -92,16 +92,16 @@
       "name": "primary/400",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 400 of 900\nCool  -&gt; blue/400  #3C8ADC  tone 56  vs white 3.58:1\nWarm  -&gt; warm green/400  #629451  tone 56  vs white 3.58:1\nCool theme  -  on light surfaces worst 2.50:1 (decorative only)  |  on dark surfaces worst 3.44:1 (large text / icons only)\nWarm theme  -  on light surfaces worst 2.51:1 (decorative only)  |  on dark surfaces worst 3.42:1 (large text / icons only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:824"
+          "id": "VariableID:2109:854"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:884"
+          "id": "VariableID:2109:854"
         }
       }
     },
@@ -110,16 +110,16 @@
       "name": "primary/500",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 500 of 900\nCool  -&gt; blue/500  #016EDF  tone 48  vs white 4.89:1\nWarm  -&gt; warm green/500  #4B7D3B  tone 48  vs white 4.89:1\nCool theme  -  on light surfaces worst 3.41:1 (large text / icons only)  |  on dark surfaces worst 2.52:1 (decorative only)\nWarm theme  -  on light surfaces worst 3.43:1 (large text / icons only)  |  on dark surfaces worst 2.50:1 (decorative only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:825"
+          "id": "VariableID:2109:855"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:885"
+          "id": "VariableID:2109:855"
         }
       }
     },
@@ -128,16 +128,16 @@
       "name": "primary/600",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 600 of 900\nCool  -&gt; blue/600  #0053D0  tone 39  vs white 6.67:1\nWarm  -&gt; warm green/600  #3B672D  tone 39  vs white 6.64:1\nCool theme  -  on light surfaces worst 4.66:1 (AA text)  |  on dark surfaces worst 1.85:1 (decorative only)\nWarm theme  -  on light surfaces worst 4.65:1 (AA text)  |  on dark surfaces worst 1.84:1 (decorative only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:826"
+          "id": "VariableID:2109:856"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:886"
+          "id": "VariableID:2109:856"
         }
       }
     },
@@ -146,16 +146,16 @@
       "name": "primary/700",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 700 of 900\nCool  -&gt; blue/700  #003DB4  tone 31  vs white 9.03:1\nWarm  -&gt; warm green/700  #2D5124  tone 31  vs white 9.08:1\nCool theme  -  on light surfaces worst 6.30:1 (AA text)  |  on dark surfaces worst 1.37:1 (decorative only)\nWarm theme  -  on light surfaces worst 6.36:1 (AA text)  |  on dark surfaces worst 1.35:1 (decorative only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:827"
+          "id": "VariableID:2109:857"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:887"
+          "id": "VariableID:2109:857"
         }
       }
     },
@@ -164,16 +164,16 @@
       "name": "primary/800",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 800 of 900\nCool  -&gt; blue/800  #002C87  tone 22  vs white 12.28:1\nWarm  -&gt; warm green/800  #1F3B1A  tone 22  vs white 12.36:1\nCool theme  -  on light surfaces worst 8.57:1 (AA text)  |  on dark surfaces worst 1.00:1 (decorative only)\nWarm theme  -  on light surfaces worst 8.67:1 (AA text)  |  on dark surfaces worst 1.01:1 (decorative only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:828"
+          "id": "VariableID:2109:858"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:888"
+          "id": "VariableID:2109:858"
         }
       }
     },
@@ -182,16 +182,16 @@
       "name": "primary/900",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "primary ladder step 900 of 900\nCool  -&gt; blue/900  #001A4E  tone 11  vs white 16.70:1\nWarm  -&gt; warm green/900  #0F2209  tone 11  vs white 16.76:1\nCool theme  -  on light surfaces worst 11.65:1 (AA text)  |  on dark surfaces worst 1.00:1 (decorative only)\nWarm theme  -  on light surfaces worst 11.75:1 (AA text)  |  on dark surfaces worst 1.01:1 (decorative only)\nPairing rule - +400 = 3:1, +500 = AA, +700 = AAA, measured against base/ of the same step.",
+      "description": "DUSQ primary accent aliases existing orange ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:829"
+          "id": "VariableID:2109:859"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:889"
+          "id": "VariableID:2109:859"
         }
       }
     },
@@ -205,11 +205,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:870"
+          "id": "VariableID:2108:840"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:840"
+          "id": "VariableID:2108:840"
         }
       }
     },
@@ -223,11 +223,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:871"
+          "id": "VariableID:2108:842"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:841"
+          "id": "VariableID:2108:842"
         }
       }
     },
@@ -241,11 +241,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:872"
+          "id": "VariableID:2108:844"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:842"
+          "id": "VariableID:2108:844"
         }
       }
     },
@@ -259,11 +259,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:873"
+          "id": "VariableID:2108:846"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:843"
+          "id": "VariableID:2108:846"
         }
       }
     },
@@ -277,11 +277,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:874"
+          "id": "VariableID:2108:848"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:844"
+          "id": "VariableID:2108:848"
         }
       }
     },
@@ -295,11 +295,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:875"
+          "id": "VariableID:2108:850"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:845"
+          "id": "VariableID:2108:850"
         }
       }
     },
@@ -313,11 +313,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:876"
+          "id": "VariableID:2108:852"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:846"
+          "id": "VariableID:2108:852"
         }
       }
     },
@@ -331,11 +331,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:877"
+          "id": "VariableID:2108:854"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:847"
+          "id": "VariableID:2108:854"
         }
       }
     },
@@ -349,11 +349,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:878"
+          "id": "VariableID:2108:856"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:848"
+          "id": "VariableID:2108:856"
         }
       }
     },
@@ -367,11 +367,11 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:879"
+          "id": "VariableID:2108:858"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2109:849"
+          "id": "VariableID:2108:858"
         }
       }
     },
@@ -565,7 +565,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:820"
+          "id": "VariableID:2108:840"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -583,7 +583,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:821"
+          "id": "VariableID:2108:841"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -601,7 +601,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:822"
+          "id": "VariableID:2108:842"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -619,7 +619,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:824"
+          "id": "VariableID:2108:844"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -637,7 +637,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:826"
+          "id": "VariableID:2108:846"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -655,7 +655,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:828"
+          "id": "VariableID:2108:848"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -673,7 +673,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:830"
+          "id": "VariableID:2108:850"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -691,7 +691,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:834"
+          "id": "VariableID:2108:854"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -709,7 +709,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:836"
+          "id": "VariableID:2108:856"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -727,7 +727,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:838"
+          "id": "VariableID:2108:858"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1465,7 +1465,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:832"
+          "id": "VariableID:2108:852"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1483,7 +1483,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:823"
+          "id": "VariableID:2108:843"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1501,7 +1501,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:825"
+          "id": "VariableID:2108:845"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1519,7 +1519,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:827"
+          "id": "VariableID:2108:847"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1537,7 +1537,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:829"
+          "id": "VariableID:2108:849"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1555,7 +1555,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:831"
+          "id": "VariableID:2108:851"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1573,7 +1573,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:833"
+          "id": "VariableID:2108:853"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1591,7 +1591,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:835"
+          "id": "VariableID:2108:855"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1609,7 +1609,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:837"
+          "id": "VariableID:2108:857"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",
@@ -1627,7 +1627,7 @@
       "valuesByMode": {
         "22:0": {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2108:839"
+          "id": "VariableID:2108:859"
         },
         "138:0": {
           "type": "VARIABLE_ALIAS",

@@ -1,0 +1,3385 @@
+/* ==========================================================================
+   DUSQ Mobile App System — Token-Bound Production Implementation
+   ========================================================================== */
+
+/* Scoped to .dusq-mobile-page and .device-screen so var(--ba-semantic-color-tokens-*)
+   evaluate under their [data-theme="dark"] attribute instead of :root [data-theme="light"]. */
+.dusq-mobile-page,
+.device-screen {
+  /* Typography bound strictly to DUSQ design system tokens */
+  --dusq-font-display: var(--ba-typography-font-family-display, 'Plus Jakarta Sans', sans-serif);
+  --dusq-font-heading: var(--ba-typography-font-family-title, 'Helvetica Neue', sans-serif);
+  --dusq-font-body: var(--ba-typography-font-family-body, 'Arial', sans-serif);
+
+  /* Website Dark-Mode Surface Palette ([data-theme="dark"] + styles.css --night/--ink) */
+  --dusq-dark-bg: var(--ba-semantic-color-tokens-background-neutral-page, #111111);
+  --dusq-dark-surface: var(--ba-semantic-color-tokens-background-neutral-default, #1A1816);
+  --dusq-dark-surface-raised: var(--ba-color-themes-base-850, #322821);
+  --dusq-dark-surface-border: color-mix(in srgb, var(--ba-color-themes-base-0, #FAF8F5) 11%, transparent);
+  --dusq-dark-surface-border-strong: var(--ba-semantic-color-tokens-border-subtle, #6D5946);
+
+  /* High-Contrast Readability Scale bound to warm neutral ladder */
+  --dusq-text-primary: var(--ba-semantic-color-tokens-foreground-neutral-default, #FAF8F5);
+  --dusq-text-secondary: var(--ba-semantic-color-tokens-foreground-neutral-subtle, #C2B9AF);
+  --dusq-text-muted: var(--ba-color-themes-base-250, #B7AA9D);
+
+  /* Brand & Semantic Status Accents */
+  --dusq-accent-orange: var(--ba-color-themes-primary-400, #F0650D);
+  --dusq-accent-eyebrow: var(--ba-color-themes-primary-200, #FBCBA8);
+  --dusq-accent-orange-soft: color-mix(in srgb, var(--ba-color-themes-primary-400, #F0650D) 18%, transparent);
+  --dusq-success-green: var(--ba-semantic-color-tokens-status-success-fill, #49B374);
+  --dusq-success-green-text: var(--ba-semantic-color-tokens-status-success-text, #8DC7A2);
+  --dusq-success-green-soft: color-mix(in srgb, var(--ba-semantic-color-tokens-status-success-fill, #49B374) 18%, transparent);
+
+  --dusq-radius-card: 20px;
+  --dusq-radius-pill: 9999px;
+}
+
+/* ==========================================================================
+   Page Wrapper
+   ========================================================================== */
+.dusq-mobile-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 15%, var(--ba-semantic-color-tokens-background-neutral-default, #1A1816) 0%, var(--dusq-dark-bg) 100%) !important;
+  color: var(--dusq-text-primary) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 16px 80px;
+  font-family: var(--dusq-font-body);
+  box-sizing: border-box;
+}
+
+.dusq-mobile-page__back-btn {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--ba-semantic-color-tokens-border-subtle, #6D5946);
+  color: var(--dusq-text-primary);
+  font-family: var(--dusq-font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dusq-mobile-page__back-btn:hover {
+  background: color-mix(in srgb, var(--ba-color-themes-base-0) 10%, transparent);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+}
+
+.dusq-mobile-page__header {
+  max-width: 960px;
+  width: 100%;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.dusq-mobile-page__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--dusq-text-secondary);
+}
+
+.dusq-mobile-page__badge strong {
+  color: #FFFFFF;
+}
+
+.dusq-mobile-page__title {
+  font-family: var(--dusq-font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+  color: #FFFFFF !important;
+  letter-spacing: -0.02em;
+}
+
+.dusq-mobile-page__subtitle {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--dusq-text-secondary) !important;
+  max-width: 660px;
+  margin: 0;
+}
+
+.dusq-mobile-page__screen-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dusq-mobile-page__screen-pill {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(250, 248, 245, 0.06);
+  border: 1px solid rgba(250, 248, 245, 0.16);
+  color: var(--dusq-text-secondary) !important;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-mobile-page__screen-pill:not(.dusq-mobile-page__screen-pill--active):hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dusq-mobile-page__screen-pill--active,
+.dusq-mobile-page__screen-pill--active:hover,
+.dusq-mobile-page__screen-pill--active:focus-visible {
+  background: #FAF8F5 !important;
+  color: #111111 !important;
+  border-color: #FAF8F5 !important;
+  font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   Real iPhone 14 Pro / 15 Pro Mockup (from devices.css)
+   ========================================================================== */
+.device {
+  position: relative;
+  box-sizing: content-box !important;
+  margin: 0 auto;
+}
+
+.device-iphone-14-pro {
+  height: 868px;
+  width: 428px;
+  position: relative;
+}
+
+.device-iphone-14-pro .device-frame {
+  background: #010101;
+  border: 1px solid #1b1721;
+  border-radius: 68px;
+  box-shadow: 
+    inset 0 0 4px 2px #c0b7cd, 
+    inset 0 0 0 6px #342c3f,
+    0 25px 70px -10px rgba(0, 0, 0, 0.9),
+    0 0 80px -15px color-mix(in srgb, var(--dusq-accent-orange) 22%, transparent);
+  height: 868px;
+  padding: 19px;
+  width: 428px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.device-iphone-14-pro .device-screen {
+  border-radius: 49px;
+  height: 830px;
+  width: 390px;
+  background: var(--dusq-dark-bg) !important;
+  color: var(--dusq-text-primary) !important;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Authentic Hardware Side Buttons */
+.device-iphone-14-pro .device-btns {
+  background: #282431;
+  border-radius: 2px;
+  height: 32px;
+  left: -2px;
+  position: absolute;
+  top: 115px;
+  width: 3px;
+}
+
+.device-iphone-14-pro .device-btns::after,
+.device-iphone-14-pro .device-btns::before {
+  background: #282431;
+  border-radius: 2px;
+  content: "";
+  height: 62px;
+  left: 0;
+  position: absolute;
+  width: 3px;
+}
+
+.device-iphone-14-pro .device-btns::after {
+  top: 60px;
+}
+
+.device-iphone-14-pro .device-btns::before {
+  top: 140px;
+}
+
+.device-iphone-14-pro .device-power {
+  background: #282431;
+  border-radius: 2px;
+  height: 100px;
+  position: absolute;
+  right: -2px;
+  top: 200px;
+  width: 3px;
+}
+
+/* Authentic Antenna Stripes */
+.device-iphone-14-pro .device-stripe::after,
+.device-iphone-14-pro .device-stripe::before {
+  border: solid rgba(255, 255, 255, 0.08);
+  border-width: 0 7px;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.device-iphone-14-pro .device-stripe::after {
+  top: 85px;
+}
+
+.device-iphone-14-pro .device-stripe::before {
+  bottom: 85px;
+}
+
+/* Authentic Dynamic Island */
+.device-iphone-14-pro .device-header {
+  background: #000000;
+  border-radius: 20px;
+  height: 30px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  top: 30px;
+  width: 120px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.device-iphone-14-pro .device-sensors::before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(farthest-corner at 20% 20%, #6074bf 0, transparent 40%), radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555e 20%, transparent 50%);
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.1);
+  height: 11px;
+  width: 11px;
+  right: 12px;
+  top: 9.5px;
+  position: absolute;
+}
+
+@media (max-width: 460px) {
+  .dusq-mobile-page {
+    padding: 20px 10px 64px;
+    overflow-x: clip;
+  }
+
+  .device-iphone-14-pro {
+    transform: scale(0.78);
+    transform-origin: top center;
+    margin-bottom: -190px;
+    flex-shrink: 0;
+  }
+}
+
+/* Home Indicator */
+.dusq-phone-home-indicator {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Design System Audit Panel (Right Side) — High-Contrast Dark Card
+   ========================================================================== */
+.dusq-audit-panel {
+  max-width: 420px;
+  flex: 1 1 340px;
+  background: var(--dusq-dark-surface) !important;
+  border: 1px solid var(--dusq-dark-surface-border) !important;
+  border-radius: 28px !important;
+  padding: 28px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7) !important;
+  color: var(--dusq-text-primary) !important;
+}
+
+.dusq-audit-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dusq-audit-panel__title {
+  margin: 0 !important;
+  font-size: 20px !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  font-family: var(--dusq-font-display) !important;
+}
+
+.dusq-audit-panel__screen {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: var(--dusq-text-secondary) !important;
+}
+
+.dusq-audit-panel__screen strong {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.dusq-audit-panel__section {
+  border-top: 1px solid var(--dusq-dark-surface-border) !important;
+  padding-top: 14px !important;
+}
+
+.dusq-audit-panel__section-title {
+  margin: 0 0 10px !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 700 !important;
+  color: var(--dusq-accent-orange) !important;
+}
+
+.dusq-audit-panel__list {
+  margin: 0 !important;
+  padding-left: 20px !important;
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+  line-height: 1.9 !important;
+  font-weight: 500 !important;
+}
+
+.dusq-audit-panel__list li {
+  color: #FFFFFF !important;
+}
+
+.dusq-audit-panel__chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.dusq-audit-panel__tag {
+  background: var(--dusq-dark-surface-raised) !important;
+  border: 1px solid var(--dusq-dark-surface-border-strong) !important;
+  color: #FFFFFF !important;
+  padding: 6px 12px !important;
+  border-radius: 999px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.dusq-audit-panel__callout {
+  background: var(--dusq-success-green-soft) !important;
+  border: 1px solid var(--ba-semantic-color-tokens-status-success-border) !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: var(--dusq-text-primary) !important;
+}
+
+.dusq-audit-panel__callout strong {
+  color: var(--dusq-success-green-text) !important;
+}
+
+.dusq-audit-panel__callout code {
+  background: rgba(0, 0, 0, 0.5) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  color: var(--dusq-success-green-text) !important;
+  font-family: var(--dusq-font-display) !important;
+}
+
+/* ==========================================================================
+   Internal Phone Screen Components — Website Dark-Mode Token Theme
+   ========================================================================== */
+.dusq-mobile-page .material-symbols-rounded,
+.device-screen .material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.dusq-screen-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 14px 18px 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dusq-screen-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Screen Headers & Back Button (Strict Pure White in Dark Mode) */
+.dusq-screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 8px;
+}
+
+.dusq-screen-header__back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #FFFFFF !important;
+  margin-left: -8px;
+}
+
+.dusq-screen-header__back .figma-icon-button,
+.dusq-screen-header__back .figma-icon-button > .figma-icon,
+.dusq-screen-header__back svg,
+.dusq-screen-header svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+  fill: none !important;
+}
+
+.dusq-screen-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 0 4px;
+  min-height: 44px;
+}
+
+.dusq-screen-top-bar__title {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  font-family: var(--dusq-font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dusq-text-primary) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dusq-screen-header__title {
+  font-family: var(--dusq-font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+}
+
+.dusq-screen-header__date {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dusq-text-secondary) !important;
+}
+
+/* Greeting */
+.dusq-greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dusq-greeting__label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--dusq-accent-orange) !important;
+  margin-bottom: 2px;
+}
+
+.dusq-greeting__name {
+  font-family: var(--dusq-font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #FFFFFF !important;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.dusq-greeting__sub {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--dusq-text-secondary) !important;
+  margin-top: 4px;
+}
+
+.dusq-greeting__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+  background: var(--dusq-dark-surface-raised);
+}
+
+.dusq-greeting__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Streak Bar (De-boxified: Open, Transparent & Clean) */
+.dusq-streak-bar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  background: transparent !important;
+  border: none !important;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.dusq-streak-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary) !important;
+  cursor: pointer;
+  padding: 6px 0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  letter-spacing: -0.01em;
+}
+
+.dusq-streak-day--active {
+  background: color-mix(in srgb, var(--dusq-accent-orange) 14%, transparent) !important;
+  color: var(--dusq-text-primary) !important;
+}
+
+.dusq-streak-day__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ba-color-themes-base-800);
+}
+
+/* Days 1 to 5: Crisp White Dots */
+.dusq-streak-day--completed .dusq-streak-day__dot {
+  background: var(--dusq-text-primary) !important;
+  box-shadow: 0 0 7px color-mix(in srgb, var(--dusq-text-primary) 70%, transparent) !important;
+}
+
+/* Day 6: Primary DUSQ Orange */
+.dusq-streak-day--current .dusq-streak-day__dot {
+  background: var(--dusq-accent-orange) !important;
+  box-shadow: 0 0 8px color-mix(in srgb, var(--dusq-accent-orange) 85%, transparent) !important;
+}
+
+/* Cards */
+.dusq-card {
+  background: var(--dusq-dark-surface) !important;
+  border: 1px solid var(--dusq-dark-surface-border) !important;
+  border-radius: var(--dusq-radius-card);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.dusq-card:hover {
+  border-color: var(--dusq-dark-surface-border-strong) !important;
+}
+
+.dusq-card--raised {
+  background: var(--dusq-dark-surface-raised) !important;
+}
+
+.dusq-card--highlight {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--dusq-accent-orange) 20%, transparent) 0%, rgba(26, 24, 22, 0.95) 100%) !important;
+  border-color: color-mix(in srgb, var(--dusq-accent-orange) 45%, transparent) !important;
+}
+
+.dusq-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dusq-card__title {
+  font-family: var(--dusq-font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  margin: 0;
+}
+
+.dusq-card__time {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dusq-text-muted) !important;
+}
+
+.dusq-card__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--dusq-text-secondary) !important;
+  margin: 0;
+}
+
+/* Apple HIG Floating Glass Tab Bar (iOS 18 Liquid Glass & SF Symbols Spec) */
+.dusq-phone-bottomnav {
+  position: absolute;
+  bottom: 22px;
+  left: 18px;
+  right: 18px;
+  height: 58px;
+  border-radius: 30px;
+  background: rgba(22, 19, 17, 0.76) !important;
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 0.5px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 
+    0 16px 36px -4px rgba(0, 0, 0, 0.68),
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6px;
+  z-index: 45;
+  box-sizing: border-box;
+}
+
+.dusq-nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  border-radius: 22px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--dusq-text-muted) !important;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dusq-nav-tab:active {
+  transform: scale(0.92);
+}
+
+.dusq-nav-tab__icon,
+.dusq-nav-tab__icon-wrap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-nav-tab svg {
+  color: var(--dusq-text-muted) !important;
+  stroke: var(--dusq-text-muted);
+  transition: all 0.2s ease;
+}
+
+.dusq-nav-tab__label {
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-family: var(--dusq-font-body);
+  color: var(--dusq-text-muted) !important;
+  transition: all 0.2s ease;
+}
+
+.dusq-nav-tab:hover {
+  background: rgba(250, 248, 245, 0.06);
+  color: var(--dusq-text-primary) !important;
+}
+
+.dusq-nav-tab:hover svg {
+  color: var(--dusq-text-primary) !important;
+  stroke: var(--dusq-text-primary);
+}
+
+.dusq-nav-tab:hover .dusq-nav-tab__label {
+  color: var(--dusq-text-primary) !important;
+}
+
+/* Active Tab: DUSQ Primary Accent + Crisp Warm-White Ink */
+.dusq-nav-tab--active {
+  background: color-mix(in srgb, var(--dusq-accent-orange) 16%, transparent) !important;
+  color: var(--dusq-accent-orange) !important;
+}
+
+.dusq-nav-tab--active svg {
+  color: var(--dusq-accent-orange) !important;
+  stroke: var(--dusq-accent-orange);
+  fill: var(--dusq-accent-orange);
+}
+
+.dusq-nav-tab--active .dusq-nav-tab__label {
+  color: var(--dusq-text-primary) !important;
+  font-weight: 600;
+}
+
+/* Status Badge */
+.dusq-nav-tab__badge {
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dusq-accent-orange);
+  box-shadow: 0 0 0 2px var(--dusq-dark-surface);
+}
+
+/* Pulse Wave */
+.dusq-wave-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 48px;
+  padding: 8px 0;
+}
+
+.dusq-wave-line {
+  width: 4px;
+  background: var(--dusq-accent-orange);
+  border-radius: 3px;
+  animation: dusqWave 1.4s ease-in-out infinite;
+}
+
+.dusq-wave-line:nth-child(2) { animation-delay: 0.2s; height: 32px; }
+.dusq-wave-line:nth-child(3) { animation-delay: 0.4s; height: 42px; }
+.dusq-wave-line:nth-child(4) { animation-delay: 0.1s; height: 24px; }
+.dusq-wave-line:nth-child(5) { animation-delay: 0.3s; height: 38px; }
+.dusq-wave-line:nth-child(6) { animation-delay: 0.5s; height: 28px; }
+
+@keyframes dusqWave {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+/* ==========================================================================
+   Design System Component Layout Helpers (Colors/Tokens Owned by Design System)
+   ========================================================================== */
+.dusq-btn-flex {
+  flex: 1 1 0%;
+}
+
+.dusq-btn-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.dusq-btn-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.dusq-btn-row > .figma-button,
+.dusq-btn-row > button {
+  flex: 1 1 0%;
+}
+
+/* Horizontal Filter Chips Strip — Zero Native Scrollbar Clipping */
+.dusq-chips-scroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0 8px;
+  min-height: 36px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dusq-chips-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.dusq-chips-scroll > div {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dusq-mobile-page .dusq-donut-wrap .figma-progress-donut {
+  width: 136px;
+  height: 136px;
+}
+
+.device-screen .figma-progress-bar,
+.dusq-mobile-page .dusq-stage-row .figma-progress-bar {
+  width: 100%;
+}
+
+.dusq-mobile-page .dusq-checkin-screen .figma-input {
+  width: 100%;
+}
+
+/* Scoped Design-System Font & Apple HIG / M3 Touch Target Guarantees */
+.device-screen .figma-button {
+  min-height: 44px;
+}
+
+.device-screen .figma-icon-button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.device-screen .figma-button .figma-label,
+.device-screen .figma-chip,
+.device-screen .figma-selection__label,
+.device-screen .figma-input__label,
+.device-screen .figma-input__input,
+.device-screen .figma-segmented-child__body,
+.device-screen .figma-stepper-child__body {
+  font-family: var(--dusq-font-body);
+}
+
+.device-screen .figma-segmented-child__title,
+.device-screen .figma-stepper-child__title {
+  font-family: var(--dusq-font-heading);
+  font-size: 14.5px;
+  line-height: 1.25;
+}
+
+.device-screen .figma-segmented-child__body,
+.device-screen .figma-stepper-child__body {
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.device-screen .figma-chip {
+  min-height: 28px;
+  height: auto;
+  padding: 4px 11px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.device-screen .figma-input__shell {
+  min-height: 48px;
+}
+
+.device-screen .figma-input__input {
+  min-height: 44px;
+  font-size: 15px;
+}
+
+.device-screen .figma-input__label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+}
+
+.dusq-chip-btn,
+.dusq-filter-chip-btn {
+  background: transparent;
+  border: 0;
+  padding: 4px 0;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.dusq-chip-btn .figma-chip,
+.dusq-filter-chip-btn .figma-chip {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Modern Non-Boxy Visual UI Styles (Zero AI Clutter / Glanceable Visuals)
+   ========================================================================== */
+
+/* Fluid, Open Hero Section (Completely De-Boxified) */
+.dusq-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 2px 0 10px;
+  background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--dusq-accent-orange) 9%, transparent) 0%, color-mix(in srgb, var(--dusq-accent-orange) 2%, transparent) 45%, transparent 75%);
+}
+
+.dusq-score-dial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dusq-score-dial__ambient-glow {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--dusq-success-green) 22%, transparent) 0%, color-mix(in srgb, var(--dusq-success-green) 8%, transparent) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(20px);
+  pointer-events: none;
+  animation: heroGlowPulse 4s ease-in-out infinite alternate;
+}
+
+.dusq-score-dial__ring-wrap {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-score-dial__svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--dusq-success-green) 35%, transparent));
+}
+
+.dusq-score-dial__center-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.dusq-score-dial__number {
+  font-family: var(--dusq-font-display);
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--dusq-text-primary) !important;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.dusq-score-dial__sub {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dusq-text-secondary) !important;
+  margin-top: 3px;
+}
+
+/* Fluid Metrics Row: Zero Box Borders / Pure Typography */
+.dusq-fluid-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 18px;
+  padding: 4px 8px;
+}
+
+.dusq-fluid-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  flex: 1;
+}
+
+.dusq-fluid-metric__val {
+  font-family: var(--dusq-font-heading);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--dusq-text-primary) !important;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.dusq-fluid-metric__lbl {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dusq-text-muted) !important;
+  letter-spacing: 0.02em;
+}
+
+.dusq-fluid-metric-divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(250, 248, 245, 0.1);
+}
+
+/* Modern Borderless Visual Surface */
+.dusq-visual-card {
+  background: radial-gradient(130% 100% at 50% 0%, var(--dusq-dark-surface) 0%, var(--dusq-dark-bg) 100%) !important;
+  border: 1px solid rgba(250, 248, 245, 0.08) !important;
+  border-radius: 22px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.4);
+}
+
+.dusq-visual-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(250, 248, 245, 0.18), transparent);
+  pointer-events: none;
+}
+
+/* Hero Recovery Dial Centerpiece */
+.dusq-hero-dial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 12px 0 6px;
+}
+
+.dusq-hero-dial__glow {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--dusq-success-green) 16%, transparent) 0%, color-mix(in srgb, var(--dusq-accent-orange) 8%, transparent) 50%, transparent 75%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(16px);
+  animation: heroGlowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlowPulse {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+}
+
+.dusq-hero-dial__center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-hero-dial__score {
+  font-family: var(--dusq-font-display);
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-top: -6px;
+}
+
+.dusq-hero-dial__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dusq-text-muted);
+  margin-top: 4px;
+}
+
+/* Glanceable Metric Row */
+.dusq-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: rgba(250, 248, 245, 0.03);
+  border: 1px solid rgba(250, 248, 245, 0.06);
+  border-radius: 16px;
+  padding: 10px 8px;
+  margin-top: 4px;
+}
+
+.dusq-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+}
+
+.dusq-stat-item__value {
+  font-family: var(--dusq-font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  line-height: 1.1;
+}
+
+.dusq-stat-item__label {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--dusq-text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* Interactive SVG Telemetry Sleep Wave */
+.dusq-telemetry-box {
+  background: rgba(14, 12, 10, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dusq-telemetry-box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dusq-telemetry-box__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dusq-telemetry-svg {
+  width: 100%;
+  height: 80px;
+  overflow: visible;
+}
+
+.dusq-surge-pin {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dusq-surge-pin:hover {
+  transform: scale(1.3);
+}
+
+/* Asymmetric Bento Grid */
+.dusq-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dusq-bento-tile {
+  background: radial-gradient(120% 120% at 50% 0%, #1a1714 0%, #100f0d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-bento-tile:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.dusq-bento-tile__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.dusq-bento-tile__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dusq-accent-orange);
+}
+
+.dusq-bento-tile__val {
+  font-family: var(--dusq-font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.dusq-bento-tile__sub {
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+/* Circadian Sleep Gate Arc Card */
+.dusq-circadian-card {
+  background: radial-gradient(130% 120% at 50% 0%, var(--dusq-dark-surface-raised) 0%, var(--dusq-dark-bg) 100%) !important;
+  border: 1px solid color-mix(in srgb, var(--dusq-accent-orange) 28%, transparent) !important;
+}
+
+.dusq-circadian-arc {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Autonomic Balance Scale (Black to Primary DUSQ Orange) */
+.dusq-balance-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 0;
+}
+
+.dusq-balance-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--dusq-dark-surface) 0%, var(--dusq-accent-orange) 100%);
+  position: relative;
+}
+
+.dusq-balance-thumb {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dusq-text-primary);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--dusq-accent-orange) 85%, transparent), 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tactile Soundscape Player Card */
+.dusq-sound-tile {
+  background: linear-gradient(145deg, var(--dusq-dark-surface) 0%, var(--dusq-dark-bg) 100%);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 20px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-sound-tile:hover {
+  border-color: color-mix(in srgb, var(--dusq-accent-orange) 40%, transparent);
+  background: linear-gradient(145deg, var(--dusq-dark-surface-raised) 0%, var(--dusq-dark-bg) 100%);
+}
+
+.dusq-sound-tile--active {
+  border-color: var(--dusq-accent-orange) !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--dusq-accent-orange) 15%, transparent) 0%, var(--dusq-dark-surface) 100%) !important;
+}
+
+.dusq-sound-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+
+.dusq-sound-bar {
+  width: 3px;
+  height: 4px;
+  background: var(--dusq-accent-orange);
+  border-radius: 2px;
+  opacity: 0.35;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.dusq-sound-bar--animated {
+  opacity: 1;
+  animation: eqBounce 1.2s ease-in-out infinite alternate;
+}
+
+.dusq-sound-bar--animated:nth-child(1) { height: 8px; animation-delay: 0.1s; }
+.dusq-sound-bar--animated:nth-child(2) { height: 18px; animation-delay: 0.3s; }
+.dusq-sound-bar--animated:nth-child(3) { height: 12px; animation-delay: 0.15s; }
+.dusq-sound-bar--animated:nth-child(4) { height: 20px; animation-delay: 0.4s; }
+.dusq-sound-bar--animated:nth-child(5) { height: 10px; animation-delay: 0.25s; }
+
+@keyframes eqBounce {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+
+/* Sleep Stage Hypnogram Ribbon */
+.dusq-hypnogram-ribbon {
+  display: flex;
+  height: 36px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dusq-hypnogram-stage {
+  height: 100%;
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+
+.dusq-hypnogram-stage--deep { background: var(--ba-primitive-color-tokens-blue-600); }
+.dusq-hypnogram-stage--light { background: var(--ba-primitive-color-tokens-blue-400); }
+.dusq-hypnogram-stage--rem { background: var(--ba-primitive-color-tokens-purple-400); }
+.dusq-hypnogram-stage--awake { background: var(--dusq-accent-orange); }
+
+.dusq-hypnogram-stage:hover {
+  opacity: 0.85;
+}
+
+/* Low-Nit Night HUD Breathing Pacer */
+.dusq-night-breathing-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--dusq-accent-orange) 30%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: nightBreathe 8s ease-in-out infinite;
+}
+
+.dusq-night-breathing-ring::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--dusq-accent-orange) 15%, transparent) 0%, transparent 70%);
+}
+
+@keyframes nightBreathe {
+  0%, 100% { transform: scale(0.92); opacity: 0.4; border-color: color-mix(in srgb, var(--dusq-accent-orange) 20%, transparent); }
+  50% { transform: scale(1.08); opacity: 0.85; border-color: color-mix(in srgb, var(--dusq-accent-orange) 60%, transparent); }
+}
+
+/* Tactile Habit Factor Grid */
+.dusq-factor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.dusq-factor-tile {
+  background: rgba(250, 248, 245, 0.03);
+  border: 1px solid rgba(250, 248, 245, 0.06);
+  border-radius: 14px;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-factor-tile:hover {
+  background: rgba(250, 248, 245, 0.06);
+  border-color: rgba(250, 248, 245, 0.12);
+}
+
+.dusq-factor-tile--selected {
+  background: color-mix(in srgb, var(--dusq-accent-orange) 12%, transparent) !important;
+  border-color: var(--dusq-accent-orange) !important;
+}
+
+.dusq-factor-tile__icon {
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-factor-tile__name {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #FAF8F5;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   Apple Inset Grouped Table View & Card Components (Apple HIG Standard)
+   ========================================================================== */
+.apple-inset-grouped-list {
+  background: rgba(26, 23, 21, 0.72);
+  border-radius: 18px;
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-inset-grouped-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  user-select: none;
+}
+
+.apple-inset-grouped-row:last-child {
+  border-bottom: none;
+}
+
+.apple-inset-grouped-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.apple-inset-grouped-row:active {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.apple-inset-grouped-row--selected {
+  background: color-mix(in srgb, var(--dusq-accent-orange) 10%, transparent);
+}
+
+.apple-inset-grouped-row__icon-tile {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(250, 248, 245, 0.07);
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.apple-inset-grouped-row--selected .apple-inset-grouped-row__icon-tile {
+  background: var(--dusq-accent-orange-soft);
+}
+
+.apple-inset-grouped-row__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.apple-inset-grouped-row__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dusq-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.apple-inset-grouped-row--selected .apple-inset-grouped-row__title {
+  font-weight: 600;
+}
+
+.apple-inset-grouped-row__subtitle {
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+.apple-inset-grouped-row__control {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* Explore Unwind Library Card Modifiers */
+.apple-audio-card {
+  border-radius: 20px;
+  padding: 16px;
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.apple-audio-card--playing {
+  border-color: color-mix(in srgb, var(--dusq-accent-orange) 45%, transparent);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--dusq-accent-orange) 12%, var(--dusq-dark-surface)) 0%, var(--dusq-dark-bg) 100%);
+}
+
+.dusq-session-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(250, 248, 245, 0.08);
+  color: var(--dusq-text-secondary);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dusq-session-badge.is-playing {
+  background: var(--dusq-accent-orange-soft);
+  color: var(--ba-color-themes-primary-300);
+}
+
+/* ==========================================================================
+   DUSQ Master IA: Chrono-Adaptive Card System & Official Mobile Shell
+   ========================================================================== */
+
+/* Bottom Nav Container with Integrated Hardware Hub Button */
+.dusq-bottomnav-container {
+  position: absolute;
+  bottom: 18px;
+  left: 14px;
+  right: 14px;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.dusq-bottomnav-container::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  right: -14px;
+  bottom: -18px;
+  height: 118px;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0) 0%,
+    rgba(17, 17, 17, 0.84) 44%,
+    var(--dusq-dark-bg) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dusq-bottomnav-container * {
+  pointer-events: auto;
+}
+
+.dusq-battery-callout {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: rgba(26, 24, 22, 0.9);
+  border: 1px solid rgba(250, 248, 245, 0.14);
+  border-radius: 999px;
+  font-family: var(--dusq-font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dusq-text-primary);
+  margin-bottom: 6px;
+  margin-right: 4px;
+  backdrop-filter: blur(16px);
+}
+
+.dusq-bottomnav-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dusq-bottomnav-row .dusq-phone-bottomnav {
+  position: static;
+  flex: 1;
+  height: 56px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+/* Dedicated DUSQ One Behind-The-Ear Hardware Pod Button */
+.dusq-hardware-pod-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: rgba(26, 24, 22, 0.88);
+  border: 1px solid rgba(250, 248, 245, 0.16);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.dusq-hardware-pod-btn:hover,
+.dusq-hardware-pod-btn.is-active {
+  background: var(--dusq-dark-surface-raised);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  transform: scale(1.04);
+}
+
+.dusq-pod-glyph {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #181614;
+  border: 1.25px solid rgba(250, 248, 245, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5px;
+  flex-shrink: 0;
+}
+
+.dusq-pod-glyph::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(250, 248, 245, 0.45);
+}
+
+.dusq-pod-glyph .pod-dot {
+  display: block;
+}
+
+.dusq-pod-glyph .pod-dot-1 {
+  width: 6px;
+  height: 7px;
+  border-radius: 50% 50% 16% 50%;
+  background: rgba(250, 248, 245, 0.72);
+}
+
+.dusq-pod-glyph .pod-dot-2 {
+  width: 8px;
+  height: 9px;
+  border-radius: 50% 16% 50% 50%;
+  background: #FAF8F5;
+  box-shadow: 0 0 6px rgba(250, 248, 245, 0.28);
+}
+
+.dusq-pod-glyph.is-small {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  gap: 2px;
+}
+
+.dusq-pod-glyph.is-small::before {
+  top: 3px;
+  left: 3px;
+  width: 2.5px;
+  height: 2.5px;
+}
+
+.dusq-pod-glyph.is-small .pod-dot-1 {
+  width: 4.5px;
+  height: 5.5px;
+}
+
+.dusq-pod-glyph.is-small .pod-dot-2 {
+  width: 6px;
+  height: 7px;
+}
+
+.dusq-pod-glyph.is-large {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  border-width: 1.75px;
+  border-color: rgba(250, 248, 245, 0.4);
+  gap: 5px;
+}
+
+.dusq-pod-glyph.is-large::before {
+  top: 8px;
+  left: 8px;
+  width: 5px;
+  height: 5px;
+}
+
+.dusq-pod-glyph.is-large .pod-dot-1 {
+  width: 12px;
+  height: 14px;
+  background: rgba(250, 248, 245, 0.78);
+}
+
+.dusq-pod-glyph.is-large .pod-dot-2 {
+  width: 16px;
+  height: 18px;
+  background: #FAF8F5;
+  box-shadow: 0 0 12px rgba(250, 248, 245, 0.35);
+}
+
+/* Ambient Circadian Arc on Left Margin */
+.dusq-chrono-home,
+.dusq-chrono-screen {
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 108px;
+}
+
+.dusq-ambient-circadian-arc {
+  position: absolute;
+  top: 130px;
+  left: 2px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Chrono Header */
+.dusq-chrono-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  padding: 0 2px;
+}
+
+.dusq-chrono-greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.dusq-chrono-greeting__lead {
+  font-size: 22px;
+  font-weight: 400;
+  color: #FAF8F5;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.dusq-chrono-greeting__name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.dusq-chrono-profile-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(250, 248, 245, 0.08);
+  border: 1px solid rgba(250, 248, 245, 0.14);
+  color: var(--dusq-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dusq-chrono-profile-btn:hover {
+  background: rgba(250, 248, 245, 0.16);
+  border-color: var(--ba-semantic-color-tokens-border-default);
+}
+
+/* Consistency & Readiness Row */
+.dusq-chrono-metrics-row {
+  display: grid;
+  grid-template-columns: 1fr 74px;
+  gap: 12px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.dusq-weekly-consistency {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dusq-consistency-label {
+  font-size: 13px;
+  color: var(--dusq-text-secondary);
+  margin-bottom: 8px;
+}
+
+.dusq-consistency-days {
+  display: flex;
+  gap: 5px;
+}
+
+.dusq-day-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.dusq-day-pill {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-day-pill.is-checked {
+  background: var(--dusq-text-primary);
+}
+
+.dusq-day-pill.is-upcoming {
+  background: rgba(250, 248, 245, 0.07);
+  border: 1px solid rgba(250, 248, 245, 0.12);
+}
+
+.dusq-day-letter {
+  font-size: 11px;
+  color: var(--dusq-text-muted);
+  font-weight: 600;
+}
+
+/* Readiness & Dusk Awaits Squircle */
+.dusq-readiness-squircle {
+  background: rgba(250, 248, 245, 0.05);
+  border: 1px solid rgba(250, 248, 245, 0.14);
+  border-radius: 16px;
+  color: var(--dusq-text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-readiness-squircle:hover {
+  background: rgba(250, 248, 245, 0.09);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+}
+
+.dusq-readiness-value {
+  display: flex;
+  align-items: baseline;
+  color: var(--ba-primitive-color-tokens-blue-200);
+}
+
+.dusq-readiness-value strong {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dusq-readiness-value span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 1px;
+}
+
+.dusq-readiness-label {
+  font-size: 11px;
+  color: var(--dusq-text-secondary);
+  margin-top: 4px;
+  letter-spacing: 0.01em;
+}
+
+.dusq-dusk-label {
+  margin-top: 6px;
+}
+
+.dusq-dusk-squircle {
+  gap: 2px;
+}
+
+/* Chrono-Adaptive Card Stack */
+.dusq-card-stack-container {
+  position: relative;
+  min-height: 314px;
+  margin-top: 22px;
+}
+
+.dusq-chrono-card {
+  border-radius: 24px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dusq-chrono-card.is-active {
+  height: 188px;
+  z-index: 10;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.dusq-chrono-card.is-stacked {
+  z-index: 5;
+}
+
+.dusq-chrono-pill-hotspot {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 95px;
+  height: 42px;
+  border-radius: 999px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.dusq-chrono-pill-hotspot:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.dusq-chrono-pill-hotspot:active {
+  transform: scale(0.95);
+}
+
+.dusq-bedside-edge-tab {
+  position: absolute;
+  right: 0;
+  top: 52%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 44px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: rgba(250, 248, 245, 0.08);
+  border: 1px solid rgba(250, 248, 245, 0.14);
+  border-right: none;
+  color: var(--dusq-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.2s ease;
+}
+
+.dusq-bedside-edge-tab:hover {
+  background: rgba(250, 248, 245, 0.16);
+  color: var(--dusq-text-primary);
+  width: 26px;
+}
+
+.dusq-chrono-card__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.1) 35%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+}
+
+.dusq-chrono-card__content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 16px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.dusq-chrono-card__tag {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--dusq-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.dusq-chrono-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.dusq-chrono-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: var(--dusq-text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.dusq-chrono-pill-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  background: var(--ba-color-themes-base-0);
+  color: var(--ba-color-themes-base-900);
+  border: 1px solid var(--ba-color-themes-base-300);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-family: var(--dusq-font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.dusq-chrono-pill-cta:hover {
+  background: var(--ba-color-themes-base-50);
+  transform: scale(1.03);
+}
+
+.dusq-card-stack-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.dusq-card-dot {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+}
+
+.dusq-card-dot.is-active {
+  background: transparent;
+}
+
+/* Qualitative Check-in Screen */
+.dusq-checkin-intro {
+  margin: 10px 0 18px;
+}
+
+.dusq-checkin-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--dusq-accent-eyebrow);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.dusq-checkin-headline {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  margin: 0 0 6px;
+}
+
+.dusq-checkin-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--dusq-text-secondary);
+  margin: 0;
+}
+
+.dusq-checkin-section {
+  margin-bottom: 18px;
+}
+
+.dusq-checkin-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+  margin-bottom: 8px;
+}
+
+.dusq-feeling-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dusq-feeling-card {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(250, 248, 245, 0.05);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-feeling-card.is-selected {
+  background: var(--dusq-accent-orange-soft);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+}
+
+.dusq-feeling-emoji {
+  font-size: 18px;
+}
+
+.dusq-feeling-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dusq-text-primary);
+}
+
+.dusq-feeling-sub {
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+.dusq-feeling-radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-feeling-card.is-selected .dusq-feeling-radio {
+  border-color: var(--dusq-accent-orange);
+}
+
+.radio-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--dusq-accent-orange);
+}
+
+.dusq-clarity-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dusq-clarity-pill {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-clarity-pill.is-selected {
+  background: #FAF8F5;
+  color: #121516;
+  font-weight: 600;
+}
+
+.dusq-checkin-footnote {
+  text-align: center;
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Surges Telemetry & Closed-Loop HUD */
+.dusq-surges-hero {
+  margin-bottom: 16px;
+}
+
+.dusq-surges-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.dusq-surges-intro {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--dusq-text-secondary);
+  margin: 0;
+}
+
+.dusq-surge-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.dusq-surge-stat-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 14px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dusq-surge-stat-num {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+}
+
+.dusq-surge-stat-label {
+  font-size: 11.5px;
+  color: var(--dusq-text-secondary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.dusq-surge-stat-sub {
+  font-size: 11px;
+  color: var(--dusq-success-green-text);
+  margin-top: 2px;
+}
+
+/* Closed-Loop Reconstruction HUD */
+.dusq-reconstruction-hud {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.dusq-hud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.dusq-hud-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dusq-accent-eyebrow);
+}
+
+.dusq-hud-title {
+  font-size: 13.5px;
+  color: var(--dusq-text-primary);
+  margin: 4px 0 0;
+}
+
+.dusq-hud-live-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--dusq-success-green-soft);
+  color: var(--dusq-success-green-text);
+  border: 1px solid var(--ba-semantic-color-tokens-status-success-border);
+}
+
+.dusq-surge-selector-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.dusq-surge-selector-row::-webkit-scrollbar {
+  display: none;
+}
+
+.dusq-surge-tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(250, 248, 245, 0.06);
+  border: 1px solid rgba(250, 248, 245, 0.14);
+  color: var(--dusq-text-primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dusq-surge-tab.is-active {
+  background: var(--ba-semantic-color-tokens-background-primary-default);
+  color: var(--ba-semantic-color-tokens-foreground-inverse-default);
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  font-weight: 600;
+}
+
+.surge-tab-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.dusq-hud-canvas {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.dusq-hud-stage-badge {
+  font-size: 12px;
+  color: var(--dusq-text-secondary);
+  margin-bottom: 6px;
+}
+
+.dusq-hud-stage-badge strong {
+  color: var(--dusq-text-primary);
+}
+
+.dusq-hud-phases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(250, 248, 245, 0.08);
+}
+
+.hud-phase {
+  font-size: 11.5px;
+  color: var(--dusq-text-secondary);
+}
+
+.hud-phase.is-highlight {
+  color: var(--dusq-text-primary);
+}
+
+.hud-phase-num {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--dusq-accent-eyebrow);
+  margin-bottom: 2px;
+}
+
+.hud-phase p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Hypnogram & Stages */
+.dusq-hypnogram-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.dusq-stages-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dusq-stage-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.dusq-stage-row:last-child {
+  margin-bottom: 0;
+}
+
+.stage-row-name {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.stage-row-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.stage-row-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.stage-row-val {
+  text-align: right;
+  color: #FAF8F5;
+  font-weight: 600;
+}
+
+/* Clinical Note Box */
+.dusq-clinical-note-box {
+  border-left: 2px solid var(--dusq-accent-orange);
+  padding: 12px 14px;
+  background: color-mix(in srgb, var(--dusq-accent-orange) 10%, transparent);
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 16px;
+}
+
+.dusq-clinical-note-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--dusq-text-primary);
+  margin: 0 0 4px;
+  font-style: italic;
+}
+
+.dusq-clinical-note-author {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dusq-accent-eyebrow);
+}
+
+/* Breathing & Vagal Pacer */
+.dusq-breathing-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 16px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.dusq-pacer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.dusq-pacer-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--dusq-accent-orange) 30%, transparent) 0%, color-mix(in srgb, var(--dusq-accent-orange) 5%, transparent) 70%);
+  border: 2px solid var(--dusq-accent-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 3.8s ease-in-out;
+}
+
+.dusq-pacer-circle.is-active {
+  animation: pacer-pulse 8s infinite ease-in-out;
+}
+
+@keyframes pacer-pulse {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(0.9); }
+}
+
+.dusq-pacer-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FAF8F5;
+  letter-spacing: 0.04em;
+}
+
+.dusq-hardware-check-tile {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* Protocol Steps */
+.dusq-protocol-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.dusq-protocol-step {
+  display: grid;
+  grid-template-columns: 28px 1fr 64px;
+  align-items: center;
+  gap: 10px;
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-protocol-step.is-active {
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+  background: color-mix(in srgb, var(--dusq-accent-orange) 12%, var(--dusq-dark-surface));
+}
+
+.protocol-step-num {
+  font-family: var(--dusq-font-display);
+  font-variant-numeric: tabular-nums;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--dusq-accent-orange);
+}
+
+.protocol-step-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--dusq-text-primary);
+}
+
+.protocol-step-sub {
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+  margin-top: 2px;
+}
+
+.protocol-toggle {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dusq-accent-orange);
+}
+
+.dusq-glance-preview-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+/* Bedside Glance Mode */
+.dusq-bedside-glance-mode {
+  position: absolute;
+  inset: 0;
+  z-index: 48;
+  background: #000000 !important;
+  color: #FF0000 !important;
+  padding: 68px 20px 36px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.dusq-glance-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.dusq-glance-header span[id] {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.dusq-glance-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #FF0000;
+  box-shadow: 0 0 8px #FF0000;
+}
+
+.dusq-glance-exit-btn {
+  min-height: 44px;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  border-radius: 999px;
+  padding: 0 16px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.dusq-glance-clock {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.dusq-glance-time {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.dusq-glance-sub {
+  display: block;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.dusq-glance-status-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--glance-red-ui, #C00000);
+  border-radius: 14px;
+  padding: 16px 14px;
+  margin-bottom: 16px;
+}
+
+.dusq-glance-metric {
+  text-align: center;
+}
+
+.glance-label {
+  display: block;
+  font-size: 11.5px;
+  opacity: 1;
+}
+
+.glance-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.dusq-glance-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 0, 0, 0.35);
+}
+
+.dusq-glance-note {
+  display: block;
+  font-size: 12px;
+  line-height: 1.45;
+  opacity: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* DUSQ One Hub Legacy Utilities */
+.dusq-pod-hardware-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.dusq-pod-hero-render {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.dusq-pod-hero-info {
+  margin-bottom: 16px;
+}
+
+.dusq-pod-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  margin: 0 0 2px;
+}
+
+.dusq-pod-serial {
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+.dusq-pod-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(250, 248, 245, 0.08);
+}
+
+.pod-metric-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.pod-metric-val {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+}
+
+.pod-metric-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+  margin-top: 2px;
+}
+
+.pod-metric-note {
+  font-size: 11px;
+  color: var(--dusq-text-muted);
+  margin-top: 2px;
+}
+
+.dusq-hardware-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.dusq-hw-module {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.hw-module-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(250, 248, 245, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dusq-accent-orange);
+}
+
+.hw-module-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--dusq-text-primary);
+}
+
+.hw-module-desc {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--dusq-text-secondary);
+  margin-top: 2px;
+}
+
+.dusq-sound-test-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.dusq-audit-panel__quote {
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--dusq-text-secondary);
+  border-left: 2px solid var(--dusq-accent-orange);
+  padding-left: 12px;
+  margin: 6px 0 8px;
+}
+
+.dusq-audit-panel__source {
+  display: block;
+  font-size: 12px;
+  color: var(--dusq-text-muted);
+}
+
+/* ==========================================================================
+   Refactored Companion Screens (Wind-Down, Readiness, Check-in, Surges, Hub)
+   ========================================================================== */
+
+.dusq-hud-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Screen 02: Wind-Down & Bedside Glance Card */
+.dusq-winddown-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dusq-step-card {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.dusq-step-card.is-active {
+  background: color-mix(in srgb, var(--dusq-accent-orange) 12%, var(--dusq-dark-surface));
+  border-color: var(--ba-semantic-color-tokens-border-primary);
+}
+
+.dusq-step-card .step-num {
+  font-family: var(--dusq-font-display);
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dusq-accent-orange);
+}
+
+.dusq-step-card .step-content {
+  min-width: 0;
+}
+
+.dusq-step-card .step-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dusq-text-primary);
+  line-height: 1.3;
+}
+
+.dusq-step-card .step-desc {
+  font-size: 12px;
+  color: var(--dusq-text-secondary);
+  line-height: 1.42;
+  margin-top: 3px;
+}
+
+.dusq-mini-audio-btn {
+  min-width: 64px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(250, 248, 245, 0.08);
+  border: 1px solid rgba(250, 248, 245, 0.18);
+  color: var(--dusq-text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dusq-mini-audio-btn:hover {
+  background: rgba(250, 248, 245, 0.14);
+}
+
+.dusq-bedside-glance-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.dusq-glance-action {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+/* Screen 03: Bedtime Readiness */
+.dusq-readiness-donut-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 14px 16px;
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 22px;
+}
+
+.dusq-donut-wrap {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dusq-donut-wrap .figma-progress-donut {
+  width: 136px !important;
+  height: 136px !important;
+}
+
+.dusq-donut-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.dusq-donut-center .donut-num {
+  font-family: var(--dusq-font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--dusq-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.dusq-donut-center .donut-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--dusq-text-muted);
+  margin-top: 4px;
+}
+
+.dusq-readiness-pacing-meta {
+  display: flex;
+  justify-content: center;
+}
+
+.dusq-readiness-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  padding-top: 12px;
+  border-top: 1px solid rgba(250, 248, 245, 0.08);
+  text-align: center;
+}
+
+.dusq-readiness-trio .trio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dusq-readiness-trio .trio-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.dusq-readiness-trio .trio-lbl {
+  font-size: 11.5px;
+  color: var(--dusq-text-muted);
+}
+
+.dusq-vagal-pacer-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+/* Screen 05: Daily Check-In Input */
+.dusq-checkin-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--dusq-dark-surface-raised);
+  border: 1px solid var(--dusq-dark-surface-border-strong);
+  color: var(--dusq-text-primary);
+  font-family: var(--dusq-font-body);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.dusq-checkin-input::placeholder {
+  color: var(--dusq-text-muted);
+}
+
+.dusq-checkin-input:focus {
+  border-color: var(--dusq-accent-orange);
+  background: var(--dusq-dark-surface);
+}
+
+/* Screen 06: Surges Telemetry HUD */
+.dusq-stat-big {
+  font-family: var(--dusq-font-display);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  line-height: 1.1;
+}
+
+.dusq-stat-sub {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+  margin-top: 4px;
+  line-height: 1.25;
+}
+
+.dusq-stat-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--dusq-success-green-text);
+  margin-top: 4px;
+  line-height: 1.2;
+}
+
+.dusq-surge-hud-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.dusq-surge-wave-panel {
+  background: rgba(17, 17, 17, 0.6);
+  border: 1px solid rgba(250, 248, 245, 0.08);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.dusq-wave-stage-badge {
+  font-size: 12px;
+  color: var(--dusq-text-secondary);
+  margin-bottom: 8px;
+}
+
+.dusq-wave-stage-badge strong {
+  color: var(--dusq-text-primary);
+}
+
+.dusq-closed-loop-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(250, 248, 245, 0.08);
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.flow-step .step-num {
+  font-family: var(--dusq-font-display);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.flow-step .step-body {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--dusq-text-secondary);
+}
+
+.dusq-stage-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12.5px;
+}
+
+.stage-name {
+  color: var(--dusq-text-primary);
+  font-weight: 500;
+}
+
+.stage-val {
+  color: var(--dusq-text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.dusq-stage-bar {
+  height: 6px;
+  width: 100%;
+  border-radius: 999px;
+  background: rgba(250, 248, 245, 0.09);
+  overflow: hidden;
+}
+
+.dusq-stage-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.dusq-quote-card {
+  border-left: 2px solid var(--dusq-accent-orange);
+  padding: 12px 14px;
+  background: color-mix(in srgb, var(--dusq-accent-orange) 10%, var(--dusq-dark-surface));
+  border-radius: 0 12px 12px 0;
+}
+
+.dusq-quote-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--dusq-text-primary);
+  font-style: italic;
+}
+
+.dusq-quote-author {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dusq-accent-eyebrow);
+  margin-top: 6px;
+}
+
+/* Screen 07: DUSQ One Hub */
+.dusq-hardware-pod-hero {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dusq-pod-hero-glow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--dusq-accent-orange) 24%, transparent) 0%, transparent 72%);
+  margin-bottom: 10px;
+}
+
+.dusq-pod-hero-name {
+  margin: 0 0 3px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+}
+
+.dusq-pod-hero-sub {
+  font-size: 12.5px;
+  color: var(--dusq-text-muted);
+  margin-bottom: 16px;
+}
+
+.dusq-pod-stats-strip {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding-top: 14px;
+  border-top: 1px solid rgba(250, 248, 245, 0.08);
+}
+
+.strip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.strip-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dusq-text-primary);
+  line-height: 1.2;
+}
+
+.strip-lbl {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--dusq-text-secondary);
+}
+
+.strip-sub {
+  font-size: 11px;
+  color: var(--dusq-text-muted);
+}
+
+.strip-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(250, 248, 245, 0.1);
+}
+
+.dusq-hardware-feature-card {
+  background: var(--dusq-dark-surface);
+  border: 1px solid var(--dusq-dark-surface-border);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.dusq-feature-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(250, 248, 245, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dusq-accent-orange);
+  flex-shrink: 0;
+}
+
+/* Screen 08: Placement Check Hero Overlay & Badge */
+.dusq-placement-pill {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: rgba(17, 17, 17, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 14px;
+  padding: 8px 14px;
+  border: 1px solid rgba(250, 248, 245, 0.14);
+}
+
+.dusq-placement-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dusq-accent-orange);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--dusq-accent-orange) 85%, transparent);
+  flex-shrink: 0;
+}
+
+.dusq-placement-step-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--dusq-accent-orange-soft);
+  border: 1.5px solid var(--dusq-accent-orange);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ba-color-themes-primary-300);
+  flex-shrink: 0;
+}
+
+
+

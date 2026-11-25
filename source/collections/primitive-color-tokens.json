@@ -13,176 +13,176 @@
   "variables": [
     {
       "id": "VariableID:2058:822",
-      "name": "neutral/100",
+      "name": "warm/100",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#D4D8DD  |  Tone 86  |  neutral ladder position 3 of 20  |  light-mode surface\nContrast  -  vs white 1.43:1  |  vs black 14.67:1\n3:1 non-text  -  +400 -&gt; neutral/500 or darker (3.40:1)\nAA 4.5:1  -  +500 -&gt; neutral/600 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; neutral/750 or darker (7.30:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.8313725590705872,
-          "g": 0.8470588326454163,
-          "b": 0.8666666746139526,
+          "r": 0.8666666746139526,
+          "g": 0.843137264251709,
+          "b": 0.8235294222831726,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:823",
-      "name": "neutral/200",
+      "name": "warm/200",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#B5BBC1  |  Tone 76  |  neutral ladder position 5 of 20  |  content - text, icons, borders\nContrast  -  vs white 1.94:1  |  vs black 10.84:1\n3:1 non-text  -  +400 -&gt; neutral/600 or darker (3.44:1)\nAA 4.5:1  -  +500 -&gt; neutral/700 or darker (4.68:1)\nAAA 7:1  -  +650 -&gt; neutral/850 or darker (7.36:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.7098039388656616,
-          "g": 0.7333333492279053,
-          "b": 0.7568627595901489,
+          "r": 0.7607843279838562,
+          "g": 0.7254902124404907,
+          "b": 0.686274528503418,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:824",
-      "name": "neutral/300",
+      "name": "warm/300",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#99A0A8  |  Tone 66  |  neutral ladder position 7 of 20  |  content - text, icons, borders\nContrast  -  vs white 2.64:1  |  vs black 7.95:1\n3:1 non-text  -  +400 -&gt; neutral/700 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/800 or darker (4.67:1)\nAAA 7:1  -  +650 -&gt; neutral/950 or darker (7.37:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.6000000238418579,
-          "g": 0.6274510025978088,
-          "b": 0.658823549747467,
+          "r": 0.6745098233222961,
+          "g": 0.615686297416687,
+          "b": 0.5529412031173706,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:825",
-      "name": "neutral/400",
+      "name": "warm/400",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#81888F  |  Tone 56  |  neutral ladder position 9 of 20  |  content - text, icons, borders\nContrast  -  vs white 3.59:1  |  vs black 5.85:1\n3:1 non-text  -  +400 -&gt; neutral/800 or darker (3.44:1) ; -400 -&gt; neutral/0 or lighter (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/900 or darker (4.66:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.5058823823928833,
-          "g": 0.5333333611488342,
-          "b": 0.5607843399047852,
+          "r": 0.6039215922355652,
+          "g": 0.5137255191802979,
+          "b": 0.4274509847164154,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:826",
-      "name": "neutral/500",
+      "name": "warm/500",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#6B7279  |  Tone 48  |  neutral ladder position 11 of 20  |  content - text, icons, borders\nContrast  -  vs white 4.87:1  |  vs black 4.31:1\n3:1 non-text  -  +400 -&gt; neutral/900 or darker (3.43:1) ; -400 -&gt; neutral/100 or lighter (3.40:1)\nAA 4.5:1  -  -500 -&gt; neutral/0 or lighter (4.66:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.41960784792900085,
-          "g": 0.4470588266849518,
-          "b": 0.4745098054409027,
+          "r": 0.5176470875740051,
+          "g": 0.4274509847164154,
+          "b": 0.33725491166114807,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:827",
-      "name": "neutral/600",
+      "name": "warm/600",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#575D64  |  Tone 39  |  neutral ladder position 13 of 20  |  content - text, icons, borders\nContrast  -  vs white 6.66:1  |  vs black 3.16:1\n3:1 non-text  -  -400 -&gt; neutral/200 or lighter (3.44:1)\nAA 4.5:1  -  -500 -&gt; neutral/100 or lighter (4.65:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.34117648005485535,
-          "g": 0.364705890417099,
-          "b": 0.3921568691730499,
+          "r": 0.4274509847164154,
+          "g": 0.3490196168422699,
+          "b": 0.27450981736183167,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:828",
-      "name": "neutral/700",
+      "name": "warm/700",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#444950  |  Tone 31  |  neutral ladder position 15 of 20  |  content - text, icons, borders\nContrast  -  vs white 9.07:1  |  vs black 2.31:1\n3:1 non-text  -  -400 -&gt; neutral/300 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; neutral/200 or lighter (4.68:1)\nAAA 7:1  -  -650 -&gt; neutral/50 or lighter (7.39:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.2666666805744171,
-          "g": 0.2862745225429535,
-          "b": 0.3137255012989044,
+          "r": 0.33725491166114807,
+          "g": 0.27450981736183167,
+          "b": 0.21176470816135406,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:829",
-      "name": "neutral/800",
+      "name": "warm/800",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#31353B  |  Tone 22  |  neutral ladder position 17 of 20  |  dark-mode surface\nContrast  -  vs white 12.33:1  |  vs black 1.70:1\n3:1 non-text  -  -400 -&gt; neutral/400 or lighter (3.44:1)\nAA 4.5:1  -  -500 -&gt; neutral/300 or lighter (4.67:1)\nAAA 7:1  -  -650 -&gt; neutral/150 or lighter (7.40:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.1921568661928177,
-          "g": 0.2078431397676468,
-          "b": 0.23137255012989044,
+          "r": 0.24705882370471954,
+          "g": 0.20000000298023224,
+          "b": 0.16078431904315948,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:830",
-      "name": "neutral/900",
+      "name": "warm/900",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#1B1E22  |  Tone 11  |  neutral ladder position 19 of 20  |  dark-mode surface\nContrast  -  vs white 16.73:1  |  vs black 1.26:1\n3:1 non-text  -  -400 -&gt; neutral/500 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; neutral/400 or lighter (4.66:1)\nAAA 7:1  -  -650 -&gt; neutral/250 or lighter (7.39:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.10588235408067703,
-          "g": 0.11764705926179886,
-          "b": 0.13333334028720856,
+          "r": 0.10196078431372549,
+          "g": 0.09411764705882353,
+          "b": 0.08627450980392157,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2058:831",
-      "name": "neutral/950",
+      "name": "warm/950",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#0A0D11  |  Tone 4  |  neutral ladder position 20 of 20  |  dark-mode surface\nContrast  -  vs white 19.47:1  |  vs black 1.08:1\n3:1 non-text  -  -400 -&gt; neutral/550 or lighter (3.41:1)\nAA 4.5:1  -  -500 -&gt; neutral/450 or lighter (4.62:1)\nAAA 7:1  -  -650 -&gt; neutral/300 or lighter (7.37:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.03921568766236305,
-          "g": 0.05098039284348488,
-          "b": 0.06666667014360428,
+          "r": 0.06666666666666667,
+          "g": 0.06666666666666667,
+          "b": 0.06666666666666667,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2062:820",
-      "name": "neutral/0",
+      "name": "warm/0",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#F8FAFC  |  Tone 98  |  neutral ladder position 1 of 20  |  light-mode surface\nContrast  -  vs white 1.05:1  |  vs black 20.07:1\n3:1 non-text  -  +400 -&gt; neutral/400 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/500 or darker (4.66:1)\nAAA 7:1  -  +650 -&gt; neutral/650 or darker (7.41:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.9725490212440491,
-          "g": 0.9803921580314636,
-          "b": 0.9882352948188782,
+          "r": 0.9803921568627451,
+          "g": 0.9725490196078431,
+          "b": 0.9607843137254902,
           "a": 1
         }
       }
@@ -509,23 +509,23 @@
     },
     {
       "id": "VariableID:2108:840",
-      "name": "warm/0",
+      "name": "neutral/0",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#FBF9F7  |  Tone 98  |  warm ladder position 1 of 20  |  light-mode surface\nContrast  -  vs white 1.05:1  |  vs black 20.00:1\n3:1 non-text  -  +400 -&gt; warm/400 or darker (3.42:1)\nAA 4.5:1  -  +500 -&gt; warm/500 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; warm/650 or darker (7.38:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
+      "description": "DUSQ neutral 0; contrast validated against entire ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.9843137264251709,
-          "g": 0.9764705896377563,
-          "b": 0.9686274528503418,
+          "r": 0.9803921568627451,
+          "g": 0.9725490196078431,
+          "b": 0.9607843137254902,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2108:841",
-      "name": "warm/50",
+      "name": "neutral/50",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#EBE7E4  |  Tone 92  |  warm ladder position 2 of 20  |  light-mode surface\nContrast  -  vs white 1.23:1  |  vs black 17.08:1\n3:1 non-text  -  +400 -&gt; warm/450 or darker (3.40:1)\nAA 4.5:1  -  +500 -&gt; warm/550 or darker (4.66:1)\nAAA 7:1  -  +650 -&gt; warm/700 or darker (7.35:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -541,7 +541,7 @@
     },
     {
       "id": "VariableID:2108:842",
-      "name": "warm/100",
+      "name": "neutral/100",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#DDD7D2  |  Tone 86  |  warm ladder position 3 of 20  |  light-mode surface\nContrast  -  vs white 1.43:1  |  vs black 14.73:1\n3:1 non-text  -  +400 -&gt; warm/500 or darker (3.42:1)\nAA 4.5:1  -  +500 -&gt; warm/600 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; warm/750 or darker (7.41:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -557,7 +557,7 @@
     },
     {
       "id": "VariableID:2108:843",
-      "name": "warm/150",
+      "name": "neutral/150",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#CEC7C1  |  Tone 81  |  warm ladder position 4 of 20  |  content - text, icons, borders\nContrast  -  vs white 1.67:1  |  vs black 12.56:1\n3:1 non-text  -  +400 -&gt; warm/550 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; warm/650 or darker (4.64:1)\nAAA 7:1  -  +650 -&gt; warm/800 or darker (7.32:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -573,7 +573,7 @@
     },
     {
       "id": "VariableID:2108:844",
-      "name": "warm/200",
+      "name": "neutral/200",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#C2B9AF  |  Tone 76  |  warm ladder position 5 of 20  |  content - text, icons, borders\nContrast  -  vs white 1.94:1  |  vs black 10.85:1\n3:1 non-text  -  +400 -&gt; warm/600 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; warm/700 or darker (4.67:1)\nAAA 7:1  -  +650 -&gt; warm/850 or darker (7.43:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -589,7 +589,7 @@
     },
     {
       "id": "VariableID:2108:845",
-      "name": "warm/250",
+      "name": "neutral/250",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#B7AA9D  |  Tone 70  |  warm ladder position 6 of 20  |  content - text, icons, borders\nContrast  -  vs white 2.27:1  |  vs black 9.25:1\n3:1 non-text  -  +400 -&gt; warm/650 or darker (3.41:1)\nAA 4.5:1  -  +500 -&gt; warm/750 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; warm/900 or darker (7.33:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -605,7 +605,7 @@
     },
     {
       "id": "VariableID:2108:846",
-      "name": "warm/300",
+      "name": "neutral/300",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#AC9D8D  |  Tone 66  |  warm ladder position 7 of 20  |  content - text, icons, borders\nContrast  -  vs white 2.64:1  |  vs black 7.96:1\n3:1 non-text  -  +400 -&gt; warm/700 or darker (3.42:1)\nAA 4.5:1  -  +500 -&gt; warm/800 or darker (4.64:1)\nAAA 7:1  -  +650 -&gt; warm/950 or darker (7.38:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -621,7 +621,7 @@
     },
     {
       "id": "VariableID:2108:847",
-      "name": "warm/350",
+      "name": "neutral/350",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#A3907C  |  Tone 61  |  warm ladder position 8 of 20  |  content - text, icons, borders\nContrast  -  vs white 3.07:1  |  vs black 6.84:1\n3:1 non-text  -  +400 -&gt; warm/750 or darker (3.44:1)\nAA 4.5:1  -  +500 -&gt; warm/850 or darker (4.68:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -637,7 +637,7 @@
     },
     {
       "id": "VariableID:2108:848",
-      "name": "warm/400",
+      "name": "neutral/400",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#9A836D  |  Tone 56  |  warm ladder position 9 of 20  |  content - text, icons, borders\nContrast  -  vs white 3.60:1  |  vs black 5.84:1\n3:1 non-text  -  +400 -&gt; warm/800 or darker (3.40:1) ; -400 -&gt; warm/0 or lighter (3.42:1)\nAA 4.5:1  -  +500 -&gt; warm/900 or darker (4.63:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -653,7 +653,7 @@
     },
     {
       "id": "VariableID:2108:849",
-      "name": "warm/450",
+      "name": "neutral/450",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#8F7861  |  Tone 52  |  warm ladder position 10 of 20  |  content - text, icons, borders\nContrast  -  vs white 4.18:1  |  vs black 5.03:1\n3:1 non-text  -  +400 -&gt; warm/850 or darker (3.44:1) ; -400 -&gt; warm/50 or lighter (3.40:1)\nAA 4.5:1  -  +500 -&gt; warm/950 or darker (4.66:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -669,7 +669,7 @@
     },
     {
       "id": "VariableID:2108:850",
-      "name": "warm/500",
+      "name": "neutral/500",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#846D56  |  Tone 48  |  warm ladder position 11 of 20  |  content - text, icons, borders\nContrast  -  vs white 4.88:1  |  vs black 4.30:1\n3:1 non-text  -  +400 -&gt; warm/900 or darker (3.41:1) ; -400 -&gt; warm/100 or lighter (3.42:1)\nAA 4.5:1  -  -500 -&gt; warm/0 or lighter (4.65:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -685,7 +685,7 @@
     },
     {
       "id": "VariableID:2108:851",
-      "name": "warm/550",
+      "name": "neutral/550",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#79624D  |  Tone 43  |  warm ladder position 12 of 20  |  content - text, icons, borders\nContrast  -  vs white 5.73:1  |  vs black 3.67:1\n3:1 non-text  -  +400 -&gt; warm/950 or darker (3.40:1) ; -400 -&gt; warm/150 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; warm/50 or lighter (4.66:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -701,7 +701,7 @@
     },
     {
       "id": "VariableID:2108:852",
-      "name": "warm/600",
+      "name": "neutral/600",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#6D5946  |  Tone 39  |  warm ladder position 13 of 20  |  content - text, icons, borders\nContrast  -  vs white 6.63:1  |  vs black 3.17:1\n3:1 non-text  -  -400 -&gt; warm/200 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; warm/100 or lighter (4.65:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -717,7 +717,7 @@
     },
     {
       "id": "VariableID:2108:853",
-      "name": "warm/650",
+      "name": "neutral/650",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#624F3F  |  Tone 35  |  warm ladder position 14 of 20  |  content - text, icons, borders\nContrast  -  vs white 7.75:1  |  vs black 2.71:1\n3:1 non-text  -  -400 -&gt; warm/250 or lighter (3.41:1)\nAA 4.5:1  -  -500 -&gt; warm/150 or lighter (4.64:1)\nAAA 7:1  -  -650 -&gt; warm/0 or lighter (7.38:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -733,7 +733,7 @@
     },
     {
       "id": "VariableID:2108:854",
-      "name": "warm/700",
+      "name": "neutral/700",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#564636  |  Tone 31  |  warm ladder position 15 of 20  |  content - text, icons, borders\nContrast  -  vs white 9.03:1  |  vs black 2.33:1\n3:1 non-text  -  -400 -&gt; warm/300 or lighter (3.42:1)\nAA 4.5:1  -  -500 -&gt; warm/200 or lighter (4.67:1)\nAAA 7:1  -  -650 -&gt; warm/50 or lighter (7.35:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -749,7 +749,7 @@
     },
     {
       "id": "VariableID:2108:855",
-      "name": "warm/750",
+      "name": "neutral/750",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#4B3C30  |  Tone 27  |  warm ladder position 16 of 20  |  content - text, icons, borders\nContrast  -  vs white 10.56:1  |  vs black 1.99:1\n3:1 non-text  -  -400 -&gt; warm/350 or lighter (3.44:1)\nAA 4.5:1  -  -500 -&gt; warm/250 or lighter (4.65:1)\nAAA 7:1  -  -650 -&gt; warm/100 or lighter (7.41:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -765,7 +765,7 @@
     },
     {
       "id": "VariableID:2108:856",
-      "name": "warm/800",
+      "name": "neutral/800",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#3F3329  |  Tone 22  |  warm ladder position 17 of 20  |  dark-mode surface\nContrast  -  vs white 12.23:1  |  vs black 1.72:1\n3:1 non-text  -  -400 -&gt; warm/400 or lighter (3.40:1)\nAA 4.5:1  -  -500 -&gt; warm/300 or lighter (4.64:1)\nAAA 7:1  -  -650 -&gt; warm/150 or lighter (7.32:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -781,7 +781,7 @@
     },
     {
       "id": "VariableID:2108:857",
-      "name": "warm/850",
+      "name": "neutral/850",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#322821  |  Tone 17  |  warm ladder position 18 of 20  |  dark-mode surface\nContrast  -  vs white 14.37:1  |  vs black 1.46:1\n3:1 non-text  -  -400 -&gt; warm/450 or lighter (3.44:1)\nAA 4.5:1  -  -500 -&gt; warm/350 or lighter (4.68:1)\nAAA 7:1  -  -650 -&gt; warm/200 or lighter (7.43:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
@@ -797,32 +797,32 @@
     },
     {
       "id": "VariableID:2108:858",
-      "name": "warm/900",
+      "name": "neutral/900",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#231D19  |  Tone 11  |  warm ladder position 19 of 20  |  dark-mode surface\nContrast  -  vs white 16.65:1  |  vs black 1.26:1\n3:1 non-text  -  -400 -&gt; warm/500 or lighter (3.41:1)\nAA 4.5:1  -  -500 -&gt; warm/400 or lighter (4.63:1)\nAAA 7:1  -  -650 -&gt; warm/250 or lighter (7.33:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
+      "description": "DUSQ neutral 900; contrast validated against entire ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.13725490868091583,
-          "g": 0.11372549086809158,
-          "b": 0.09803921729326248,
+          "r": 0.10196078431372549,
+          "g": 0.09411764705882353,
+          "b": 0.08627450980392157,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2108:859",
-      "name": "warm/950",
+      "name": "neutral/950",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#100C09  |  Tone 4  |  warm ladder position 20 of 20  |  dark-mode surface\nContrast  -  vs white 19.47:1  |  vs black 1.08:1\n3:1 non-text  -  -400 -&gt; warm/550 or lighter (3.40:1)\nAA 4.5:1  -  -500 -&gt; warm/450 or lighter (4.66:1)\nAAA 7:1  -  -650 -&gt; warm/300 or lighter (7.38:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
+      "description": "DUSQ neutral 950; contrast validated against entire ladder.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.062745101749897,
-          "g": 0.0470588244497776,
-          "b": 0.03529411926865578,
+          "r": 0.06666666666666667,
+          "g": 0.06666666666666667,
+          "b": 0.06666666666666667,
           "a": 1
         }
       }
@@ -1312,13 +1312,13 @@
       "name": "orange/0",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#FFF8F0  |  Tone 98  |  orange ladder position 1 of 10\nContrast  -  vs white 1.05:1  |  vs black 19.94:1\n3:1 non-text  -  4 steps darker -&gt; orange/400 or beyond (3.41:1)\nAA 4.5:1  -  5 steps darker -&gt; orange/500 or beyond (4.62:1)\nAAA 7:1  -  7 steps darker -&gt; orange/700 or beyond (8.53:1)",
+      "description": "#FFF8F0  |  DUSQ orange 0; light tint surface",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
           "r": 1,
-          "g": 0.9725490212440491,
-          "b": 0.9411764740943909,
+          "g": 0.972549,
+          "b": 0.941176,
           "a": 1
         }
       }
@@ -1328,13 +1328,13 @@
       "name": "orange/100",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#E7D5BE  |  Tone 86  |  orange ladder position 2 of 10\nContrast  -  vs white 1.43:1  |  vs black 14.66:1\n3:1 non-text  -  4 steps darker -&gt; orange/500 or beyond (3.40:1)\nAA 4.5:1  -  5 steps darker -&gt; orange/600 or beyond (4.63:1)\nAAA 7:1  -  7 steps darker -&gt; orange/800 or beyond (8.57:1)",
+      "description": "#FDE6D2  |  DUSQ orange 100; soft accent surface",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.9058823585510254,
-          "g": 0.8352941274642944,
-          "b": 0.7450980544090271,
+          "r": 0.992157,
+          "g": 0.901961,
+          "b": 0.823529,
           "a": 1
         }
       }
@@ -1344,13 +1344,13 @@
       "name": "orange/200",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#D9B488  |  Tone 76  |  orange ladder position 3 of 10\nContrast  -  vs white 1.94:1  |  vs black 10.83:1\n3:1 non-text  -  4 steps darker -&gt; orange/600 or beyond (3.42:1)\nAA 4.5:1  -  5 steps darker -&gt; orange/700 or beyond (4.64:1)\nAAA 7:1  -  7 steps darker -&gt; orange/900 or beyond (8.63:1)",
+      "description": "#FBCBA8  |  DUSQ orange 200; subtle border/fill",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.8509804010391235,
-          "g": 0.7058823704719543,
-          "b": 0.5333333611488342,
+          "r": 0.984314,
+          "g": 0.796078,
+          "b": 0.658824,
           "a": 1
         }
       }
@@ -1360,13 +1360,13 @@
       "name": "orange/300",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#D1924F  |  Tone 65  |  orange ladder position 4 of 10\nContrast  -  vs white 2.65:1  |  vs black 7.94:1\n3:1 non-text  -  4 steps darker -&gt; orange/700 or beyond (3.40:1)\nAA 4.5:1  -  5 steps darker -&gt; orange/800 or beyond (4.64:1)\nAAA 7:1  -  not reachable in this family",
+      "description": "#F7A366  |  DUSQ orange 300; secondary badge/metric",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.8196078538894653,
-          "g": 0.572549045085907,
-          "b": 0.30980393290519714,
+          "r": 0.968627,
+          "g": 0.639216,
+          "b": 0.4,
           "a": 1
         }
       }
@@ -1376,13 +1376,13 @@
       "name": "orange/400",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#CF6D13  |  Tone 56  |  orange ladder position 5 of 10\nContrast  -  vs white 3.59:1  |  vs black 5.85:1\n3:1 non-text  -  4 steps darker -&gt; orange/800 or beyond (3.42:1) ; 4 steps lighter -&gt; orange/0 or beyond (3.41:1)\nAA 4.5:1  -  5 steps darker -&gt; orange/900 or beyond (4.66:1)\nAAA 7:1  -  not reachable in this family",
+      "description": "#F0650D  |  DUSQ orange 400; interactive hover state",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.8117647171020508,
-          "g": 0.4274509847164154,
-          "b": 0.07450980693101883,
+          "r": 0.941176,
+          "g": 0.396078,
+          "b": 0.05098,
           "a": 1
         }
       }
@@ -1392,13 +1392,13 @@
       "name": "orange/500",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#BC5100  |  Tone 48  |  orange ladder position 6 of 10\nContrast  -  vs white 4.87:1  |  vs black 4.32:1\n3:1 non-text  -  4 steps darker -&gt; orange/900 or beyond (3.44:1) ; 4 steps lighter -&gt; orange/100 or beyond (3.40:1)\nAA 4.5:1  -  5 steps lighter -&gt; orange/0 or beyond (4.62:1)\nAAA 7:1  -  not reachable in this family",
+      "description": "#E85D04  |  DUSQ orange 500; signature clinical orange accent",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.7372549176216125,
-          "g": 0.3176470696926117,
-          "b": 0,
+          "r": 0.909804,
+          "g": 0.364706,
+          "b": 0.015686,
           "a": 1
         }
       }
@@ -1408,12 +1408,12 @@
       "name": "orange/600",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#A53800  |  Tone 39  |  orange ladder position 7 of 10\nContrast  -  vs white 6.63:1  |  vs black 3.17:1\n3:1 non-text  -  4 steps lighter -&gt; orange/200 or beyond (3.42:1)\nAA 4.5:1  -  5 steps lighter -&gt; orange/100 or beyond (4.63:1)\nAAA 7:1  -  not reachable in this family",
+      "description": "#C64B00  |  DUSQ orange 600; active/pressed state",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.6470588445663452,
-          "g": 0.21960784494876862,
+          "r": 0.776471,
+          "g": 0.294118,
           "b": 0,
           "a": 1
         }
@@ -1424,12 +1424,12 @@
       "name": "orange/700",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#882700  |  Tone 31  |  orange ladder position 8 of 10\nContrast  -  vs white 8.99:1  |  vs black 2.34:1\n3:1 non-text  -  4 steps lighter -&gt; orange/300 or beyond (3.40:1)\nAA 4.5:1  -  5 steps lighter -&gt; orange/200 or beyond (4.64:1)\nAAA 7:1  -  7 steps lighter -&gt; orange/0 or beyond (8.53:1)",
+      "description": "#9E3B00  |  DUSQ orange 700; deep signal/high contrast border",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.5333333611488342,
-          "g": 0.15294118225574493,
+          "r": 0.619608,
+          "g": 0.231373,
           "b": 0,
           "a": 1
         }
@@ -1440,12 +1440,12 @@
       "name": "orange/800",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#651B00  |  Tone 22  |  orange ladder position 9 of 10\nContrast  -  vs white 12.28:1  |  vs black 1.71:1\n3:1 non-text  -  4 steps lighter -&gt; orange/400 or beyond (3.42:1)\nAA 4.5:1  -  5 steps lighter -&gt; orange/300 or beyond (4.64:1)\nAAA 7:1  -  7 steps lighter -&gt; orange/100 or beyond (8.57:1)",
+      "description": "#732A00  |  DUSQ orange 800; dark surface accent",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.3960784375667572,
-          "g": 0.10588235408067703,
+          "r": 0.45098,
+          "g": 0.164706,
           "b": 0,
           "a": 1
         }
@@ -1456,12 +1456,12 @@
       "name": "orange/900",
       "resolvedType": "COLOR",
       "scopes": [],
-      "description": "#371300  |  Tone 11  |  orange ladder position 10 of 10\nContrast  -  vs white 16.73:1  |  vs black 1.26:1\n3:1 non-text  -  4 steps lighter -&gt; orange/500 or beyond (3.44:1)\nAA 4.5:1  -  5 steps lighter -&gt; orange/400 or beyond (4.66:1)\nAAA 7:1  -  7 steps lighter -&gt; orange/200 or beyond (8.63:1)",
+      "description": "#401700  |  DUSQ orange 900; deep night tone",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.21568627655506134,
-          "g": 0.07450980693101883,
+          "r": 0.25098,
+          "g": 0.090196,
           "b": 0,
           "a": 1
         }
@@ -1949,144 +1949,144 @@
     },
     {
       "id": "VariableID:2113:820",
-      "name": "neutral/50",
+      "name": "warm/50",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#E5E8ED  |  Tone 92  |  neutral ladder position 2 of 20  |  light-mode surface\nContrast  -  vs white 1.23:1  |  vs black 17.10:1\n3:1 non-text  -  +400 -&gt; neutral/450 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/550 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; neutral/700 or darker (7.39:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.8980392217636108,
-          "g": 0.9098039269447327,
-          "b": 0.929411768913269,
+          "r": 0.9215686321258545,
+          "g": 0.9058823585510254,
+          "b": 0.8941176533699036,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:821",
-      "name": "neutral/150",
+      "name": "warm/150",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#C4C9CF  |  Tone 81  |  neutral ladder position 4 of 20  |  content - text, icons, borders\nContrast  -  vs white 1.67:1  |  vs black 12.60:1\n3:1 non-text  -  +400 -&gt; neutral/550 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/650 or darker (4.65:1)\nAAA 7:1  -  +650 -&gt; neutral/800 or darker (7.40:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.7686274647712708,
-          "g": 0.7882353067398071,
-          "b": 0.8117647171020508,
+          "r": 0.8078431487083435,
+          "g": 0.7803921699523926,
+          "b": 0.7568627595901489,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:822",
-      "name": "neutral/250",
+      "name": "warm/250",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#A7ADB4  |  Tone 70  |  neutral ladder position 6 of 20  |  content - text, icons, borders\nContrast  -  vs white 2.26:1  |  vs black 9.28:1\n3:1 non-text  -  +400 -&gt; neutral/650 or darker (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/750 or darker (4.62:1)\nAAA 7:1  -  +650 -&gt; neutral/900 or darker (7.39:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.6549019813537598,
-          "g": 0.6784313917160034,
-          "b": 0.7058823704719543,
+          "r": 0.7176470756530762,
+          "g": 0.6666666865348816,
+          "b": 0.615686297416687,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:823",
-      "name": "neutral/350",
+      "name": "warm/350",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#8D949B  |  Tone 61  |  neutral ladder position 8 of 20  |  content - text, icons, borders\nContrast  -  vs white 3.07:1  |  vs black 6.84:1\n3:1 non-text  -  +400 -&gt; neutral/750 or darker (3.41:1)\nAA 4.5:1  -  +500 -&gt; neutral/850 or darker (4.65:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.5529412031173706,
-          "g": 0.5803921818733215,
-          "b": 0.6078431606292725,
+          "r": 0.6392157077789307,
+          "g": 0.5647059082984924,
+          "b": 0.48627451062202454,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:824",
-      "name": "neutral/450",
+      "name": "warm/450",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#767C84  |  Tone 52  |  neutral ladder position 10 of 20  |  content - text, icons, borders\nContrast  -  vs white 4.21:1  |  vs black 4.99:1\n3:1 non-text  -  +400 -&gt; neutral/850 or darker (3.39:1) ; -400 -&gt; neutral/50 or lighter (3.43:1)\nAA 4.5:1  -  +500 -&gt; neutral/950 or darker (4.62:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.4627451002597809,
-          "g": 0.48627451062202454,
-          "b": 0.5176470875740051,
+          "r": 0.5607843399047852,
+          "g": 0.47058823704719543,
+          "b": 0.3803921639919281,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:825",
-      "name": "neutral/550",
+      "name": "warm/550",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#61676F  |  Tone 43  |  neutral ladder position 12 of 20  |  content - text, icons, borders\nContrast  -  vs white 5.71:1  |  vs black 3.68:1\n3:1 non-text  -  +400 -&gt; neutral/950 or darker (3.41:1) ; -400 -&gt; neutral/150 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; neutral/50 or lighter (4.65:1)\nAAA 7:1  -  not reachable in this family\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.3803921639919281,
-          "g": 0.40392157435417175,
-          "b": 0.43529412150382996,
+          "r": 0.4745098054409027,
+          "g": 0.3843137323856354,
+          "b": 0.3019607961177826,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:826",
-      "name": "neutral/650",
+      "name": "warm/650",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#4E535A  |  Tone 35  |  neutral ladder position 14 of 20  |  content - text, icons, borders\nContrast  -  vs white 7.75:1  |  vs black 2.71:1\n3:1 non-text  -  -400 -&gt; neutral/250 or lighter (3.43:1)\nAA 4.5:1  -  -500 -&gt; neutral/150 or lighter (4.65:1)\nAAA 7:1  -  -650 -&gt; neutral/0 or lighter (7.41:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.30588236451148987,
-          "g": 0.32549020648002625,
-          "b": 0.3529411852359772,
+          "r": 0.3843137323856354,
+          "g": 0.30980393290519714,
+          "b": 0.24705882370471954,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:827",
-      "name": "neutral/750",
+      "name": "warm/750",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#3B4046  |  Tone 27  |  neutral ladder position 16 of 20  |  content - text, icons, borders\nContrast  -  vs white 10.46:1  |  vs black 2.01:1\n3:1 non-text  -  -400 -&gt; neutral/350 or lighter (3.41:1)\nAA 4.5:1  -  -500 -&gt; neutral/250 or lighter (4.62:1)\nAAA 7:1  -  -650 -&gt; neutral/100 or lighter (7.30:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.23137255012989044,
-          "g": 0.250980406999588,
-          "b": 0.27450981736183167,
+          "r": 0.29411765933036804,
+          "g": 0.23529411852359772,
+          "b": 0.1882352977991104,
           "a": 1
         }
       }
     },
     {
       "id": "VariableID:2113:828",
-      "name": "neutral/850",
+      "name": "warm/850",
       "resolvedType": "COLOR",
       "scopes": [],
       "description": "#272B2F  |  Tone 17  |  neutral ladder position 18 of 20  |  dark-mode surface\nContrast  -  vs white 14.26:1  |  vs black 1.47:1\n3:1 non-text  -  -400 -&gt; neutral/450 or lighter (3.39:1)\nAA 4.5:1  -  -500 -&gt; neutral/350 or lighter (4.65:1)\nAAA 7:1  -  -650 -&gt; neutral/200 or lighter (7.36:1)\nRule of thumb: +400 = 3:1, +500 = AA, +700 = AAA. Holds in every Accesibility family.",
       "hiddenFromPublishing": false,
       "valuesByMode": {
         "2058:0": {
-          "r": 0.15294118225574493,
-          "g": 0.16862745583057404,
-          "b": 0.18431372940540314,
+          "r": 0.19607843458652496,
+          "g": 0.1568627506494522,
+          "b": 0.12941177189350128,
           "a": 1
         }
       }
